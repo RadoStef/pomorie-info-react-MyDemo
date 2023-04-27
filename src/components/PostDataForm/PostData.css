@@ -64,7 +64,7 @@ input:hover {
 input:active,
 input:focus {
     border-bottom: 2px solid #fbbc05;
-    width: 90%;
+    width: 70%;
     transition: all 0.5s;
 }
 

@@ -2,14 +2,14 @@ import React from 'react';
 import { AppHeaderBar } from '../components/HeaderSection/AppHeaderBar';
 import { ScrollToTopButton } from '../components/UI/ScrollToTopButton';
 import { Breadcrumb } from '../components/BreadCrumbSection/Breadcrumb';
-import { PostData } from '../components/PostDataForm/PostData';
+import { GetData } from '../components/GetData/GetData';
 
-export const PostDataPage = () => {
+export const GetDataPage = () => {
   return (
     <div>
       <AppHeaderBar/>
-      <Breadcrumb location='/ Post data to Firebase'/>
-      <PostData/>
+      <Breadcrumb location='/ Get data from Firebase'/>
+      <GetData/>
       <ScrollToTopButton/>
     </div>
   )

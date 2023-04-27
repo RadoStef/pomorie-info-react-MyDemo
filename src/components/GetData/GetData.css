@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    background-color: bisque;
+    color: black;
+    margin-left: 17.5%;
+    background-color: #f1f1f1;
+    margin-bottom: 50px;
+}
+
+.logo-wrapper {
+    margin: 20px 0 10px 0;
+}
+.logo-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 10px;
+}
+.picture-wrapper {
+    width: 60%;
+}
+.picture-wrapper img {
+    width: 250px;
+    height: 200px;
+    margin: 20px 0;
+    border: 1px solid black;
+}
+
+.object-wrapper {
+    min-width: 70%;
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
