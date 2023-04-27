@@ -1,0 +1,16 @@
+.list {
+    text-decoration: none;
+    color: #767676;
+    width: 100%;
+    border-bottom: 1px solid 'white';
+}
+
+
+.list a:hover,
+.list a.active {
+    color: #fa9746;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid #fa9746;
+    width: 100%;
+}
