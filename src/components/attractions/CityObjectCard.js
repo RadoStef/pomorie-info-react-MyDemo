@@ -13,6 +13,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import { BootstrapTooltip } from "../UI/Themes";
 import { Link } from 'react-router-dom';
 import '../UI/CityObject.css';
+import { styles } from '../UI/CityObjectsCardStyles';
 
 
 export const CityObjectCard = (props) => {
@@ -21,7 +22,7 @@ export const CityObjectCard = (props) => {
       {props.attractionsData.map((attraction) => {
         return (
           <Card
-            sx={{ width: 420, height: 700, margin: "20px" }}
+            sx={styles.cityObjectCard}
             key={attraction.id}
           >
             <CardActionArea disableRipple>
@@ -31,7 +32,7 @@ export const CityObjectCard = (props) => {
                 image={attraction.img}
                 alt="green iguana"
               />
-              <CardContent sx={{ height: "300px" }}>
+              <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant="h5" component="div">
                   {attraction.name}
                 </Typography>
