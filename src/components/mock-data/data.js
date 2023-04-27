@@ -830,4 +830,11 @@ export const menuItems = [
     length: "",
     link: "/restaurants",
   },
+  {
+    id: 14,
+    text: 'Post Data To Firebase',
+    icon: <DinnerDiningIcon />,
+    length: "",
+    link: "/post-data-page",
+  }
 ];

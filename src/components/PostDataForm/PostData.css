@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    background-color: bisque;
+    color: black;
+    margin-left: 17.5%;
+    background-color: #f1f1f1;
+    margin-bottom: 50px;
+}
+
+.logo-wrapper {
+    margin: 20px 0 10px 0;
+}
+.logo-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.form-wrapper {
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+input {
+    margin: 10px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid;
+    width: 60%;
+    border: 1px solid #3c7bbb;
+}
+
+input:focus {
+    border-color: #fbbc05;
+}
+
+input,
+input:focus,
+input:active,
+input:hover {
+    outline: 0;
+}
+input:active,
+input:focus {
+    border-bottom: 2px solid #fbbc05;
+    width: 90%;
+    transition: all 0.5s;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border: 1px solid #fbbc05;
+    background-color: #fbbc05;
+}
+.submit:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #fa9746;
+    transition: all 0.7s;
+    border-radius: 5px;
+}

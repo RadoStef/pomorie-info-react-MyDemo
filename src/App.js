@@ -15,9 +15,11 @@ import { WineAndCulture } from './pages/WineAndCulture';
 import { Transport } from './pages/Transport';
 import { Hotels } from './pages/Hotels';
 import { Restaurants } from './pages/Restaurants';
+import { PostDataPage } from './pages/PostDataPage';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
+  {path: 'post-data-page', element: <PostDataPage/>},
   {path: 'museums', element: <Museums/>},
   {path: 'landmarks', element: <Landmarks/>},
   {path: 'beaches', element: <Beaches/>},
