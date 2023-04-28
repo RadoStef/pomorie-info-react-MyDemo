@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    background-color: bisque;
+    color: black;
+    margin-left: 17.5%;
+    background-color: #f1f1f1;
+    margin-bottom: 50px;
+}
+
+.logo-wrapper {
+    margin: 20px 0 10px 0;
+}
+
+.logo-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(108, 104, 104);
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: white;
+}
+
+tfoot {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: dotted;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) td {
+    background-color: white;
+}

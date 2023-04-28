@@ -17,11 +17,13 @@ import { Hotels } from './pages/Hotels';
 import { Restaurants } from './pages/Restaurants';
 import { PostDataPage } from './pages/PostDataPage';
 import { GetDataPage } from './pages/GetDataPage';
+import { TablePage } from './pages/TablePage';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
   {path: 'post-data-page', element: <PostDataPage/>},
   {path: 'get-data-page', element: <GetDataPage/>},
+  {path: 'table-page', element: <TablePage/>},
   {path: 'museums', element: <Museums/>},
   {path: 'landmarks', element: <Landmarks/>},
   {path: 'beaches', element: <Beaches/>},

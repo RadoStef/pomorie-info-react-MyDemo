@@ -82,3 +82,13 @@ input:focus {
     transition: all 0.7s;
     border-radius: 5px;
 }
+
+.success {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #3c7bbb;
+}
+
+.success p {
+    color: red;
+    font-weight: 600;
+}

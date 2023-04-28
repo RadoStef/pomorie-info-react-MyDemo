@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import axios from 'axios';
 import "./PostData.css";
 
 
 export const PostData = (props) => {
+    const [success, setSuccess] = useState('');
+    const [error, setError] = useState('')
 
     const nameRef = useRef('');
     const descriptionRef = useRef('');
@@ -24,11 +26,20 @@ export const PostData = (props) => {
 
         axios.post('https://pomorie-info-default-rtdb.europe-west1.firebasedatabase.app/objects.json', data)
         .then(response => {
-            console.log(response);
+            if(response) {
+                console.log(response);
+                setSuccess('Information successfully sent!');
+            }
         })
         .catch(error => {
+            setError('Something went wrong, please try again')
             console.log(error);
         });
+
+        setTimeout(() => {
+            setSuccess('');
+            setError('');
+        }, 5000);
     }
 
   return (
@@ -43,6 +54,7 @@ export const PostData = (props) => {
         <h2>Sending post request to firebase, PeEx, working with forms</h2>
         <div className="form-wrapper">
           <form className="form" onSubmit={submitDataHandler}>
+            <div className="success"><p>{success ? success : error}</p></div>
             <label htmlFor="name">Object name: </label>
             <input type="text" placeholder="City object name" id="name" ref={nameRef}/>
             <label htmlFor="description">Description: </label>

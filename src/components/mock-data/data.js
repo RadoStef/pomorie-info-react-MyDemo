@@ -11,6 +11,9 @@ import WineBarIcon from "@mui/icons-material/WineBar";
 import EmojiTransportationIcon from "@mui/icons-material/EmojiTransportation";
 import LocalHotelIcon from "@mui/icons-material/LocalHotel";
 import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
+import BackupIcon from '@mui/icons-material/Backup';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
 import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
@@ -833,15 +836,22 @@ export const menuItems = [
   {
     id: 14,
     text: 'Post Data to firebase',
-    icon: <DinnerDiningIcon />,
+    icon: <BackupIcon />,
     length: "",
     link: "/post-data-page",
   },
   {
     id: 15,
     text: 'Get Data from firebase',
-    icon: <DinnerDiningIcon />,
+    icon: <CloudDownloadIcon />,
     length: "",
     link: "/get-data-page",
+  },
+  {
+    id: 16,
+    text: "Table page",
+    icon: <PivotTableChartIcon/>,
+    length: "",
+    link: "/table-page",
   }
 ];
