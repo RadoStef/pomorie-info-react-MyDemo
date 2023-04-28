@@ -18,12 +18,14 @@ import { Restaurants } from './pages/Restaurants';
 import { PostDataPage } from './pages/PostDataPage';
 import { GetDataPage } from './pages/GetDataPage';
 import { TablePage } from './pages/TablePage';
+import { NewsPage } from './pages/NewsPage';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
   {path: 'post-data-page', element: <PostDataPage/>},
   {path: 'get-data-page', element: <GetDataPage/>},
   {path: 'table-page', element: <TablePage/>},
+  {path: 'news-page', element: <NewsPage/>},
   {path: 'museums', element: <Museums/>},
   {path: 'landmarks', element: <Landmarks/>},
   {path: 'beaches', element: <Beaches/>},

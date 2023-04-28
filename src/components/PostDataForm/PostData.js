@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import axios from 'axios';
 import "./PostData.css";
+import { CustomCard } from "../UI/CustomCard";
 
 
 export const PostData = (props) => {
@@ -44,13 +45,7 @@ export const PostData = (props) => {
 
   return (
     <>
-      <div className="container">
-        <div className="logo-wrapper">
-          <img
-            src="https://peex.softserveinc.com/assets/logo-min.svg"
-            alt="peex logo"
-          />
-        </div>
+      <CustomCard>
         <h2>Sending post request to firebase, PeEx, working with forms</h2>
         <div className="form-wrapper">
           <form className="form" onSubmit={submitDataHandler}>
@@ -83,7 +78,7 @@ export const PostData = (props) => {
             <button className="submit">Submit</button>
           </form>
         </div>
-      </div>
+      </CustomCard>
     </>
   );
 };

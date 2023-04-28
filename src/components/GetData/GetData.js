@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './GetData.css';
+import { CustomCard } from '../UI/CustomCard';
 
 export const GetData = () => {
     const [cityObjects, setCityObjects] = useState(null);
@@ -25,13 +26,7 @@ export const GetData = () => {
   }
 
     return (
-    <div className="container">
-        <div className="logo-wrapper">
-          <img
-            src="https://peex.softserveinc.com/assets/logo-min.svg"
-            alt="peex logo"
-          />
-        </div>
+    <CustomCard>
         <h2>Getting data from firebase, PeEx</h2>
         <div className='object-wrapper'>
             {cityObjects ? (
@@ -52,6 +47,6 @@ export const GetData = () => {
         <div>{error ? <p style={{color: 'red', textAlign: 'center'}}>{error}</p> : <p></p>}</div>
         </div>
         <button className="submit" onClick={fetchDataHandler}>Get data</button>
-    </div>
+    </CustomCard>
     );
 };

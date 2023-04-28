@@ -14,6 +14,7 @@ import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
 import BackupIcon from '@mui/icons-material/Backup';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
 import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
@@ -853,5 +854,12 @@ export const menuItems = [
     icon: <PivotTableChartIcon/>,
     length: "",
     link: "/table-page",
+  },
+  {
+    id: 17,
+    text: "Latest News",
+    icon: <NewspaperIcon/>,
+    length: "",
+    link: '/news-page',
   }
 ];

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Table.css";
+import { CustomCard } from "../UI/CustomCard";
 
 export const Table = () => {
   const myTable = {
@@ -26,13 +27,7 @@ export const Table = () => {
   const totalHours = myTable.hours.reduce((total, current) => total + current);
 
   return (
-    <div className="container">
-      <div className="logo-wrapper">
-        <img
-          src="https://peex.softserveinc.com/assets/logo-min.svg"
-          alt="peex logo"
-        />
-      </div>
+    <CustomCard>
       <h2>Adding Table to the document.</h2>
       <table style={{ float: "left" }}>
         <caption style={{ color: "red", paddingBottom: "20px" }}>
@@ -82,6 +77,6 @@ export const Table = () => {
         hours, but do not forget your PTO which is <b>25</b> days or{" "}
         <b>{paidTimeOff}</b> working hours 😉.
       </p>
-    </div>
+    </CustomCard>
   );
 };
