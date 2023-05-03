@@ -10,6 +10,10 @@ export const WeatherInfo = () => {
   const [windSpeed, setWindSpeed] = useState(null);
   const [weatherDescription, setWeatherDescription] = useState(null);
 
+  const today = new Date();
+  const summerStart = new Date(2023, 5, 21);
+  const daysLeftToSummerStart = (date1, date2) => Math.round((date2 - date1) / (1000 * 60 * 60 * 24));
+
   const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
   const lat = 42.56;
   const lon = 27.64;
@@ -48,6 +52,9 @@ export const WeatherInfo = () => {
           Скорост на вятъра: {windSpeed} м/с
         </Box>
       )}
+      {<Box>
+        Hi ALL! Just to say, Summer starts in <span style={{color: 'red'}}>{daysLeftToSummerStart(today, summerStart)}</span> days! 💥😎🎉
+      </Box>}
       <Box>
         <WbSunnyIcon />
       </Box>
