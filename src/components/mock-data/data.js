@@ -15,6 +15,7 @@ import BackupIcon from '@mui/icons-material/Backup';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
+import CastleIcon from '@mui/icons-material/Castle';
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
 import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
@@ -861,5 +862,12 @@ export const menuItems = [
     icon: <NewspaperIcon/>,
     length: "",
     link: '/news-page',
+  },
+  {
+    id: 18,
+    text: "History of Pomorie",
+    icon: <CastleIcon/>,
+    length: "",
+    link: "/history-page",
   }
 ];

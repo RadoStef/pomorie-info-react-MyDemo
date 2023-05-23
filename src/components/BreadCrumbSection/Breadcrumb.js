@@ -6,7 +6,7 @@ import { HomeButton } from '../UI/HomeButton';
 export const Breadcrumb = (props) => {
 
   return (
-    <Container sx={headerStyles.weatherInfoBar} maxWidth="xl">
+    <Container sx={headerStyles.breadCrumbs} maxWidth="xl">
       <Box sx={{ display: 'flex', alignItems: 'center'}}>
         <HomeButton/> {props.location}
       </Box>

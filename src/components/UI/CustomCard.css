@@ -1,12 +1,13 @@
-.container {
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 65%;
+    margin-left: 17.5%;
     align-items: center;
     margin-top: 160px;
     background-color: bisque;
     color: black;
-    margin-left: 17.5%;
     background-color: #f1f1f1;
     margin-bottom: 50px;
 }

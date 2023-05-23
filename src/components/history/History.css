@@ -1,0 +1,9 @@
+.history-wrapper {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

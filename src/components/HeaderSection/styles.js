@@ -24,12 +24,26 @@ export const headerStyles = {
         background: '#FFF',
         borderBottom: '1px solid #EDEDED',
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
         top: 80, 
         left: 0, 
         right: 0, 
         zIndex: 500,
-    }
+    },
+
+    breadCrumbs: {
+        width: '100%',
+        height: '50px',
+        background: '#FFF',
+        borderBottom: '1px solid #EDEDED',
+        display: 'flex',
+        alignItems: 'center',
+        position: 'absolute',
+        top: 80, 
+        left: 0, 
+        right: 0, 
+        zIndex: 500,
+    },
 }   
