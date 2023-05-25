@@ -42,7 +42,7 @@ export const GetData = () => {
             </div>
           ))
         ) : (
-          <p style={{textAlign: 'center'}}>Sorry, no objects found, please click Get data button.</p>
+          <p style={{textAlign: 'center'}}>To get data, please click on "Get Data" button.</p>
         )}
         <div>{error ? <p style={{color: 'red', textAlign: 'center'}}>{error}</p> : <p></p>}</div>
         </div>

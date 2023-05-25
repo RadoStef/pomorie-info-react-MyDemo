@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from 'axios';
-import "./PostData.css";
+import classes from "./PostData.module.css";
 import { CustomCard } from "../UI/CustomCard";
 
 
@@ -14,41 +14,70 @@ export const PostData = (props) => {
     const phoneRef= useRef('');
     const pictureRef = useRef('');
 
+    const data = {
+        name: nameRef.current.value,
+        description: descriptionRef.current.value,
+        address: addressRef.current.value,
+        phone: phoneRef.current.value,
+        picture: pictureRef.current.value,
+    };
+
+    const validateData = () => {
+      const name = nameRef.current.value;
+      const description = descriptionRef.current.value;
+      const address = addressRef.current.value;
+      const phone = phoneRef.current.value;
+      const picture = pictureRef.current.value;
+
+      if (!name || !description || !address || !phone || !picture) {
+        setError('Please fill in all fields');
+        return false;
+      }
+
+      if (isNaN(phone)) {
+        setError('Please enter a valid phone number');
+        return false;
+      }
+
+      return true;
+    };
+
+    const clearErrorMessage = () => {
+      return setTimeout(() => {
+        setSuccess('');
+        setError('');
+      }, 5000);
+    };
+
     const submitDataHandler = (event) => {
-        event.preventDefault();
+      event.preventDefault();
 
-        const data = {
-            name: nameRef.current.value,
-            description: descriptionRef.current.value,
-            address: addressRef.current.value,
-            phone: phoneRef.current.value,
-            picture: pictureRef.current.value,
-        };
+      if(!validateData()) {
+        return;
+      } 
 
-        axios.post('https://pomorie-info-default-rtdb.europe-west1.firebasedatabase.app/objects.json', data)
-        .then(response => {
-            if(response) {
-                console.log(response);
-                setSuccess('Information successfully sent!');
-            }
-        })
-        .catch(error => {
-            setError('Something went wrong, please try again')
-            console.log(error);
-        });
+      axios.post('https://pomorie-info-default-rtdb.europe-west1.firebasedatabase.app/objects.json', data)
+      .then(response => {
+        if(response) {
+          console.log(response);
+          setSuccess('Information successfully sent!');
+        }
+      })
+      .catch(error => {
+        setError('Something went wrong, please try again')
+         console.log(error);
+      });
+      
+      clearErrorMessage();
+    };
 
-        setTimeout(() => {
-            setSuccess('');
-            setError('');
-        }, 5000);
-    }
 
   return (
     <>
       <CustomCard>
         <h2>Sending post request to firebase, PeEx, working with forms</h2>
-        <div className="form-wrapper">
-          <form className="form" onSubmit={submitDataHandler}>
+        <div className={classes.formWrapper}>
+          <form className={classes.form} onSubmit={submitDataHandler}>
             <div className="success"><p>{success ? success : error}</p></div>
             <label htmlFor="name">Object name: </label>
             <input type="text" placeholder="City object name" id="name" ref={nameRef}/>
@@ -75,7 +104,7 @@ export const PostData = (props) => {
             />
             <label htmlFor='picture'>Picture:</label>
             <input type='text' placeholder='picture URL here' id='picture' ref={pictureRef}/>
-            <button className="submit">Submit</button>
+            <button className={classes.submit}>Submit</button>
           </form>
         </div>
       </CustomCard>

@@ -7,3 +7,30 @@
     align-items: center;
     flex-direction: column;
 }
+
+.download-section {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.download-btn_loading {
+    height: 40px;
+    width: 200px;
+    background-color: #FBBC05;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn_ready {
+    height: 40px;
+    width: 200px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

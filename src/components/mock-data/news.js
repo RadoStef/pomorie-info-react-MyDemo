@@ -2,7 +2,8 @@ import news1 from '../../assets/news/aleya.jpg';
 import news2 from '../../assets/news/thomb.jpg';
 import news3 from '../../assets/news/kula.jpg';
 import news4 from '../../assets/news/newparking.jpg';
-import moment from 'moment'
+import news5 from '../../assets/news/bluezone.jpg';
+import moment from 'moment';
 
 let publishDate = moment().format('MMMM Do YYYY, h:mm:ss a');
  
@@ -41,5 +42,13 @@ export const news = [
     date: publishDate,
     author: "Община Поморие",
     source: 'https://www.pomorie.bg/77326/startira-rabotata-po-dalgootchakvaniya-parking-v-rayona-na-sofarma/',
+  },
+  {
+    id: 'n5',
+    title: 'Започва поставянето на нови пътни знаци и хоризонтална маркировка в кв. „Малко солено езеро“ – гр. Поморие',
+    image: news5,
+    date: publishDate,
+    author: 'Община Поморие',
+    source: 'https://www.pomorie.bg/78790/zapotchva-postavyaneto-na-novi-patni-znatsi-i-horizontalna-markirovka-v-kv-vmalko-soleno-ezerov-gr-pomorie/',
   },
 ];
