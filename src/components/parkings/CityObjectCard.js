@@ -30,7 +30,7 @@ export const CityObjectCard = (props) => {
                 component="img"
                 height="250"
                 image={parking.img}
-                alt="green iguana"
+                alt={parking.name}
               />
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant="h5" component="div">

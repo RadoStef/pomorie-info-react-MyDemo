@@ -1,5 +1,5 @@
 import React from "react";
-import { PDFViewer, Page, Text, Image, Document, StyleSheet } from "@react-pdf/renderer";
+import { Page, Text, Image, Document, StyleSheet } from "@react-pdf/renderer";
 import coverImage from "../../assets/museums/museum/museum.jpg";
 import "./History.css";
 
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
 export const History = () => {
   return (
-    <Document className='history-wrapper'>
+    <Document className='history-wrapper' title='Historical museum of Pomorie.' author='Radoslav Stefanov'>
       <Page style={styles.body}>
         <Text style={styles.header}></Text>
         <Image style={styles.image} src={coverImage} />

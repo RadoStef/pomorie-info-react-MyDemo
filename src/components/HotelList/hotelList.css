@@ -1,0 +1,11 @@
+.dividers {
+    margin: 20px 0;
+}
+
+.show-btn {
+    background-color: #FBBC05;
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}

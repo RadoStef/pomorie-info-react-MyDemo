@@ -20,6 +20,7 @@ import { GetDataPage } from './pages/GetDataPage';
 import { TablePage } from './pages/TablePage';
 import { NewsPage } from './pages/NewsPage';
 import { HistoryPage } from './pages/HistoryPage';
+import { HotelListPage } from './pages/HotelListPage';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
   {path: 'get-data-page', element: <GetDataPage/>},
   {path: 'table-page', element: <TablePage/>},
   {path: 'history-page', element: <HistoryPage/>},
+  {path: 'hotel-list-page', element: <HotelListPage/>},
   {path: 'news-page', element: <NewsPage/>},
   {path: 'museums', element: <Museums/>},
   {path: 'landmarks', element: <Landmarks/>},

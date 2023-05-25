@@ -16,6 +16,8 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CastleIcon from '@mui/icons-material/Castle';
+import DryCleaningIcon from '@mui/icons-material/DryCleaning';
+
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
 import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
@@ -743,6 +745,26 @@ export const parkings = [
   },
 ];
 
+  export const hotels = [{
+    id: 1,
+    name: "Hotel Saint George",
+    description: 'A great hotel in the center of the city.',
+    address: 'Yavorov 10'
+  },
+  {
+    id: 2,
+    name: 'Grand Hotel Pomorie',
+    description: 'The largest hotel right by the sea.',
+    address: 'Professor Stoyanov',
+  },
+  {
+    id: 3,
+    name: 'Hotel Paradise',
+    description: 'At the same center, your place for stay is this.',
+    address: 'On the square!'
+  }
+];
+
 export const menuItems = [
   {
     id: 1,
@@ -869,5 +891,12 @@ export const menuItems = [
     icon: <CastleIcon/>,
     length: "",
     link: "/history-page",
+  },
+  {
+    id: 19,
+    text: "Popular Hotels",
+    icon: <DryCleaningIcon/>,
+    length: "",
+    link: "/hotel-list-page"
   }
 ];
