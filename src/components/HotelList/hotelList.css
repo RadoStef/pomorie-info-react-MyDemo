@@ -9,3 +9,15 @@
     border: none;
     cursor: pointer;
 }
+
+li {
+    list-style: none;
+}
+
+li, .headers {
+    text-align: left;
+}
+
+.stars {
+    color: red;
+}

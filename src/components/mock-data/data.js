@@ -749,19 +749,58 @@ export const parkings = [
     id: 1,
     name: "Hotel Saint George",
     description: 'A great hotel in the center of the city.',
-    address: 'Yavorov 10'
+    address: 'Yavorov 10',
+    stars: `four`,
+    star: `*`.repeat(4),
+    
   },
   {
     id: 2,
     name: 'Grand Hotel Pomorie',
     description: 'The largest hotel right by the sea.',
     address: 'Professor Stoyanov',
+    stars: `five`,
+    star: `*`.repeat(5),
   },
   {
     id: 3,
     name: 'Hotel Paradise',
     description: 'At the same center, your place for stay is this.',
-    address: 'On the square!'
+    address: 'On the square!',
+    stars: `three`,
+    star: `*`.repeat(3),
+  },
+  {
+    id: 4,
+    name: 'Family Hotel Regata',
+    description: 'Located in the old part of the city of Pomorie on the sea coast, Hotel Regata offers rooms with modern furnishings and a cozy restaurant with a terrace.',
+    address: 'Pomorie, old town by the bay!',
+    stars: `three`,
+    star: `*`.repeat(3),
+  },
+    {
+    id: 5,
+    name: 'Festa Pomorie Resort',
+    description: 'Located on the southern beach of Pomorie on the Bulgarian Black Sea coast, the 4-star Festa Pomorie Resort features a large outdoor pool and a gym.',
+    address: 'Pomorie, new town.',
+    stars: `four`,
+    star: `*`.repeat(4),
+  },
+  {
+    id: 6,
+    name: 'Hotel St. Nikola',
+    description: 'Situated 150 meters from the beach in Pomorie, Hotel St Nikola enjoys a central and peaceful location, with a choice of restaurants and shops nearby.',
+    address: 'Somewhere in Pomorie.',
+    stars: `three`,
+    star: `*`.repeat(3),
+  },
+  {
+    id: 7,
+    name: 'Wave Resort - Ultra All InclusiveOpens in a new window',
+    description: 'Located 5 km from the center of Pomorie, Wave Resort features a private beach, a spa center covering an area of ​​2500 m2, an aqua park and several swimming pools, including 1 outdoor pool.',
+    address: `Beachfront`,
+    stars: `five`,
+    star: `*`.repeat(5),
   }
 ];
 

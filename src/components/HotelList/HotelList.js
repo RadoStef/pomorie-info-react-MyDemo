@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { hotels } from '../../components/mock-data/data';
 import { CustomCard } from '../UI/CustomCard';
 import './hotelList.css';
+
 class HotelList extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +21,14 @@ class HotelList extends Component {
       const hotelsList = (
         <ul>
           {hotels.map((hotel) => {
-            return <li><b>{hotel.name}</b>, {hotel.description}</li>
+            return (
+                <li key={hotel.id}>
+                    <div> 
+                        <p><b>{hotel.name} <span className='stars'>{hotel.star}</span></b> / ({hotel.stars}) stars</p>
+                        <p>{hotel.description}</p>
+                    </div>
+                </li>
+            )
           })}
         </ul>
       );
