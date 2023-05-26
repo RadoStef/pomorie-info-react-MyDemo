@@ -2,7 +2,6 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { RootLayout } from './pages/Root';
 import { Museums } from './pages/Museums';
-import './App.css';
 import { Beaches } from './pages/Beaches';
 import { Landmarks } from './pages/Landmarks';
 import { Parking } from './pages/Parking';
@@ -21,7 +20,7 @@ import { TablePage } from './pages/TablePage';
 import { NewsPage } from './pages/NewsPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { HotelListPage } from './pages/HotelListPage';
-import { Footer } from './components/Footer/Footer';
+import './App.css';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},

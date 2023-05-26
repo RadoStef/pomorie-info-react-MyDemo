@@ -15,11 +15,11 @@ export const PostData = (props) => {
     const pictureRef = useRef('');
 
     const data = {
-        name: nameRef.current.value,
-        description: descriptionRef.current.value,
-        address: addressRef.current.value,
-        phone: phoneRef.current.value,
-        picture: pictureRef.current.value,
+      name: nameRef.current.value,
+      description: descriptionRef.current.value,
+      address: addressRef.current.value,
+      phone: phoneRef.current.value,
+      picture: pictureRef.current.value,
     };
 
     const validateData = () => {

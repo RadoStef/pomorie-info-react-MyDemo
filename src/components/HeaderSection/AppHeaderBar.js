@@ -13,6 +13,7 @@ import classes from './MenuStyles.module.css';
 import { headerStyles } from './styles';
 import { menuItems } from '../mock-data/data';
 import { NavLink } from 'react-router-dom';
+import { RegisterForm } from '../RegisterDialog/RegisterForm';
 
 const backToMainPage = 'https://www.eva-pomorie.eu';
 
@@ -66,22 +67,22 @@ export const AppHeaderBar = () => {
           <img src={logo} alt='site_logo' sx={headerStyles.logo}/>
         </a>
       </Box>
-      <Box>
-        <div>
-          {[`menu`].map((anchor) => (
-            <React.Fragment key={anchor}>
-              <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor} </Button>
-              <SwipeableDrawer
-                // anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-                onOpen={toggleDrawer(anchor, true)}
-              >
-                {list(anchor)}
-              </SwipeableDrawer>
-            </React.Fragment>
-          ))}
-        </div>
+      
+      <Box sx={{display: 'flex', flexDirection:'row', width: 400, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
+        {[`menu`].map((anchor) => (
+          <React.Fragment key={anchor}>
+            <RegisterForm/>
+            <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor} </Button>
+            <SwipeableDrawer
+              // anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+              onOpen={toggleDrawer(anchor, true)}
+            >
+              {list(anchor)}
+            </SwipeableDrawer>
+          </React.Fragment>
+        ))}
       </Box>
     </Container>
   );

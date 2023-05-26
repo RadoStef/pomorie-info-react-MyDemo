@@ -1,6 +1,5 @@
 .footer-wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
@@ -9,13 +8,26 @@
     margin-top: 30px;
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    width: 33.3%;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
+@media only screen and (min-width: 450px) {
+    .footer-column {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-column {
+            display: flex;
+            width: 33.3%;
+            flex-direction: column;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+    }
 }
 
 p {
@@ -26,4 +38,11 @@ p {
 li {
     display: flex;
     padding-bottom: 5px;
+}
+
+.subscribe {
+    background-color: #FBBC05;
+    border: none;
+    padding: 10px;
+    width: 200px;
 }
