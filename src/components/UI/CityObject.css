@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 90px auto 30px auto;
+    margin: 140px auto 30px auto;
     justify-content: center;
 }
 
@@ -29,4 +29,5 @@ h2 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 140px;
 }

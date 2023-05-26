@@ -1,15 +1,49 @@
-.card-container {
+@media only screen and (min-width: 450px) {
+  .card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
-    margin-left: 17.5%;
+    width: 90%;
+    margin-left: 5%;
     align-items: center;
     margin-top: 160px;
     background-color: bisque;
     color: black;
     background-color: #f1f1f1;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    margin-top: 160px;
+    background-color: bisque;
+    color: black;
+    background-color: #f1f1f1;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+    align-items: center;
+    margin-top: 160px;
+    background-color: bisque;
+    color: black;
+    background-color: #f1f1f1;
+    margin-bottom: 50px;
+  }
 }
 
 .logo-wrapper {
@@ -23,4 +57,5 @@
 
 h2 {
     margin: 10px;
+    text-align: center;
 }

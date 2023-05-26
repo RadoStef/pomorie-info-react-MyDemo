@@ -1,0 +1,29 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #f1f1f1;
+    margin-top: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    height: 25px;
+}
+
+li {
+    display: flex;
+    padding-bottom: 5px;
+}

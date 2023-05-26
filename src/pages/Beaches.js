@@ -3,6 +3,7 @@ import { AppHeaderBar } from '../components/HeaderSection/AppHeaderBar';
 import { CityObject } from '../components/beaches/CityObject';
 import { ScrollToTopButton } from '../components/UI/ScrollToTopButton';
 import { Breadcrumb } from '../components/BreadCrumbSection/Breadcrumb';
+import { Footer } from '../components/Footer/Footer';
 
 export const Beaches = () => {
   return (
@@ -10,6 +11,7 @@ export const Beaches = () => {
       <AppHeaderBar/>
       <Breadcrumb location='/ Плажове'/>
       <CityObject/>
+      <Footer/>
       <ScrollToTopButton/>
     </div>
   )

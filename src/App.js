@@ -21,6 +21,7 @@ import { TablePage } from './pages/TablePage';
 import { NewsPage } from './pages/NewsPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { HotelListPage } from './pages/HotelListPage';
+import { Footer } from './components/Footer/Footer';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},

@@ -17,6 +17,8 @@ import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CastleIcon from '@mui/icons-material/Castle';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
@@ -60,6 +62,40 @@ import monumentSaintGeorgeCoverPic from '../../assets/landmarks/monumentsaintgeo
 import oldHarborCoverPic from '../../assets/landmarks/oldharbor/stariyat-key0.jpg';
 import oldHousesCoverPic from '../../assets/landmarks/oldhouses/houses6.jpg';
 import yavorovMonumentCoverPic from '../../assets/landmarks/yavorov/pametnikyavorov4.jpg';
+
+export const footerContacts = [
+  {
+    icon: <LocationCityIcon/>,
+    info: '5 Solna str, Pomorie, Bulgaria',
+  },
+  {
+    icon: <EmailIcon/>,
+    info: 'webmaster@pomorieinfo.com'
+  },
+  {
+    icon: <PhoneForwardedIcon/>,
+    info: '+359 89974****'
+  },
+];
+
+export const footerWebsites = [
+  {
+    text: 'Община Поморие',
+    link: 'https://www.pomorie.bg/'
+  },
+  {
+    text: 'Туризъм Поморие',
+    link: 'https://pomorietourism.bg/en/'
+  },
+  {
+    text: 'Новини от Поморие',
+    link: 'https://radiomilena.com/'
+  },
+  {
+    text: 'Музеи Поморие',
+    link: 'https://pomorie-historical-museum.com/'
+  }
+];
 
 // beach payment regimes
 const mixedRegime = "Безплатна и платена зона";

@@ -29,6 +29,7 @@ export const Table = () => {
   return (
     <CustomCard>
       <h2>Adding Table to the document.</h2>
+      <div className="table-wrapper">
       <table style={{ float: "left" }}>
         <caption style={{ color: "red", paddingBottom: "20px" }}>
           Working days in year 2023
@@ -46,16 +47,16 @@ export const Table = () => {
           <tr>
             <th>Working days</th>
             {myTable.days.map((day, index) => {
-              return <td key={index}>{day}</td>;
+              return <td key={index}>{day} days</td>;
             })}
-            <td>{totalDays}</td>
+            <td>{totalDays} days</td>
           </tr>
           <tr>
             <th>Working hours</th>
             {myTable.hours.map((hour, index) => {
-              return <td key={index}>{hour}</td>;
+              return <td key={index}>{hour} hours</td>;
             })}
-            <td>{totalHours}</td>
+            <td>{totalHours} hours</td>
           </tr>          
         </tbody>
         <tfoot>
@@ -72,6 +73,7 @@ export const Table = () => {
           </tr>
         </tfoot>
       </table>
+      </div>
       <p style={{ marginTop: "20px" }}>
         In 2023 we will work <b>{totalDays}</b> days and <b>{totalHours}</b>{" "}
         hours, but do not forget your PTO which is <b>25</b> days or{" "}

@@ -1,5 +1,6 @@
-.formWrapper {
-    width: 60%;
+@media only screen and (min-width: 450px) {
+  .formWrapper {
+    width: 90%;
     background-color: white;
     padding: 30px;
     margin-top: 20px;
@@ -7,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 }
 
 form {
@@ -14,7 +16,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
 }
 
 input {
