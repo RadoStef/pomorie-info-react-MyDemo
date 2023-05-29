@@ -1,3 +1,4 @@
+// icon imports from MUI
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import BeachAccessIcon from "@mui/icons-material/BeachAccess";
@@ -26,6 +27,7 @@ import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
 import thombCoverPic from "../../assets/museums/mogila/mogila7.jpg";
 import ornithologyCoverPic from "../../assets/museums/ornithology/ornithology.jpg";
 import galleryCoverPic from "../../assets/museums/gallery/gallery2.jpg";
+
 // beaches cover pictures
 import firstBeachCoverPic from "../../assets/beaches/1/pyrvi.jpg";
 import secondBeachCoverPic from "../../assets/beaches/2/vtori.jpg";
@@ -34,6 +36,7 @@ import centralBeachCoverPic from "../../assets/beaches/centralen/centralen.jpg";
 import inzhStroyBeachCoverPic from "../../assets/beaches/inzhstroi/lahabana0.jpg";
 import pompataBeachCoverPic from "../../assets/beaches/pompata/pompata1.jpg";
 import sunnyBayBeachCoverPic from "../../assets/beaches/sunnybay/sunnybay0.jpg";
+
 // parkings cover pictures
 import atriumLargeCoverPic from "../../assets/parkings/atriumLarge/parking-atrium-large3.jpg";
 import atriumSmallCoverPic from "../../assets/parkings/atriumSmall/parking-atrium1.jpg";
@@ -44,6 +47,7 @@ import sanatoriumCoverPic from "../../assets/parkings/sanatorium/sanatorium.jpg"
 import tokalievCoverPic from "../../assets/parkings/tokaliev/tokaliev.jpg";
 import trafficLightsCoverPic from "../../assets/parkings/traffic/parking-svetofar1.jpg";
 import tuthonCoverPic from "../../assets/parkings/tuthon/parking-tuthon1.jpg";
+
 //attractions cover pictures
 import aquaparkCoverPic from "../../assets/attractions/aquapark/sunset.jpg";
 import trainCoverPic from "../../assets/attractions/attraction-train/train-pomorie1.jpg";
@@ -52,6 +56,7 @@ import kukBoatCoverPic from "../../assets/attractions/kuk-boat/kuk1.jpg";
 import lunaparkCoverPic from "../../assets/attractions/lunapark/lunapark-pomorie2.jpg";
 import niyaBoatCoverPic from "../../assets/attractions/niya-boat/niya1.jpg";
 import summerCinemaCoverPic from "../../assets/attractions/summer-cinema/kino-pomorie.jpg";
+
 // landmarks cover pictures
 import oldChurchCoverPic from '../../assets/landmarks/church/church0.jpg';
 import lakeCoverPic from '../../assets/landmarks/ezero/ezero.jpg';
@@ -62,6 +67,15 @@ import monumentSaintGeorgeCoverPic from '../../assets/landmarks/monumentsaintgeo
 import oldHarborCoverPic from '../../assets/landmarks/oldharbor/stariyat-key0.jpg';
 import oldHousesCoverPic from '../../assets/landmarks/oldhouses/houses6.jpg';
 import yavorovMonumentCoverPic from '../../assets/landmarks/yavorov/pametnikyavorov4.jpg';
+
+// main page lightbox pictures
+import church1 from '../../assets/landmarks/church/church.jpg';
+import church2 from '../../assets/landmarks/church/church0.jpg';
+import church3 from '../../assets/landmarks/church/church1.jpg';
+import church4 from '../../assets/landmarks/church/church2.jpg';
+import church5 from '../../assets/landmarks/church/church3.jpg';
+import church6 from '../../assets/landmarks/church/church4.jpg';
+import church7 from '../../assets/landmarks/church/church5.jpg';
 
 export const footerContacts = [
   {
@@ -174,8 +188,8 @@ export const sectionDescriptions = [
   },
 ];
 
+// descriptions of museums
 export const longDescriptions = [
-  // descriptions of museums
   {
     historicalMuseum: `Исторически музей – Поморие съхранява и експонира културно-историческото наследство на града и общината.
         Сградата на музея е построена в края на XIX в. като гръцко девическо училище. Тя е паметник на културата с местно значение.
@@ -321,6 +335,7 @@ export const longDescriptions = [
     atriumLargeParking: ``,
     atriumSmallParking: ``,
   },
+
   // descriptions of beaches
   {
     firstBeach: ``,
@@ -331,6 +346,7 @@ export const longDescriptions = [
     atriumBeach: ``,
     centralBeach: ``,
   },
+
   // descriptons of attractions
   {
     kukBoat: `Кораб „КУК” е най-големият атракционен туристически кораб на нашето Черноморие, построен изцяло в България.
@@ -781,7 +797,7 @@ export const parkings = [
   },
 ];
 
-  export const hotels = [{
+export const hotels = [{
     id: 1,
     name: "Hotel Saint George",
     description: 'A great hotel in the center of the city.',
@@ -840,6 +856,7 @@ export const parkings = [
   }
 ];
 
+// items in the menu element
 export const menuItems = [
   {
     id: 1,
@@ -974,4 +991,40 @@ export const menuItems = [
     length: "",
     link: "/hotel-list-page"
   }
+];
+
+export const mainPageLightboxData = [
+  {
+    img: church1,
+    title: 'Seagull',
+    cols: 2,
+  },
+  {
+    img: church2,
+    title: 'Gull',
+  },
+  {
+    img: church3,
+    title: 'MoreGulls',
+  },
+  {
+    img: church4,
+    title: 'Coffee',
+    cols: 2,
+  },
+  {
+    img: church5,
+    title: 'Coffee',
+    cols: 2,
+  },
+  {
+    img: church6,
+    title: 'Coffee',
+    cols: 1,
+  },
+  {
+    img: church7,
+    title: 'Coffee',
+    cols: 3,
+  },
 ];

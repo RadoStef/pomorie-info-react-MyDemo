@@ -1,15 +1,9 @@
 import React, { useState } from "react";
+import { mainPageLightboxData } from '../mock-data/data';
 import FsLightbox from "fslightbox-react";
-import classes from './LightboxElement.module.css';
-import church1 from '../../assets/landmarks/church/church.jpg';
-import church2 from '../../assets/landmarks/church/church0.jpg';
-import church3 from '../../assets/landmarks/church/church1.jpg';
-import church4 from '../../assets/landmarks/church/church2.jpg';
-import church5 from '../../assets/landmarks/church/church3.jpg';
-import church6 from '../../assets/landmarks/church/church4.jpg';
-import church7 from '../../assets/landmarks/church/church5.jpg';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import classes from './LightboxElement.module.css';
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -20,7 +14,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-export const LightboxElement = (props) => {
+export const LightboxElement = () => {
 	const [toggler, setToggler] = useState(false);
 
 	return (
@@ -31,7 +25,7 @@ export const LightboxElement = (props) => {
       cols={4}
       rowHeight={250}
     >
-      {itemData.map((item) => (
+      {mainPageLightboxData.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1} >
           <img
             {...srcset(item.img, 121, item.rows, item.cols)}
@@ -45,45 +39,9 @@ export const LightboxElement = (props) => {
 			<FsLightbox
 				toggler={toggler}
 				sources={
-          itemData.map((img) => img.img)
+          mainPageLightboxData.map((img) => img.img)
 				}
 			/>
 		</div>
 	);
 };
-
-const itemData = [
-  {
-    img: church1,
-    title: 'Seagull',
-    cols: 2,
-  },
-  {
-    img: church2,
-    title: 'Gull',
-  },
-  {
-    img: church3,
-    title: 'MoreGulls',
-  },
-  {
-    img: church4,
-    title: 'Coffee',
-    cols: 2,
-  },
-  {
-    img: church5,
-    title: 'Coffee',
-    cols: 2,
-  },
-  {
-    img: church6,
-    title: 'Coffee',
-    cols: 1,
-  },
-  {
-    img: church7,
-    title: 'Coffee',
-    cols: 3,
-  },
-];

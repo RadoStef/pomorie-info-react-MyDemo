@@ -3,8 +3,8 @@ import Chip from '@mui/material/Chip';
 import { menuItems } from "../mock-data/data";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./Categories.css";
 import { Search } from "../SearchSection/Search";
+import "./Categories.css";
 
 export const Categories = () => {
   return (

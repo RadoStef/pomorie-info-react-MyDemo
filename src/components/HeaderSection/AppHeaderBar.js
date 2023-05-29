@@ -1,24 +1,25 @@
-import * as React from 'react';
+import React, {useState, Fragment} from 'react';
+import { headerStyles } from './styles';
+import { menuItems } from '../mock-data/data';
+import { NavLink } from 'react-router-dom';
+import { RegisterForm } from '../RegisterForm/RegisterForm';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import logo from '../../assets/logo.png'
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import logo from '../../assets/logo.png'
 import classes from './MenuStyles.module.css';
-import { headerStyles } from './styles';
-import { menuItems } from '../mock-data/data';
-import { NavLink } from 'react-router-dom';
-import { RegisterForm } from '../RegisterDialog/RegisterForm';
+
 
 const backToMainPage = 'https://www.eva-pomorie.eu';
 
 export const AppHeaderBar = () => {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
@@ -68,9 +69,9 @@ export const AppHeaderBar = () => {
         </a>
       </Box>
       
-      <Box sx={{display: 'flex', flexDirection:'row', width: 400, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
-        {[`menu`].map((anchor) => (
-          <React.Fragment key={anchor}>
+      <Box sx={{display: 'flex', flexDirection:'row', width: 300, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
+        {[`меню`].map((anchor) => (
+          <Fragment key={anchor}>
             <RegisterForm/>
             <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor} </Button>
             <SwipeableDrawer
@@ -81,7 +82,7 @@ export const AppHeaderBar = () => {
             >
               {list(anchor)}
             </SwipeableDrawer>
-          </React.Fragment>
+          </Fragment>
         ))}
       </Box>
     </Container>

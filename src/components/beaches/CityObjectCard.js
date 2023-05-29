@@ -1,4 +1,7 @@
 import React from "react";
+import { Button, CardActionArea, CardActions } from "@mui/material";
+import { BootstrapTooltip } from "../UI/Themes";
+import { Link } from 'react-router-dom';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,11 +12,8 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import { BootstrapTooltip } from "../UI/Themes";
-import { Link } from 'react-router-dom';
-import '../UI/CityObject.css';
 import { styles } from '../UI/CityObjectsCardStyles';
+import '../UI/CityObject.css';
 
 export const CityObjectCard = (props) => {
   

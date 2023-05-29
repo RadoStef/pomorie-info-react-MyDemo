@@ -1,6 +1,5 @@
 import { Component, Fragment } from 'react';
 import { hotels } from '../../components/mock-data/data';
-import HotelList from './HotelList';
 
 class HotelFinder extends Component {
     constructor() {

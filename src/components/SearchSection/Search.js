@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import classes from "./Search.module.css";
 import { Button, TextField } from "@mui/material";
+import classes from "./Search.module.css";
+
 
 export const Search = () => {
   const [searchValue, setSearchValue] = useState('');

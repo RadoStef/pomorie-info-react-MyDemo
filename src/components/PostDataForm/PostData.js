@@ -5,41 +5,41 @@ import { CustomCard } from "../UI/CustomCard";
 
 
 export const PostData = (props) => {
-    const [success, setSuccess] = useState('');
-    const [error, setError] = useState('')
+  const [success, setSuccess] = useState('');
+  const [error, setError] = useState('')
 
-    const nameRef = useRef('');
-    const descriptionRef = useRef('');
-    const addressRef = useRef('');
-    const phoneRef= useRef('');
-    const pictureRef = useRef('');
+  const nameRef = useRef('');
+  const descriptionRef = useRef('');
+  const addressRef = useRef('');
+  const phoneRef= useRef('');
+  const pictureRef = useRef('');
 
-    const data = {
-      name: nameRef.current.value,
-      description: descriptionRef.current.value,
-      address: addressRef.current.value,
-      phone: phoneRef.current.value,
-      picture: pictureRef.current.value,
-    };
+  const data = {
+    name: nameRef.current.value,
+    description: descriptionRef.current.value,
+    address: addressRef.current.value,
+    phone: phoneRef.current.value,
+    picture: pictureRef.current.value,
+  };
 
-    const validateData = () => {
-      const name = nameRef.current.value;
-      const description = descriptionRef.current.value;
-      const address = addressRef.current.value;
-      const phone = phoneRef.current.value;
-      const picture = pictureRef.current.value;
+  const validateData = () => {
+    const name = nameRef.current.value;
+    const description = descriptionRef.current.value;
+    const address = addressRef.current.value;
+    const phone = phoneRef.current.value;
+    const picture = pictureRef.current.value;
 
-      if (!name || !description || !address || !phone || !picture) {
-        setError('Please fill in all fields');
-        return false;
-      }
+    if (!name || !description || !address || !phone || !picture) {
+      setError('Please fill in all fields');
+      return false;
+    }
 
-      if (isNaN(phone)) {
-        setError('Please enter a valid phone number');
-        return false;
-      }
+    if (isNaN(phone)) {
+      setError('Please enter a valid phone number');
+      return false;
+    }
 
-      return true;
+    return true;
     };
 
     const clearErrorMessage = () => {

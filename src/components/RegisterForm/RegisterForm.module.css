@@ -34,7 +34,12 @@ label {
 }
 
 .input-error {
-    background-color: tomato;
-    color: white;
-    margin-bottom: 20px;
+    color: tomato;
+    margin: 0;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
 }

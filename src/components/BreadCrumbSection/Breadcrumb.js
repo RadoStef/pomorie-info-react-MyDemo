@@ -4,7 +4,6 @@ import { headerStyles } from '../HeaderSection/styles';
 import { HomeButton } from '../UI/HomeButton';
 
 export const Breadcrumb = (props) => {
-
   return (
     <Container sx={headerStyles.breadCrumbs} maxWidth="xl">
       <Box sx={{ display: 'flex', alignItems: 'center'}}>

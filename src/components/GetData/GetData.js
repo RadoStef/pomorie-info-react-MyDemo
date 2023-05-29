@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { CustomCard } from '../UI/CustomCard';
 import axios from 'axios';
 import './GetData.css';
-import { CustomCard } from '../UI/CustomCard';
+
 
 export const GetData = () => {
     const [cityObjects, setCityObjects] = useState(null);
