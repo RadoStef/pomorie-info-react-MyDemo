@@ -1,6 +1,13 @@
-.accordion-wrapper {
-    background-color: #f1f1f1;
-    width: 80%;
-    margin-bottom: 10px;
-    margin-left: 10%;
+@media only screen and (min-width: 450px) {
+    .accordion-element-wrapper {
+        width: 98%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .accordion-element-wrapper {
+        width: 80%;
+        margin-bottom: 10px;
+    }
 }

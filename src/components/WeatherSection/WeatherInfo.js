@@ -53,7 +53,7 @@ export const WeatherInfo = () => {
         </Box>
       )} */}
       {<Box>
-        Hi ALL! I just want to say: Summer starts in <span style={{color: 'red'}}>{daysLeftToSummerStart(today, summerStart)}</span> days! 💥😎🎉
+        Здравейте и добре дошли в Поморие! Астрономическото лято започва след <span style={{color: 'red'}}>{daysLeftToSummerStart(today, summerStart)}</span> дни, но ние вече сме готови! 💥😎🎉
       </Box>}
       <Box>
         <WbSunnyIcon />

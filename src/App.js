@@ -9,7 +9,7 @@ import { Playgrounds } from './pages/Playgrounds';
 import { Attractions } from './pages/Attractions';
 import { Sport } from './pages/Sport';
 import { Healthcare } from './pages/Healthcare';
-import { Mug } from './pages/Mug';
+import { Mud } from './pages/Mud';
 import { WineAndCulture } from './pages/WineAndCulture';
 import { Transport } from './pages/Transport';
 import { Hotels } from './pages/Hotels';
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
   {path: 'attractions', element: <Attractions/>},
   {path: 'sport', element: <Sport/>},
   {path: 'healthcare', element: <Healthcare/>},
-  {path: 'mug', element: <Mug/>},
+  {path: 'mud', element: <Mud/>},
   {path: 'wineandculture', element: <WineAndCulture/>},
   {path: 'transport', element: <Transport/>},
   {path: 'hotels', element: <Hotels/>},

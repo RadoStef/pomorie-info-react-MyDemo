@@ -68,6 +68,19 @@ import oldHarborCoverPic from '../../assets/landmarks/oldharbor/stariyat-key0.jp
 import oldHousesCoverPic from '../../assets/landmarks/oldhouses/houses6.jpg';
 import yavorovMonumentCoverPic from '../../assets/landmarks/yavorov/pametnikyavorov4.jpg';
 
+// hotels cover pictures
+import saintGeorge from '../../assets/hotels/saint-george-pomorie.jpg';
+import paradise from '../../assets/hotels/paradise-pomorie.jpg';
+import grandHotelPomorie from '../../assets/hotels/grand-hotel-pomorie.jpg';
+import festaResort from '../../assets/hotels/festa-resort-pomorie.jpg';
+import regata from '../../assets/hotels/regata-pomorie.jpg';
+import crotiria from '../../assets/hotels/crotiria-pomorie.jpg';
+import waveResort from '../../assets/hotels/wave-resort-pomorie.jpg';
+import penelopaPalace from '../../assets/hotels/penelopa-palace-pomorie.png';
+
+// mug cover pictures
+import kalniBani from '../../assets/mud/kalni-bani-pomorie.jpg';
+
 // main page lightbox pictures
 import church1 from '../../assets/landmarks/church/church.jpg';
 import church2 from '../../assets/landmarks/church/church0.jpg';
@@ -185,6 +198,16 @@ export const sectionDescriptions = [
             прекрасни морки преживявания можете да разчитате на корабчетата, които всяка вечер рулират в акваторията на града и предлагат една различна и вълнуваща гледка.`,
       header: `АТРАКЦИОНИ В ГРАД ПОМОРИЕ`,
     },
+
+    hotels: {
+      description: `В Поморие има много хотели от ралични категории и цени така, че всеки да може да избере перфектното място за своя престой според предпочитанията и възможностите си!`,
+      header: `ХОТЕЛИ В ГРАД ПОМОРИЕ`,
+    },
+
+    mud: {
+      description: `Калта от Поморийското езеро е естествен природен продукт изключително ценни лечебни качества. Тя се образува на дъното на поморийското езеро като резултат от редица биологични, химични и микробилогични процеси. Съставена е от многобройни органични и неорганични вещества , които имат активно лечебно-профилактично действие върху човешкия организъм.`,
+      header: `КАЛОЛЕЧЕБНИЦИ В ГРАД ПОМОРИЕ`,
+    }
   },
 ];
 
@@ -798,62 +821,106 @@ export const parkings = [
 ];
 
 export const hotels = [{
-    id: 1,
-    name: "Hotel Saint George",
-    description: 'A great hotel in the center of the city.',
-    address: 'Yavorov 10',
-    stars: `four`,
+    id: 5812451,
+    name: 'Хотел Сейнт Джордж',
+    shortDescription: 'В Хотел Свети Георги - Медикъл СПА, разположен на морския бряг в град Поморие, ще откриете уют, спокойствие, лечебни процедури и комфорт през 4-те сезона на годината! Хотелът е разположен в старата част на целогодишния балнеолечебен курорт Поморие, между централната пешеходна алея и крайморския булевард.',
+    description: '',
+    address: 'Поморие, бул. П. К. Яворов 15',
+    stars: `Категория: Четири звезди`,
     star: `*`.repeat(4),
-    
+    priceRange: `67 лв. - 85 лв. за легло.`,
+    img: saintGeorge,
   },
   {
-    id: 2,
-    name: 'Grand Hotel Pomorie',
-    description: 'The largest hotel right by the sea.',
-    address: 'Professor Stoyanov',
-    stars: `five`,
+    id: 3569142,
+    name: 'Гранд Хотел Поморие',
+    shortDescription: 'Гранд Хотел Поморие е целогодишен петзвезден хотелски комплекс разположен на тясната ивица земя между бреговете на Черно море и Поморийското солено езеро. Хотелът разполага със 178 стаи и апартаменти, изцяло обновен през 2020 година медикъл спа център и многофункционални конферентни зали.',
+    description: '',
+    address: 'Pomorie, ул. “Проф. Стоянов 5',
+    stars: `Категория: Пет звезди`,
     star: `*`.repeat(5),
+    priceRange: `72 лв. - 196 лв. на легло.`,
+    img: grandHotelPomorie,
   },
   {
-    id: 3,
-    name: 'Hotel Paradise',
-    description: 'At the same center, your place for stay is this.',
-    address: 'On the square!',
-    stars: `three`,
+    id: 6548763,
+    name: "Хотел Парадайс",
+    shortDescription: 'Хотелски комплекс Парадайс предлага на гостите си 42 стаи (всяка от тях с тераса), 33 от които са двойни, 2 - единични, 4 студиа и 3 панорамни апартамента. В избраната от Вас стая разполагате с телефон, телевизор, мини-бар, а хотелът е оборудван и със сателитна и климатична системи.',
+    description: '',
+    address: 'Поморие, ул. Алеко Константинов 1',
+    stars: `Категория: Три звезди`,
     star: `*`.repeat(3),
+    priceRange: `40 лв. - 61 лв. за легло.`,
+    img: paradise,
   },
   {
-    id: 4,
-    name: 'Family Hotel Regata',
-    description: 'Located in the old part of the city of Pomorie on the sea coast, Hotel Regata offers rooms with modern furnishings and a cozy restaurant with a terrace.',
-    address: 'Pomorie, old town by the bay!',
-    stars: `three`,
+    id: 5625484,
+    name: "Семеен Хотел Регата",
+    shortDescription: 'Хотел Регата се намира в старата част на гр. Поморие. Разположен е на самия морски бряг. В хотела може да релаксирате сред перфектна комбинация от морски бриз и свеж въздух. От всички тераси има панорамна гледка към морето. Близостта на плажа и приказният изглед към морето ще направят престоя на всеки гост незабравим.',
+    description: '',
+    address: 'Поморие, ул. Европа 2',
+    stars: `Категория: Три звезди`,
     star: `*`.repeat(3),
+    priceRange: `50 лв. - 70 лв. на легло.`,
+    img: regata,
   },
     {
-    id: 5,
-    name: 'Festa Pomorie Resort',
-    description: 'Located on the southern beach of Pomorie on the Bulgarian Black Sea coast, the 4-star Festa Pomorie Resort features a large outdoor pool and a gym.',
-    address: 'Pomorie, new town.',
-    stars: `four`,
+    id: 7813545,
+    name: 'Феста Поморие Резорт',
+    shortDescription: 'Хотел „Феста Поморие Ризорт“ се намира на самия южен плаж на град Поморие, едно от най-старите курортни селища на българското Черноморие. Директният достъп до плажа, неповторимата гледка към морето го превръщат в предпочитано място за семейна ваканция.',
+    description: '',
+    address: 'Поморие, ул. Княз Борис I, 211',
+    stars: `Категория: Четири звезди`,
     star: `*`.repeat(4),
+    priceRange: `41 лв. - 102 лв. на легло.`,
+    img: festaResort,
   },
   {
-    id: 6,
-    name: 'Hotel St. Nikola',
-    description: 'Situated 150 meters from the beach in Pomorie, Hotel St Nikola enjoys a central and peaceful location, with a choice of restaurants and shops nearby.',
-    address: 'Somewhere in Pomorie.',
-    stars: `three`,
-    star: `*`.repeat(3),
-  },
-  {
-    id: 7,
-    name: 'Wave Resort - Ultra All InclusiveOpens in a new window',
-    description: 'Located 5 km from the center of Pomorie, Wave Resort features a private beach, a spa center covering an area of ​​2500 m2, an aqua park and several swimming pools, including 1 outdoor pool.',
+    id: 6748167,
+    name: 'Уейв Резорт',
+    shortDescription: 'Ваканционен комплекс Уейв Резорт е разположен на плажната ивица, на 5,5 км северно от гр. Поморие и на 15 минути път с кола от летище Бургас. Комплексът предлага изключително разнообразие от спортни и увеселителни съоръжения за ценителите на лукса и спокойната морска почивка.',
+    description: '',
     address: `Beachfront`,
-    stars: `five`,
+    stars: `Категория: Пет звезди`,
     star: `*`.repeat(5),
+    priceRange: ``,
+    img: waveResort,
+  },
+  {
+    id: 7591873,
+    name: 'Апартхотел Кротириа',
+    shortDescription: 'Апартхотел Кротириа, Поморие Ви посреща със страхотна гледка - само на няколко метра от плажа. Подгответе се за едно спокойно и релаксиращо преживяване в нашите чисто нови апартаменти с модерно обзавеждане!',
+    description: '',
+    address: `Поморие, къмпинг Европа`,
+    stars: `Категория: Две звезди`,
+    star: `*`.repeat(2),
+    priceRange: `40 лв. - 50 лв. на легло.`,
+    img: crotiria,
+  },
+  {
+    id: 5225894,
+    name: 'Хотел Пенелопа Палас',
+    shortDescription: 'Апарт-Комплекс Пенелопа Палас се намира на 7 км от Летище Бургас (кв. Сарафово) и на 15 км северно от центъра на Бургас. Комплексът е стратегически разположен в самия край на южния плаж на Поморие, което осигурява директен достъп до пясъчната ивица. Мястото е тихо и спокойно, което е гаранция за необезпокояван отдих.',
+    description: '',
+    address: `Поморие, ул. Чайка 3`,
+    stars: `Категория: Четири звезди`,
+    star: `*`.repeat(4),
+    priceRange: `83 лв. - 156 лв. на легло.`,
+    img: penelopaPalace,
   }
+];
+
+export const mud = [
+  {
+    id: 4654125,
+    name: 'Кални Бани - Специализирана болница за рехабилитация',
+    shortDescription: 'Болницата за рехабилитация в гр.Поморие е на 500 м от центъра на града и е най- големия калолечебен център на Балкански полуостров с капацитет 1000 калолечебни процедури на ден. Разположена е на 100 м от морския бряг, на брега на соленото езеро.',
+    description: '',
+    address: 'Поморие, ул. Проф. Парашкев Стоянов 7',
+    phoneNumber: '0596 2 41 50, 0596 2 61 03',
+    website: 'http://nkrehabilitation.bg/',
+    img: kalniBani,
+  },
 ];
 
 // items in the menu element
@@ -919,7 +986,7 @@ export const menuItems = [
     text: "Калолечение",
     icon: <AccessibilityNewIcon />,
     length: "",
-    link: "/mug",
+    link: "/mud",
   },
   {
     id: 10,
@@ -939,7 +1006,7 @@ export const menuItems = [
     id: 12,
     text: "Хотели",
     icon: <LocalHotelIcon />,
-    length: "",
+    length: hotels.length,
     link: "/hotels",
   },
   {
