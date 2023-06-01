@@ -1,4 +1,4 @@
-# Getting started with Pomorie-info **React** version
+## Getting started with Pomorie-info **React** version
 ****
 > At this point this project is still in the development phase and it is not LIVE. This is the first React project code that I am sharing on my GitHub.
 > jpg pictures are NOT uploaded here, so if you want to download and start the project it would not work
