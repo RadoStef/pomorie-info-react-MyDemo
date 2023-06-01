@@ -8,9 +8,11 @@ import IconButton from '@mui/material/IconButton';
 import { BootstrapTooltip } from '../UI/Themes';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import { Link } from 'react-router-dom';
+import { HomepageSectionsCard } from '../UI/HomepageSectionsCard';
 
 export const ImageListElement = () => {
   return (
+    <HomepageSectionsCard>
     <ImageList sx={{ width: '65%', height: 700, margin: '30px 0 30px 0', borderRadius: '8px' }}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div" sx={{ backgroundColor: '#83aed3', color: 'white'}}><h2 style={{margin: 0}}>Новини</h2></ListSubheader>
@@ -41,5 +43,6 @@ export const ImageListElement = () => {
         </ImageListItem>
       ))}
     </ImageList>
+    </HomepageSectionsCard>
   );
 };
