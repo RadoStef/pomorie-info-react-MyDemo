@@ -6,25 +6,63 @@
     background-color: white;
 }
 
-.gradient-wrapper {
-    position: relative;
-    width: 80%;
-    height: 450px;
-    background: rgb(175, 58, 180);
-    background: linear-gradient(81deg, rgba(252, 176, 69, 1) 15%, rgba(248, 253, 29, 1) 50%, rgba(175, 58, 180, 1) 85%);
-    margin-left: 10%;
+@media only screen and (min-width: 450px) {
+    .gradient-wrapper {
+        position: relative;
+        width: 90%;
+        height: 450px;
+        background: rgb(175, 58, 180);
+        background: linear-gradient(81deg, rgba(252, 176, 69, 1) 15%, rgba(248, 253, 29, 1) 50%, rgba(175, 58, 180, 1) 85%);
+        margin-left: 5%;
+    }
 }
 
-.gradient-wrapper img {
-    position: absolute;
-    width: 98.7%;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    height: 440px;
+@media only screen and (min-width: 768px) {
+    .gradient-wrapper {
+        position: relative;
+        width: 80%;
+        height: 450px;
+        background: rgb(175, 58, 180);
+        background: linear-gradient(81deg, rgba(252, 176, 69, 1) 15%, rgba(248, 253, 29, 1) 50%, rgba(175, 58, 180, 1) 85%);
+        margin-left: 10%;
+    }
 }
 
+@media only screen and (min-width: 450px) {
+    .gradient-wrapper img {
+        position: absolute;
+        width: 400px;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        height: 440px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gradient-wrapper img {
+        position: absolute;
+        width: 98.7%;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .gradient-wrapper img {
+        position: absolute;
+        width: 97.8%;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        height: 440px;
+    }
+}
 
 h2 {
     margin-bottom: 30px;
@@ -50,4 +88,10 @@ article {
     background: rgb(175, 58, 180);
     background: linear-gradient(81deg, rgba(175, 58, 180, 1) 0%, rgba(248, 253, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     margin: 0 50px;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    margin: auto;
 }

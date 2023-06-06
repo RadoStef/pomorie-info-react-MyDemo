@@ -75,7 +75,7 @@ export const PostData = (props) => {
   return (
     <>
       <CustomCard>
-        <h2>Sending post request to firebase, PeEx, working with forms</h2>
+        <h2>Sending post request to firebase, working with forms</h2>
         <div className={classes.formWrapper}>
           <form className={classes.form} onSubmit={submitDataHandler}>
             <div className="success"><p>{success ? success : error}</p></div>

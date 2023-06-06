@@ -12,7 +12,7 @@ export const WelcomeText = () => {
       background: 'rgba(250, 245, 245, 0.911)',
       padding: { xs: 2, sm: 3, md: 4 },
     }}>
-      <TypewriterText text='Нещата за Поморие, които и google не знае...' />
+      <TypewriterText text='Нещата за Поморие, които и google не знае.' />
       <Divider />
       <Typography variant="subtitle1" align='left' m='2'>
         Добре дошли в красивия и слънчев курорт, Поморие! Време е градът ни да има информационен

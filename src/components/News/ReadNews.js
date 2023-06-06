@@ -11,7 +11,7 @@ export const ReadNews = () => {
 
   return (
     <CustomCard>
-        <h2> Breaking NEWS, working with date and time, PeEx </h2>
+        <h2> Breaking NEWS, working with date and time </h2>
         <p>There are {news.length} NEWS to read here. Next NEWS expexted {nextNews}</p>
         <div className='news-container'>
             {news.map((news) => {
