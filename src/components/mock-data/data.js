@@ -20,6 +20,12 @@ import CastleIcon from '@mui/icons-material/Castle';
 import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
+import WcIcon from '@mui/icons-material/Wc';
+import PoolIcon from '@mui/icons-material/Pool';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import NightlifeIcon from '@mui/icons-material/Nightlife';
 
 // museums cover pictures
 import museumCoverPic from "../../assets/museums/museum/museum.jpg";
@@ -91,6 +97,8 @@ import church4 from '../../assets/landmarks/church/church2.jpg';
 import church5 from '../../assets/landmarks/church/church3.jpg';
 import church6 from '../../assets/landmarks/church/church4.jpg';
 import church7 from '../../assets/landmarks/church/church5.jpg';
+
+export const beachPageIcons = [<BeachAccessIcon/>, <WcIcon/>, <PoolIcon/>, <LocalOfferIcon/>, <HistoryToggleOffIcon/>, <RestaurantIcon/>, <NightlifeIcon/>];
 
 export const footerContacts = [
   {
@@ -498,7 +506,14 @@ export const beaches = [
     price: priceHight,
     address: address1,
     img: `${firstBeachCoverPic}`,
-    linkTo: '',
+    toilet: `(✔) Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `(✔) Спасител`,
+    showers: `(✔) Душове`,
+    changingPlace: `(✔) Съблекални`,
+    restaurant: `(✔) Ресторант/Място за хранене`,
+    nightLife: `(✔) Бийч Бар/Нощен бар`,
+    linkTo: '/beach-one',
   },
   {
     id: 2,
@@ -508,7 +523,14 @@ export const beaches = [
     price: priceHight,
     address: address1,
     img: `${secondBeachCoverPic}`,
-    linkTo: '',
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `Бийч Бар/Нощен бар`,
+    linkTo: '/beach-two',
   },
   {
     id: 3,
@@ -518,6 +540,13 @@ export const beaches = [
     price: priceLow,
     address: address2,
     img: `${atriumBeachCoverPic}`,
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `Бийч Бар/Нощен бар`,
     linkTo: '',
   },
   {
@@ -528,6 +557,13 @@ export const beaches = [
     price: priceLow,
     address: address2,
     img: `${centralBeachCoverPic}`,
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `$Бийч Бар/Нощен бар`,
     linkTo: '',
   },
   {
@@ -538,6 +574,13 @@ export const beaches = [
     price: priceHight,
     address: address1,
     img: `${inzhStroyBeachCoverPic}`,
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `Бийч Бар/Нощен бар`,
     linkTo: '',
   },
   {
@@ -548,6 +591,13 @@ export const beaches = [
     price: "Безплатен",
     address: address1,
     img: `${pompataBeachCoverPic}`,
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `Бийч Бар/Нощен бар`,
     linkTo: '',
   },
   {
@@ -558,6 +608,13 @@ export const beaches = [
     price: priceHight,
     address: address1,
     img: `${sunnyBayBeachCoverPic}`,
+    toilet: `Тоалетна`,
+    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguard: `Спасител`,
+    showers: `Душове`,
+    changingPlace: `Съблекални`,
+    restaurant: `Ресторант/Място за хранене`,
+    nightLife: `Бийч Бар/Нощен бар`,
     linkTo: '',
   },
 ];

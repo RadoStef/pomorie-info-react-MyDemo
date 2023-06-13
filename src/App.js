@@ -21,6 +21,8 @@ import { NewsPage } from './pages/NewsPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { HotelListPage } from './pages/HotelListPage';
 import './App.css';
+import { BeachOne } from './pages/Places/BeachOne';
+import { BeachTwo } from './pages/Places/BeachTwo';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
@@ -43,6 +45,8 @@ const router = createBrowserRouter([
   {path: 'transport', element: <Transport/>},
   {path: 'hotels', element: <Hotels/>},
   {path: 'restaurants', element: <Restaurants/>},
+  {path: 'beach-one', element: <BeachOne/>},
+  {path: 'beach-two', element: <BeachTwo/>}
 ]);
 
 function App() {

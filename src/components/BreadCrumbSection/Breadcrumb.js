@@ -8,6 +8,7 @@ export const Breadcrumb = (props) => {
     <Container sx={headerStyles.breadCrumbs} maxWidth="xl">
       <Box sx={{ display: 'flex', alignItems: 'center'}}>
         <HomeButton/> {props.location}
+        {props.backLink}
       </Box>
     </Container>
   );
