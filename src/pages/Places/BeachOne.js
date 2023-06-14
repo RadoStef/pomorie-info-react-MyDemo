@@ -19,6 +19,7 @@ import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
+import { NextObject } from "../../components/UI/NextObject";
 
 const beachName = `Първи плаж`;
 const description = `Няма описание.`
@@ -41,6 +42,7 @@ export const BeachOne = () => {
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={description} beachName={beachName}/>
             <BeachesExtras beachExtras={beachOne}/>
+            <Link to='/beach-two'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>
         <Footer/>

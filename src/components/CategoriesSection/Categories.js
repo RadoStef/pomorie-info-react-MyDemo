@@ -4,14 +4,12 @@ import { HomepageSectionsCard } from "../UI/HomepageSectionsCard";
 import { menuItems } from "../mock-data/data";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Search } from "../SearchSection/Search";
 import "./Categories.css";
 
 export const Categories = () => {
   return (
     <HomepageSectionsCard>
       <h1>обекти по категории</h1>
-      <Search/>
       <div className="category-container">
         {menuItems.map((item) => {
           return (

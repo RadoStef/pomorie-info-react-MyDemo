@@ -68,7 +68,7 @@ export const CityObjectCard = (props) => {
             </Box>
 
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
-              <Link to=''>
+              <Link to={museum.linkTo}>
                 <Button size="small" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   Разгледай
                 </Button>
