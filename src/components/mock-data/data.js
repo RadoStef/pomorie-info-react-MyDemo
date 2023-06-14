@@ -1,17 +1,17 @@
 // icon imports from MUI
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import LocationCityIcon from "@mui/icons-material/LocationCity";
-import BeachAccessIcon from "@mui/icons-material/BeachAccess";
-import LocalParkingIcon from "@mui/icons-material/LocalParking";
-import ChildCareIcon from "@mui/icons-material/ChildCare";
-import AttractionsIcon from "@mui/icons-material/Attractions";
-import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
-import MedicalInformationIcon from "@mui/icons-material/MedicalInformation";
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import WineBarIcon from "@mui/icons-material/WineBar";
-import EmojiTransportationIcon from "@mui/icons-material/EmojiTransportation";
-import LocalHotelIcon from "@mui/icons-material/LocalHotel";
-import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import BeachAccessIcon from '@mui/icons-material/BeachAccess';
+import LocalParkingIcon from '@mui/icons-material/LocalParking';
+import ChildCareIcon from '@mui/icons-material/ChildCare';
+import AttractionsIcon from '@mui/icons-material/Attractions';
+import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
+import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+import WineBarIcon from '@mui/icons-material/WineBar';
+import EmojiTransportationIcon from '@mui/icons-material/EmojiTransportation';
+import LocalHotelIcon from '@mui/icons-material/LocalHotel';
+import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
 import BackupIcon from '@mui/icons-material/Backup';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
@@ -28,40 +28,40 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 
 // museums cover pictures
-import museumCoverPic from "../../assets/museums/museum/museum.jpg";
-import saltCoverPic from "../../assets/museums/salt/salt1.jpg";
-import thombCoverPic from "../../assets/museums/mogila/mogila7.jpg";
-import ornithologyCoverPic from "../../assets/museums/ornithology/ornithology.jpg";
-import galleryCoverPic from "../../assets/museums/gallery/gallery2.jpg";
+import museumCoverPic from '../../assets/museums/museum/museum.jpg';
+import saltCoverPic from '../../assets/museums/salt/salt1.jpg';
+import thombCoverPic from '../../assets/museums/mogila/mogila7.jpg';
+import ornithologyCoverPic from '../../assets/museums/ornithology/ornithology.jpg';
+import galleryCoverPic from '../../assets/museums/gallery/gallery2.jpg';
 
 // beaches cover pictures
-import firstBeachCoverPic from "../../assets/beaches/1/pyrvi.jpg";
-import secondBeachCoverPic from "../../assets/beaches/2/vtori.jpg";
-import atriumBeachCoverPic from "../../assets/beaches/atrium/atrium.jpg";
-import centralBeachCoverPic from "../../assets/beaches/centralen/centralen.jpg";
-import inzhStroyBeachCoverPic from "../../assets/beaches/inzhstroi/lahabana0.jpg";
-import pompataBeachCoverPic from "../../assets/beaches/pompata/pompata1.jpg";
-import sunnyBayBeachCoverPic from "../../assets/beaches/sunnybay/sunnybay0.jpg";
+import firstBeachCoverPic from '../../assets/beaches/1/pyrvi.jpg';
+import secondBeachCoverPic from '../../assets/beaches/2/vtori.jpg';
+import atriumBeachCoverPic from '../../assets/beaches/atrium/atrium.jpg';
+import centralBeachCoverPic from '../../assets/beaches/centralen/centralen.jpg';
+import inzhStroyBeachCoverPic from '../../assets/beaches/inzhstroi/lahabana0.jpg';
+import pompataBeachCoverPic from '../../assets/beaches/pompata/pompata1.jpg';
+import sunnyBayBeachCoverPic from '../../assets/beaches/sunnybay/sunnybay0.jpg';
 
 // parkings cover pictures
-import atriumLargeCoverPic from "../../assets/parkings/atriumLarge/parking-atrium-large3.jpg";
-import atriumSmallCoverPic from "../../assets/parkings/atriumSmall/parking-atrium1.jpg";
-import mbalPomorieCoverPic from "../../assets/parkings/mbal/mbal.jpg";
-import municipalityCoverPic from "../../assets/parkings/municipality/parking-obshtina6.jpg";
-import stGeorgeCoverPic from "../../assets/parkings/saintGeorge/st-george.jpg";
-import sanatoriumCoverPic from "../../assets/parkings/sanatorium/sanatorium.jpg";
-import tokalievCoverPic from "../../assets/parkings/tokaliev/tokaliev.jpg";
-import trafficLightsCoverPic from "../../assets/parkings/traffic/parking-svetofar1.jpg";
-import tuthonCoverPic from "../../assets/parkings/tuthon/parking-tuthon1.jpg";
+import atriumLargeCoverPic from '../../assets/parkings/atriumLarge/parking-atrium-large3.jpg';
+import atriumSmallCoverPic from '../../assets/parkings/atriumSmall/parking-atrium1.jpg';
+import mbalPomorieCoverPic from '../../assets/parkings/mbal/mbal.jpg';
+import municipalityCoverPic from '../../assets/parkings/municipality/parking-obshtina6.jpg';
+import stGeorgeCoverPic from '../../assets/parkings/saintGeorge/st-george.jpg';
+import sanatoriumCoverPic from '../../assets/parkings/sanatorium/sanatorium.jpg';
+import tokalievCoverPic from '../../assets/parkings/tokaliev/tokaliev.jpg';
+import trafficLightsCoverPic from '../../assets/parkings/traffic/parking-svetofar1.jpg';
+import tuthonCoverPic from '../../assets/parkings/tuthon/parking-tuthon1.jpg';
 
 //attractions cover pictures
-import aquaparkCoverPic from "../../assets/attractions/aquapark/sunset.jpg";
-import trainCoverPic from "../../assets/attractions/attraction-train/train-pomorie1.jpg";
-import blackPearlCoverPic from "../../assets/attractions/black-pearl/black-pearl.jpg";
-import kukBoatCoverPic from "../../assets/attractions/kuk-boat/kuk1.jpg";
-import lunaparkCoverPic from "../../assets/attractions/lunapark/lunapark-pomorie2.jpg";
-import niyaBoatCoverPic from "../../assets/attractions/niya-boat/niya1.jpg";
-import summerCinemaCoverPic from "../../assets/attractions/summer-cinema/kino-pomorie.jpg";
+import aquaparkCoverPic from '../../assets/attractions/aquapark/sunset.jpg';
+import trainCoverPic from '../../assets/attractions/attraction-train/train-pomorie1.jpg';
+import blackPearlCoverPic from '../../assets/attractions/black-pearl/black-pearl.jpg';
+import kukBoatCoverPic from '../../assets/attractions/kuk-boat/kuk1.jpg';
+import lunaparkCoverPic from '../../assets/attractions/lunapark/lunapark-pomorie2.jpg';
+import niyaBoatCoverPic from '../../assets/attractions/niya-boat/niya1.jpg';
+import summerCinemaCoverPic from '../../assets/attractions/summer-cinema/kino-pomorie.jpg';
 
 // landmarks cover pictures
 import oldChurchCoverPic from '../../assets/landmarks/church/church0.jpg';
@@ -98,57 +98,65 @@ import church5 from '../../assets/landmarks/church/church3.jpg';
 import church6 from '../../assets/landmarks/church/church4.jpg';
 import church7 from '../../assets/landmarks/church/church5.jpg';
 
-export const beachPageIcons = [<BeachAccessIcon/>, <WcIcon/>, <PoolIcon/>, <LocalOfferIcon/>, <HistoryToggleOffIcon/>, <RestaurantIcon/>, <NightlifeIcon/>];
+export const beachPageIcons = [
+  <BeachAccessIcon />,
+  <WcIcon />,
+  <PoolIcon />,
+  <LocalOfferIcon />,
+  <HistoryToggleOffIcon />,
+  <RestaurantIcon />,
+  <NightlifeIcon />,
+];
 
 export const footerContacts = [
   {
-    icon: <LocationCityIcon/>,
+    icon: <LocationCityIcon />,
     info: '5 Solna str, Pomorie, Bulgaria',
   },
   {
-    icon: <EmailIcon/>,
-    info: 'webmaster@pomorieinfo.com'
+    icon: <EmailIcon />,
+    info: 'webmaster@pomorieinfo.com',
   },
   {
-    icon: <PhoneForwardedIcon/>,
-    info: '+359 89974****'
+    icon: <PhoneForwardedIcon />,
+    info: '+359 89974****',
   },
 ];
 
 export const footerWebsites = [
   {
     text: 'Община Поморие',
-    link: 'https://www.pomorie.bg/'
+    link: 'https://www.pomorie.bg/',
   },
   {
     text: 'Туризъм Поморие',
-    link: 'https://pomorietourism.bg/en/'
+    link: 'https://pomorietourism.bg/en/',
   },
   {
     text: 'Новини от Поморие',
-    link: 'https://radiomilena.com/'
+    link: 'https://radiomilena.com/',
   },
   {
     text: 'Музеи Поморие',
-    link: 'https://pomorie-historical-museum.com/'
-  }
+    link: 'https://pomorie-historical-museum.com/',
+  },
 ];
 
 // beach payment regimes
-const mixedRegime = "Безплатна и платена зона";
+const mixedRegime = 'Безплатна и платена зона';
 // const freeGuarded = 'Безплатен, охраняем плаж';
-const freeUnguarded = "Безплатен, неoхраняем плаж";
+const freeUnguarded = 'Безплатен, неoхраняем плаж';
 
 // beach prices
-const priceHight = "7 лева чадър, 7 лева шезлонг";
-const priceLow = "3.60 лв чадър, 3.60 лв шезлонг, 2 лв шалте, 2 лв масичка";
+const priceHight = '7 лева чадър, 7 лева шезлонг';
+const priceLow = '3.60 лв чадър, 3.60 лв шезлонг, 2 лв шалте, 2 лв масичка';
 
 // beach addresses
-const address1 = "Ул. Крайбрежна";
-const address2 = "Ул. Професор Стоянов - срещу Гранд Хотел Поморие";
+const address1 = 'Ул. Крайбрежна';
+const address2 = 'Ул. Професор Стоянов - срещу Гранд Хотел Поморие';
 
 // parking prices
-const municipalityPrice = "2 лева за час - 12 лева за денонощие";
+const municipalityPrice = '2 лева за час - 12 лева за денонощие';
 
 // content for FAQ section
 export const frequentlyAskedQuestions = [
@@ -220,7 +228,7 @@ export const sectionDescriptions = [
       Поморийската кал има комплексно влияние върху организма със своите многостранни лечебни фактори – термичен, химичен, механичен, биологичен и др. Особено важно значение имат топлинните ѝ свойства, благодарение на големия ѝ топлинен капацитет и малката ѝ топлопроводимост се повишава температурата на тялото, разширяват се капилярите и по-големите кръвоносните съдове,
        подобрява се кръвоснабдяването в дълбочината на тъканите и храненето им, активират се ензими, ускоряват се обменните процеси и се разнасят отпадните продукти от възпалението.`,
       header: `КАЛОЛЕЧЕБНИЦИ В ГРАД ПОМОРИЕ`,
-    }
+    },
   },
 ];
 
@@ -427,7 +435,7 @@ export const attractions = [
     phoneNumber: `+359 888 38 09 95`,
     prices: `<a href="https://shipkuk.com/bg/uslugi-i-atrakczii/" target="_blank">Тук</a>`,
     address: `ул. „П. К. Яворов“, старото пристанище`,
-    linkTo: "",
+    linkTo: '',
     img: `${kukBoatCoverPic}`,
   },
   {
@@ -438,17 +446,17 @@ export const attractions = [
     phoneNumber: `+359 898 63 06 87`,
     prices: `Цена за възрастни и за деца - 10 лева за една разходка.`,
     address: `ул. „П. К. Яворов“ №15`,
-    linkTo: "",
+    linkTo: '',
     img: `${blackPearlCoverPic}`,
   },
   {
     id: 3,
     name: 'Кораб за разходки "Ния"',
     description: `Корабче за разходки "Ния" предлага вълнуващи морски преживявания за малки и големи. Корабът предлага разходки в акваторията на града, разходки до фара, както и дневни партита. `,
-    phoneNumber: "+359 879 04 61 55 / +359 894 63 64 71",
+    phoneNumber: '+359 879 04 61 55 / +359 894 63 64 71',
     prices: `няма`,
     address: `ул. „П. К. Яворов“ №15`,
-    linkTo: "",
+    linkTo: '',
     img: `${niyaBoatCoverPic}`,
   },
   {
@@ -458,30 +466,30 @@ export const attractions = [
     phoneNumber: `+359 893 02 74 07`,
     workTime: `Вт. - Нд. 09:00 - 18:00`,
     address: `На входа на град Поморие`,
-    linkTo: "",
+    linkTo: '',
     img: `${aquaparkCoverPic}`,
   },
   {
     id: 5,
-    name: "Развлекателно влакче за разходка около града",
+    name: 'Развлекателно влакче за разходка около града',
     description: `Атракционните влакчета на град Поморие са отличен начин да разгледате цялата стара част на града и да се запознаете с него. Началната спирка е пред "Стария Кей". Обикновенно влакчето се 
       запълва още там. Има и редица други спирки от които можете да се възползвате за да слезете. Влакчето минава през старата част на града, улица крайбрежна, "Руския квартал", квартал "Свобода" и се връща отново на първа спирка.`,
     phoneNumber: `няма`,
     workTime: `Всеки ден от 12:00 - 23:00`,
     prices: `5 лева за възрастен / дете.`,
     address: `ул. „П. К. Яворов“ №15`,
-    linkTo: "",
+    linkTo: '',
     img: `${trainCoverPic}`,
   },
   {
     id: 6,
-    name: "Лунапарк",
+    name: 'Лунапарк',
     description: `Лунапаркът се намира в самия център на града пред площада и читалището. Разполага с множество атракциони за малки и големи.`,
     phoneNumber: `няма`,
     workTime: `Всеки ден от 17:00 - 00:00`,
     prices: `6 лв жетон / важи за всеки атракцион`,
     address: `ул. "Княз Борис I" №64`,
-    linkTo: "",
+    linkTo: '',
     img: `${lunaparkCoverPic}`,
   },
   {
@@ -492,7 +500,7 @@ export const attractions = [
     phoneNumber: `няма`,
     prices: `няма`,
     address: `ул. П. К. Яворов 18`,
-    linkTo: "",
+    linkTo: '',
     img: `${summerCinemaCoverPic}`,
   },
 ];
@@ -500,8 +508,8 @@ export const attractions = [
 export const beaches = [
   {
     id: 1,
-    name: "Първи плаж, улица Крайбрежна",
-    description: "Няма описание",
+    name: 'Първи плаж, улица Крайбрежна',
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -517,25 +525,25 @@ export const beaches = [
   },
   {
     id: 2,
-    name: "Втори плаж, улица Крайбрежна",
-    description: "Няма описание",
+    name: 'Втори плаж, улица Крайбрежна',
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
     img: `${secondBeachCoverPic}`,
-    toilet: `Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
-    lifeguard: `Спасител`,
-    showers: `Душове`,
-    changingPlace: `Съблекални`,
-    restaurant: `Ресторант/Място за хранене`,
-    nightLife: `Бийч Бар/Нощен бар`,
+    toilet: `(✔) Тоалетна`,
+    lifeguardWorkingTime: `(✔) Спасител от 07:00 до 18:00`,
+    lifeguard: `(✔) Спасител`,
+    showers: `(✔) Душове`,
+    changingPlace: `(✔) Съблекални`,
+    restaurant: `(✔) Ресторант/Място за хранене`,
+    nightLife: `(✔) Бийч Бар/Нощен бар`,
     linkTo: '/beach-two',
   },
   {
     id: 3,
     name: 'Плаж "Атриум" - пред Гранд Хотел Поморие',
-    description: "Няма описание",
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceLow,
     address: address2,
@@ -547,12 +555,12 @@ export const beaches = [
     changingPlace: `Съблекални`,
     restaurant: `Ресторант/Място за хранене`,
     nightLife: `Бийч Бар/Нощен бар`,
-    linkTo: '',
+    linkTo: '/beach-atrium',
   },
   {
     id: 4,
     name: 'Плаж "централен" - пред Гранд Хотел Поморие',
-    description: "Няма описание",
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceLow,
     address: address2,
@@ -564,12 +572,12 @@ export const beaches = [
     changingPlace: `Съблекални`,
     restaurant: `Ресторант/Място за хранене`,
     nightLife: `$Бийч Бар/Нощен бар`,
-    linkTo: '',
+    linkTo: '/beach-central',
   },
   {
     id: 5,
     name: 'Плаж "Инжстрой" - пред станцията на "Софарма"',
-    description: "Няма описание",
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -581,14 +589,14 @@ export const beaches = [
     changingPlace: `Съблекални`,
     restaurant: `Ресторант/Място за хранене`,
     nightLife: `Бийч Бар/Нощен бар`,
-    linkTo: '',
+    linkTo: '/beach-sopharma',
   },
   {
     id: 6,
     name: 'Плажове "Помпата" 1 и 2',
-    description: "Няма описание",
+    description: 'Няма описание',
     regime: freeUnguarded,
-    price: "Безплатен",
+    price: 'Безплатен',
     address: address1,
     img: `${pompataBeachCoverPic}`,
     toilet: `Тоалетна`,
@@ -598,12 +606,12 @@ export const beaches = [
     changingPlace: `Съблекални`,
     restaurant: `Ресторант/Място за хранене`,
     nightLife: `Бийч Бар/Нощен бар`,
-    linkTo: '',
+    linkTo: '/beach-pompata',
   },
   {
     id: 7,
-    name: 'Плаж пред хотел "Съни Бей"',
-    description: "Няма описание",
+    name: 'Плаж трети, пред хотел "Съни Бей"',
+    description: 'Няма описание',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -615,7 +623,7 @@ export const beaches = [
     changingPlace: `Съблекални`,
     restaurant: `Ресторант/Място за хранене`,
     nightLife: `Бийч Бар/Нощен бар`,
-    linkTo: '',
+    linkTo: '/beach-three',
   },
 ];
 
@@ -632,7 +640,7 @@ export const landmarks = [
   },
   {
     id: 2,
-    name: "Поморийско езеро",
+    name: 'Поморийско езеро',
     description: `Лиманна лечебна кал и луга, които осигурява Поморийското езеро са една от най-големите природни богатства не само за Поморие, но и за цяла България.`,
     phoneNumber: `няма`,
     workTime: `няма`,
@@ -653,7 +661,7 @@ export const landmarks = [
   },
   {
     id: 4,
-    name: "Резерват стари поморийски къщи",
+    name: 'Резерват стари поморийски къщи',
     description: `Архитектурният ансамбъл „Стари Поморийски къщи” включва 10 къщи с типична възрожденска архитектура, поради което те са обявени за паметник на културата.
       Тези къщи имат определени черти, които са характерни за т. нар. „черноморска градска къща“.`,
     phoneNumber: `няма`,
@@ -675,7 +683,7 @@ export const landmarks = [
   },
   {
     id: 6,
-    name: "Паметник на писателя Пейо К. Яворов",
+    name: 'Паметник на писателя Пейо К. Яворов',
     description: `В знак на признателност към поета и революционер, в гр. Поморие, на самия бряг на морето, стои белокаменна статуя на П. К. Яворов.
       Автор на паметника е Иван Блажев, а годината на създаване – 1959 г.`,
     phoneNumber: `няма`,
@@ -686,7 +694,7 @@ export const landmarks = [
   },
   {
     id: 7,
-    name: "„Момчето с гроздето“",
+    name: '„Момчето с гроздето“',
     description: `Момчето с гроздето е бронзова статуя, олицетворяваща плодородието на поморийските лозя. Това е един от символите на града, позициониран на входа на стария кей.`,
     phoneNumber: `няма`,
     workTime: `няма`,
@@ -696,7 +704,7 @@ export const landmarks = [
   },
   {
     id: 8,
-    name: "Старият кей",
+    name: 'Старият кей',
     description: `Старият кей е една от емблемите на Поморие. Той е неразривно свързан с историята и поминъците на града.
       Пристанът е бил използван за износ на вино, сол, риба, жито, дървен материал и за внос на манифактурни и промишлени стоки.`,
     phoneNumber: `няма`,
@@ -707,7 +715,7 @@ export const landmarks = [
   },
   {
     id: 9,
-    name: "Фарът на Поморие",
+    name: 'Фарът на Поморие',
     description: `Един от най-впечатляващите морски фарове в България е фарът на Поморие. 
       Той е построен през 1933 г. от немската фирма „Юлиус Пинч”, която е лидер в производството на осветителни съоръжения.`,
     phoneNumber: `няма`,
@@ -721,7 +729,7 @@ export const landmarks = [
 export const museums = [
   {
     id: 1,
-    name: "Исторически музей",
+    name: 'Исторически музей',
     description: `Исторически музей – Поморие съхранява и експонира културно-историческото наследство на града и общината.
       Сградата на музея е построена в края на XIX в. като гръцко девическо училище. Тя е паметник на културата с местно значение.`,
     phoneNumber: `+359 (0)596 2 20 08`,
@@ -732,7 +740,7 @@ export const museums = [
   },
   {
     id: 2,
-    name: "Музей на солта",
+    name: 'Музей на солта',
     description: `Намира се на брега на Поморийското езеро. Основан е на 07.09.2002 г. Музеят е създаден с финансовата подкрепа на ЕС, Република България и Община Поморие.
       Музеят е единствения в България и на Балканския полуостров специализиран музей за производство на сол чрез слънчево изпарение на морска вода. Запазени са действащи солници по старинна анхиалска технология.`,
     phoneNumber: `+359 (0)596 2 2008`,
@@ -743,10 +751,10 @@ export const museums = [
   },
   {
     id: 3,
-    name: "Тракийска антична куполна гробница",
+    name: 'Тракийска антична куполна гробница',
     description: `Уникалната гробница се намира под насипа на могила на 5 км западно от град Поморие. Достъпът на туристи до гробницата е лесен и удобен.
       Датирана е от ІІ – ІV в. сл. Хр. Смята се, че тя е служила за „Хероон” (Мавзолей) на богата анхиалска фамилия, в който са се извършвали нееднократно религиозни езически ритуали.`,
-    phoneNumber: "+359 (0)596 2 2008",
+    phoneNumber: '+359 (0)596 2 2008',
     workTime: `Втк. - Нед. 10:00 - 17:00`,
     address: `разгледай обекта`,
     img: `${thombCoverPic}`,
@@ -754,7 +762,7 @@ export const museums = [
   },
   {
     id: 4,
-    name: "Посетителски център „Поморийско езеро“",
+    name: 'Посетителски център „Поморийско езеро“',
     description: `В него ще получите богата информация за биологичното разнообразие, природните ресурси и режимите на защита в комплекса от защитени природни територии на Поморийско езеро.`,
     phoneNumber: `няма`,
     workTime: `Вт. - Нд. 09:00 - 18:00`,
@@ -764,7 +772,7 @@ export const museums = [
   },
   {
     id: 5,
-    name: "Градска художествена галерия „Дечко Стоев“",
+    name: 'Градска художествена галерия „Дечко Стоев“',
     description: `Градска художествена галерия „Дечко Стоев“ гр. Поморие е открита на 01.11.2016 г. 
       Тя привлича ценителите на изобразителното изкуство, като им предлага да се потопят в безвремието на над 100 оригинала от стари майстори-класици 
       в българското изобразително изкуство до футуристични образи на Черно море.`,
@@ -779,54 +787,54 @@ export const museums = [
 export const parkings = [
   {
     id: 1,
-    name: "Голям паркинг пред Община Поморие",
+    name: 'Голям паркинг пред Община Поморие',
     description: `Това е най-големия паркинг в град Поморие. Намира се непосредствено пред общината, а входът му е откъм улица Цар Петър.
       Тази година паркинга е с допълнително увеличен капацитет. Работи денонощно.`,
     status: `Платен`,
     prices: municipalityPrice,
     address: `ул. Цар Петър 6`,
     img: `${municipalityCoverPic}`,
-    gps: "https://www.google.com/maps/place/%D0%A6%D0%B0%D1%80+%D0%9F%D0%B5%D1%82%D1%8A%D1%80+6+Parking/@42.558522,27.6426542,114m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd7ace879c13:0x8ac957ac813b3b5d!8m2!3d42.5585291!4d27.6425515!16s%2Fg%2F11sb4v3mjn",
+    gps: 'https://www.google.com/maps/place/%D0%A6%D0%B0%D1%80+%D0%9F%D0%B5%D1%82%D1%8A%D1%80+6+Parking/@42.558522,27.6426542,114m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd7ace879c13:0x8ac957ac813b3b5d!8m2!3d42.5585291!4d27.6425515!16s%2Fg%2F11sb4v3mjn',
     linkTo: '',
   },
   {
     id: 2,
-    name: "Паркинг ул. Петко Каравелов 1",
+    name: 'Паркинг ул. Петко Каравелов 1',
     description: `Този паркинг се намира в старата част на град Поморие, на кръстовището на улиците Проф. Стоянов и Солна. 
       Паркингът е общински и разполага с множество паркоместа за гостите на града. Цените и режимът му са, както на другите общински паркинги. 2 лв. за час и 12 лв. за денонощие.`,
     status: `Платен`,
     prices: municipalityPrice,
     address: `ул. Петко Каравелов 1`,
     img: `${trafficLightsCoverPic}`,
-    gps: "https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9F%D0%B5%D1%82%D0%BA%D0%BE+%D0%9A%D0%B0%D1%80%D0%B0%D0%B2%D0%B5%D0%BB%D0%BE%D0%B2+1+Parking/@42.5607082,27.6399235,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd63600f4949:0x9ca394d2093a916c!8m2!3d42.5607772!4d27.6398131!16s%2Fg%2F11jz5fphtp",
+    gps: 'https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9F%D0%B5%D1%82%D0%BA%D0%BE+%D0%9A%D0%B0%D1%80%D0%B0%D0%B2%D0%B5%D0%BB%D0%BE%D0%B2+1+Parking/@42.5607082,27.6399235,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd63600f4949:0x9ca394d2093a916c!8m2!3d42.5607772!4d27.6398131!16s%2Fg%2F11jz5fphtp',
     linkTo: '',
   },
   {
     id: 3,
-    name: "Общински паркинг Токалиев",
+    name: 'Общински паркинг Токалиев',
     description: `Непосредствено до Община Поморие, по улица "Нео Анхиало" в посока "Софарма" се намира този малък паркинг. Той също е общинси и функционира денонощно. `,
     status: `Платен`,
     prices: municipalityPrice,
     address: `До община Поморие`,
     img: `${tokalievCoverPic}`,
-    gps: "https://www.google.com/maps/place/%D0%9E%D0%B1%D1%89%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3+%22%D0%A2%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%22/@42.5593781,27.6426438,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bdb351ffa08f:0x450f61eccd5f42db!8m2!3d42.5594175!4d27.6426481!16s%2Fg%2F11t9kj8rbp",
+    gps: 'https://www.google.com/maps/place/%D0%9E%D0%B1%D1%89%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3+%22%D0%A2%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%22/@42.5593781,27.6426438,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bdb351ffa08f:0x450f61eccd5f42db!8m2!3d42.5594175!4d27.6426481!16s%2Fg%2F11t9kj8rbp',
     linkTo: '',
   },
   {
     id: 4,
-    name: "Паркинг пред Кални Бани",
+    name: 'Паркинг пред Кални Бани',
     description: `Този паркинг се намира непосредствено пред известния санаториум на град Поморие, на улица "Професор Стоянов", точно преди Гранд Хотел Поморие и стадиона на града.
       Паркингът е денонощен, с режим на паркиране идентичен на другите общински паркинги.`,
     status: `Платен`,
     prices: municipalityPrice,
     address: `ул. Професор Стоянов 3`,
     img: `${sanatoriumCoverPic}`,
-    gps: "https://www.google.com/maps/place/%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D0%BE%D1%80+%D0%92%D0%B5%D1%81%D0%B5%D0%BB%D0%B8%D0%BD+%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BE%D0%B2+3+Parking/@42.5649217,27.6382932,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd61f3f6e30b:0xa3c0ac4314640e5c!8m2!3d42.5650473!4d27.6382146!16s%2Fg%2F11jz5gg2cx",
+    gps: 'https://www.google.com/maps/place/%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D0%BE%D1%80+%D0%92%D0%B5%D1%81%D0%B5%D0%BB%D0%B8%D0%BD+%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BE%D0%B2+3+Parking/@42.5649217,27.6382932,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd61f3f6e30b:0xa3c0ac4314640e5c!8m2!3d42.5650473!4d27.6382146!16s%2Fg%2F11jz5gg2cx',
     linkTo: '',
   },
   {
     id: 5,
-    name: "Паркинг пред МБАЛ Поморие",
+    name: 'Паркинг пред МБАЛ Поморие',
     description: `Паркингът пред МБАЛ Поморие функционира, като платен паркинг и за гостите на града. ТЪй, като местните жители го 
       използват, когато посещават болничното заведение, първите 2 часа от престоя са безплатни.`,
     status: `Платен`,
@@ -844,12 +852,12 @@ export const parkings = [
     prices: municipalityPrice,
     address: `ул. „П. К. Яворов“ 3`,
     img: `${stGeorgeCoverPic}`,
-    gps: "https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B0%D1%82%D0%B5%D0%BD+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3/@42.5564667,27.6397384,75m/data=!3m1!1e3!4m12!1m5!3m4!2zNDLCsDMzJzQzLjMiTiAyN8KwMzgnMTguMCJF!8m2!3d42.5620278!4d27.6383333!3m5!1s0x40a6bda96df482f9:0xc79e0dd2483b014f!8m2!3d42.5564974!4d27.6396301!16s%2Fg%2F11t4dzy65k",
+    gps: 'https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B0%D1%82%D0%B5%D0%BD+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3/@42.5564667,27.6397384,75m/data=!3m1!1e3!4m12!1m5!3m4!2zNDLCsDMzJzQzLjMiTiAyN8KwMzgnMTguMCJF!8m2!3d42.5620278!4d27.6383333!3m5!1s0x40a6bda96df482f9:0xc79e0dd2483b014f!8m2!3d42.5564974!4d27.6396301!16s%2Fg%2F11t4dzy65k',
     linkTo: '',
   },
   {
     id: 7,
-    name: "Частен паркинг на ул. Тутхон",
+    name: 'Частен паркинг на ул. Тутхон',
     description: ``,
     status: `Платен`,
     prices: `12 - 15 лв. за денонощие*.`,
@@ -860,18 +868,18 @@ export const parkings = [
   },
   {
     id: 8,
-    name: "Частен паркинг пред Гранд Хотел Поморие",
+    name: 'Частен паркинг пред Гранд Хотел Поморие',
     description: `Това е единият от двата паркинга разположени непосредствено до комплекс "Атриум", срещу Гранд Хотел Поморие. Паркингът се намира до централен плаж.`,
     status: `Платен`,
     prices: `2 лева за час, 6 часа 10 лева/12 часа, 15 лв - 24 часа, 20лева`,
     address: `ул. Професор Стоянов`,
     img: `${atriumLargeCoverPic}`,
-    gps: "https://www.google.com/maps/dir/42.5658725,27.6386398/%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+8200/@42.5659134,27.6385368,66m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x40a6bd61c6bead57:0x56c54b1c6c2f7ab1!2m2!1d27.6383442!2d42.5611404!3e0",
+    gps: 'https://www.google.com/maps/dir/42.5658725,27.6386398/%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+8200/@42.5659134,27.6385368,66m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x40a6bd61c6bead57:0x56c54b1c6c2f7ab1!2m2!1d27.6383442!2d42.5611404!3e0',
     linkTo: '',
   },
   {
     id: 9,
-    name: "Частен паркинг пред Гранд Хотел Поморие 2",
+    name: 'Частен паркинг пред Гранд Хотел Поморие 2',
     description: `Другият голям паркинг пред Гранд Хотел Поморие е този. Той се намира от другата страна на комплекс "Атриум."`,
     status: `Платен`,
     prices: `2 лева за час / 20 лева за 24 часа.`,
@@ -882,10 +890,12 @@ export const parkings = [
   },
 ];
 
-export const hotels = [{
+export const hotels = [
+  {
     id: 5812451,
     name: 'Хотел Сейнт Джордж',
-    shortDescription: 'В Хотел Свети Георги - Медикъл СПА, разположен на морския бряг в град Поморие, ще откриете уют, спокойствие, лечебни процедури и комфорт през 4-те сезона на годината! Хотелът е разположен в старата част на целогодишния балнеолечебен курорт Поморие, между централната пешеходна алея и крайморския булевард.',
+    shortDescription:
+      'В Хотел Свети Георги - Медикъл СПА, разположен на морския бряг в град Поморие, ще откриете уют, спокойствие, лечебни процедури и комфорт през 4-те сезона на годината! Хотелът е разположен в старата част на целогодишния балнеолечебен курорт Поморие, между централната пешеходна алея и крайморския булевард.',
     description: '',
     address: 'Поморие, бул. П. К. Яворов 15',
     stars: `Категория: Четири звезди`,
@@ -896,7 +906,8 @@ export const hotels = [{
   {
     id: 3569142,
     name: 'Гранд Хотел Поморие',
-    shortDescription: 'Гранд Хотел Поморие е целогодишен петзвезден хотелски комплекс разположен на тясната ивица земя между бреговете на Черно море и Поморийското солено езеро. Хотелът разполага със 178 стаи и апартаменти, изцяло обновен през 2020 година медикъл спа център и многофункционални конферентни зали.',
+    shortDescription:
+      'Гранд Хотел Поморие е целогодишен петзвезден хотелски комплекс разположен на тясната ивица земя между бреговете на Черно море и Поморийското солено езеро. Хотелът разполага със 178 стаи и апартаменти, изцяло обновен през 2020 година медикъл спа център и многофункционални конферентни зали.',
     description: '',
     address: 'Pomorie, ул. “Проф. Стоянов 5',
     stars: `Категория: Пет звезди`,
@@ -906,8 +917,9 @@ export const hotels = [{
   },
   {
     id: 6548763,
-    name: "Хотел Парадайс",
-    shortDescription: 'Хотелски комплекс Парадайс предлага на гостите си 42 стаи (всяка от тях с тераса), 33 от които са двойни, 2 - единични, 4 студиа и 3 панорамни апартамента. В избраната от Вас стая разполагате с телефон, телевизор, мини-бар, а хотелът е оборудван и със сателитна и климатична системи.',
+    name: 'Хотел Парадайс',
+    shortDescription:
+      'Хотелски комплекс Парадайс предлага на гостите си 42 стаи (всяка от тях с тераса), 33 от които са двойни, 2 - единични, 4 студиа и 3 панорамни апартамента. В избраната от Вас стая разполагате с телефон, телевизор, мини-бар, а хотелът е оборудван и със сателитна и климатична системи.',
     description: '',
     address: 'Поморие, ул. Алеко Константинов 1',
     stars: `Категория: Три звезди`,
@@ -917,8 +929,9 @@ export const hotels = [{
   },
   {
     id: 5625484,
-    name: "Семеен Хотел Регата",
-    shortDescription: 'Хотел Регата се намира в старата част на гр. Поморие. Разположен е на самия морски бряг. В хотела може да релаксирате сред перфектна комбинация от морски бриз и свеж въздух. От всички тераси има панорамна гледка към морето. Близостта на плажа и приказният изглед към морето ще направят престоя на всеки гост незабравим.',
+    name: 'Семеен Хотел Регата',
+    shortDescription:
+      'Хотел Регата се намира в старата част на гр. Поморие. Разположен е на самия морски бряг. В хотела може да релаксирате сред перфектна комбинация от морски бриз и свеж въздух. От всички тераси има панорамна гледка към морето. Близостта на плажа и приказният изглед към морето ще направят престоя на всеки гост незабравим.',
     description: '',
     address: 'Поморие, ул. Европа 2',
     stars: `Категория: Три звезди`,
@@ -928,8 +941,9 @@ export const hotels = [{
   },
   {
     id: 5615784,
-    name: "Хотел Свети Петър и Павел",
-    shortDescription: 'Хотел Св.Св. Петър и Павел е категория три звезди. Построен през 2007 година  на самия бряг на морето, живописно разположен между морето и Поморийското солено езеро. Хотелът се намира на 10 м от централния плаж на град Поморие, известен с черния си пясък. На 700 м от центъра на града, на 15 км от Летище Бургас .',
+    name: 'Хотел Свети Петър и Павел',
+    shortDescription:
+      'Хотел Св.Св. Петър и Павел е категория три звезди. Построен през 2007 година  на самия бряг на морето, живописно разположен между морето и Поморийското солено езеро. Хотелът се намира на 10 м от централния плаж на град Поморие, известен с черния си пясък. На 700 м от центъра на града, на 15 км от Летище Бургас .',
     description: '',
     address: 'Поморие, ул. Проф. Стоянов №11',
     stars: `Категория: Три звезди`,
@@ -937,10 +951,11 @@ export const hotels = [{
     priceRange: `54 лв. - 70 лв. на легло.`,
     img: petarAndPavel,
   },
-    {
+  {
     id: 7813545,
     name: 'Феста Поморие Резорт',
-    shortDescription: 'Хотел „Феста Поморие Ризорт“ се намира на самия южен плаж на град Поморие, едно от най-старите курортни селища на българското Черноморие. Директният достъп до плажа, неповторимата гледка към морето го превръщат в предпочитано място за семейна ваканция.',
+    shortDescription:
+      'Хотел „Феста Поморие Ризорт“ се намира на самия южен плаж на град Поморие, едно от най-старите курортни селища на българското Черноморие. Директният достъп до плажа, неповторимата гледка към морето го превръщат в предпочитано място за семейна ваканция.',
     description: '',
     address: 'Поморие, ул. Княз Борис I, 211',
     stars: `Категория: Четири звезди`,
@@ -951,7 +966,8 @@ export const hotels = [{
   {
     id: 6748167,
     name: 'Уейв Резорт',
-    shortDescription: 'Ваканционен комплекс Уейв Резорт е разположен на плажната ивица, на 5,5 км северно от гр. Поморие и на 15 минути път с кола от летище Бургас. Комплексът предлага изключително разнообразие от спортни и увеселителни съоръжения за ценителите на лукса и спокойната морска почивка.',
+    shortDescription:
+      'Ваканционен комплекс Уейв Резорт е разположен на плажната ивица, на 5,5 км северно от гр. Поморие и на 15 минути път с кола от летище Бургас. Комплексът предлага изключително разнообразие от спортни и увеселителни съоръжения за ценителите на лукса и спокойната морска почивка.',
     description: '',
     address: `Beachfront`,
     stars: `Категория: Пет звезди`,
@@ -962,7 +978,8 @@ export const hotels = [{
   {
     id: 7591873,
     name: 'Апартхотел Кротириа',
-    shortDescription: 'Апартхотел Кротириа, Поморие Ви посреща със страхотна гледка - само на няколко метра от плажа. Подгответе се за едно спокойно и релаксиращо преживяване в нашите чисто нови апартаменти с модерно обзавеждане!',
+    shortDescription:
+      'Апартхотел Кротириа, Поморие Ви посреща със страхотна гледка - само на няколко метра от плажа. Подгответе се за едно спокойно и релаксиращо преживяване в нашите чисто нови апартаменти с модерно обзавеждане!',
     description: '',
     address: `Поморие, къмпинг Европа`,
     stars: `Категория: Две звезди`,
@@ -973,21 +990,23 @@ export const hotels = [{
   {
     id: 5225894,
     name: 'Хотел Пенелопа Палас',
-    shortDescription: 'Апарт-Комплекс Пенелопа Палас се намира на 7 км от Летище Бургас (кв. Сарафово) и на 15 км северно от центъра на Бургас. Комплексът е стратегически разположен в самия край на южния плаж на Поморие, което осигурява директен достъп до пясъчната ивица. Мястото е тихо и спокойно, което е гаранция за необезпокояван отдих.',
+    shortDescription:
+      'Апарт-Комплекс Пенелопа Палас се намира на 7 км от Летище Бургас (кв. Сарафово) и на 15 км северно от центъра на Бургас. Комплексът е стратегически разположен в самия край на южния плаж на Поморие, което осигурява директен достъп до пясъчната ивица. Мястото е тихо и спокойно, което е гаранция за необезпокояван отдих.',
     description: '',
     address: `Поморие, ул. Чайка 3`,
     stars: `Категория: Четири звезди`,
     star: `*`.repeat(4),
     priceRange: `83 лв. - 156 лв. на легло.`,
     img: penelopaPalace,
-  }
+  },
 ];
 
 export const mud = [
   {
     id: 4654125,
     name: 'СБР Поморие - Специализирана болница за рехабилитация',
-    shortDescription: 'Болницата за рехабилитация в гр.Поморие е на 500 м от центъра на града и е най- големия калолечебен център на Балкански полуостров с капацитет 1000 калолечебни процедури на ден. Разположена е на 100 м от морския бряг, на брега на соленото езеро.',
+    shortDescription:
+      'Болницата за рехабилитация в гр.Поморие е на 500 м от центъра на града и е най- големия калолечебен център на Балкански полуостров с капацитет 1000 калолечебни процедури на ден. Разположена е на 100 м от морския бряг, на брега на соленото езеро.',
     description: '',
     address: 'Поморие, ул. Проф. Парашкев Стоянов 7',
     phoneNumber: '0596 2 41 50, 0596 2 61 03',
@@ -997,7 +1016,8 @@ export const mud = [
   {
     id: 8444524,
     name: 'СБР Вита - Специализирана болница за рехабилитация',
-    shortDescription: '"Специализирана болница - ВИТА” ЕООД осъществява изключително активно дейността си за осъществяване на болнична помощ за лица, нуждаещи се от физикална терапия, моторна и психична рехабилитация, балнеoлечение, калолечение и климатолечение, за пациенти със заболявания на опорно-двигателния апарат...',
+    shortDescription:
+      '"Специализирана болница - ВИТА” ЕООД осъществява изключително активно дейността си за осъществяване на болнична помощ за лица, нуждаещи се от физикална терапия, моторна и психична рехабилитация, балнеoлечение, калолечение и климатолечение, за пациенти със заболявания на опорно-двигателния апарат...',
     description: '',
     address: 'Поморие, ул. Проф. Парашкев Стоянов 12',
     phoneNumber: '0876 670048, 0878 670083',
@@ -1007,7 +1027,8 @@ export const mud = [
   {
     id: 3569142,
     name: 'Гранд Хотел Поморие',
-    shortDescription: 'Гранд Хотел Поморие е целогодишен петзвезден хотелски комплекс разположен на тясната ивица земя между бреговете на Черно море и Поморийското солено езеро. Хотелът разполага със 178 стаи и апартаменти, изцяло обновен през 2020 година медикъл спа център и многофункционални конферентни зали.',
+    shortDescription:
+      'Гранд Хотел Поморие е целогодишен петзвезден хотелски комплекс разположен на тясната ивица земя между бреговете на Черно море и Поморийското солено езеро. Хотелът разполага със 178 стаи и апартаменти, изцяло обновен през 2020 година медикъл спа център и многофункционални конферентни зали.',
     description: '',
     address: 'Pomorie, ул. “Проф. Стоянов 5',
     phoneNumber: '0596 2 8888, 0889 206666',
@@ -1017,7 +1038,8 @@ export const mud = [
   {
     id: 5812451,
     name: 'Хотел Сейнт Джордж',
-    shortDescription: 'В Хотел Свети Георги - Медикъл СПА, разположен на морския бряг в град Поморие, ще откриете уют, спокойствие, лечебни процедури и комфорт през 4-те сезона на годината! Хотелът е разположен в старата част на целогодишния балнеолечебен курорт Поморие, между централната пешеходна алея и крайморския булевард.',
+    shortDescription:
+      'В Хотел Свети Георги - Медикъл СПА, разположен на морския бряг в град Поморие, ще откриете уют, спокойствие, лечебни процедури и комфорт през 4-те сезона на годината! Хотелът е разположен в старата част на целогодишния балнеолечебен курорт Поморие, между централната пешеходна алея и крайморския булевард.',
     description: '',
     address: 'Поморие, бул. П. К. Яворов 15',
     phoneNumber: '0596 2 4411, 0885 274884',
@@ -1026,152 +1048,152 @@ export const mud = [
   },
   {
     id: 5615784,
-    name: "Хотел Свети Петър и Павел",
-    shortDescription: 'Хотел Св.Св. Петър и Павел е категория три звезди. Построен през 2007 година  на самия бряг на морето, живописно разположен между морето и Поморийското солено езеро. Хотелът се намира на 10 м от централния плаж на град Поморие, известен с черния си пясък. На 700 м от центъра на града, на 15 км от Летище Бургас .',
+    name: 'Хотел Свети Петър и Павел',
+    shortDescription:
+      'Хотел Св.Св. Петър и Павел е категория три звезди. Построен през 2007 година  на самия бряг на морето, живописно разположен между морето и Поморийското солено езеро. Хотелът се намира на 10 м от централния плаж на град Поморие, известен с черния си пясък. На 700 м от центъра на града, на 15 км от Летище Бургас .',
     description: '',
     address: 'Поморие, ул. Проф. Стоянов №11',
     phoneNumber: '0596 2 8002, 0879 530095',
     website: 'https://www.hotelpetarpavel.com/tzeni-i-oferti/balneo-paket-covid',
     img: petarAndPavel,
   },
-
 ];
 
 // items in the menu element
 export const menuItems = [
   {
     id: 1,
-    text: "Музеи",
+    text: 'Музеи',
     icon: <AccountBalanceIcon />,
     length: museums.length,
-    link: "/museums",
+    link: '/museums',
   },
   {
     id: 2,
-    text: "Забележителности",
+    text: 'Забележителности',
     icon: <LocationCityIcon />,
     length: landmarks.length,
-    link: "/landmarks",
+    link: '/landmarks',
   },
   {
     id: 3,
-    text: "Плажове",
+    text: 'Плажове',
     icon: <BeachAccessIcon />,
     length: beaches.length,
-    link: "/beaches",
+    link: '/beaches',
   },
   {
     id: 4,
-    text: "Паркинги",
+    text: 'Паркинги',
     icon: <LocalParkingIcon />,
     length: parkings.length,
-    link: "/parkings",
+    link: '/parkings',
   },
   {
     id: 5,
-    text: "Атракциони",
+    text: 'Атракциони',
     icon: <AttractionsIcon />,
     length: attractions.length,
-    link: "/attractions",
+    link: '/attractions',
   },
   {
     id: 6,
-    text: "За децата",
+    text: 'За децата',
     icon: <ChildCareIcon />,
-    length: "",
-    link: "/playgrounds",
+    length: '',
+    link: '/playgrounds',
   },
   {
     id: 7,
-    text: "Спорт",
+    text: 'Спорт',
     icon: <SportsBasketballIcon />,
-    length: "",
-    link: "/sport",
+    length: '',
+    link: '/sport',
   },
   {
     id: 8,
-    text: "Здравеопазване",
+    text: 'Здравеопазване',
     icon: <MedicalInformationIcon />,
-    length: "",
-    link: "/healthcare",
+    length: '',
+    link: '/healthcare',
   },
   {
     id: 9,
-    text: "Калолечение",
+    text: 'Калолечение',
     icon: <AccessibilityNewIcon />,
     length: mud.length,
-    link: "/mud",
+    link: '/mud',
   },
   {
     id: 10,
-    text: "Култура и вино",
+    text: 'Култура и вино',
     icon: <WineBarIcon />,
-    length: "",
-    link: "/wineandculture",
+    length: '',
+    link: '/wineandculture',
   },
   {
     id: 11,
-    text: "Транспорт",
+    text: 'Транспорт',
     icon: <EmojiTransportationIcon />,
-    length: "",
-    link: "/transport",
+    length: '',
+    link: '/transport',
   },
   {
     id: 12,
-    text: "Хотели",
+    text: 'Хотели',
     icon: <LocalHotelIcon />,
     length: hotels.length,
-    link: "/hotels",
+    link: '/hotels',
   },
   {
     id: 13,
-    text: "Ресторанти и барове",
+    text: 'Ресторанти и барове',
     icon: <DinnerDiningIcon />,
-    length: "",
-    link: "/restaurants",
+    length: '',
+    link: '/restaurants',
   },
   {
     id: 14,
     text: 'Post Data to firebase',
     icon: <BackupIcon />,
-    length: "",
-    link: "/post-data-page",
+    length: '',
+    link: '/post-data-page',
   },
   {
     id: 15,
     text: 'Get Data from firebase',
     icon: <CloudDownloadIcon />,
-    length: "",
-    link: "/get-data-page",
+    length: '',
+    link: '/get-data-page',
   },
   {
     id: 16,
-    text: "Table page",
-    icon: <PivotTableChartIcon/>,
-    length: "",
-    link: "/table-page",
+    text: 'Table page',
+    icon: <PivotTableChartIcon />,
+    length: '',
+    link: '/table-page',
   },
   {
     id: 17,
-    text: "Latest News",
-    icon: <NewspaperIcon/>,
-    length: "",
+    text: 'Latest News',
+    icon: <NewspaperIcon />,
+    length: '',
     link: '/news-page',
   },
   {
     id: 18,
-    text: "History of Pomorie",
-    icon: <CastleIcon/>,
-    length: "",
-    link: "/history-page",
+    text: 'History of Pomorie',
+    icon: <CastleIcon />,
+    length: '',
+    link: '/history-page',
   },
   {
     id: 19,
-    text: "Popular Hotels",
-    icon: <DryCleaningIcon/>,
-    length: "",
-    link: "/hotel-list-page"
-  }
+    text: 'Popular Hotels',
+    icon: <DryCleaningIcon />,
+    length: '',
+    link: '/hotel-list-page',
+  },
 ];
 
 export const mainPageLightboxData = [

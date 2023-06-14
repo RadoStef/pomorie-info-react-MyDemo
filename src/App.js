@@ -23,6 +23,11 @@ import { HotelListPage } from './pages/HotelListPage';
 import './App.css';
 import { BeachOne } from './pages/Places/BeachOne';
 import { BeachTwo } from './pages/Places/BeachTwo';
+import { BeachAtrium } from './pages/Places/BeachAtrium';
+import { BeachCentral } from './pages/Places/BeachCentral';
+import { BeachSopharma } from './pages/Places/BeachSopharma';
+import { BeachPompata } from './pages/Places/BeachPompata';
+import { BeachThree } from './pages/Places/BeachThree';
 
 const router = createBrowserRouter([
   {path: '/', element: <RootLayout/>},
@@ -46,7 +51,12 @@ const router = createBrowserRouter([
   {path: 'hotels', element: <Hotels/>},
   {path: 'restaurants', element: <Restaurants/>},
   {path: 'beach-one', element: <BeachOne/>},
-  {path: 'beach-two', element: <BeachTwo/>}
+  {path: 'beach-two', element: <BeachTwo/>},
+  {path: 'beach-atrium', element: <BeachAtrium/>},
+  {path: 'beach-central', element: <BeachCentral/>},
+  {path: 'beach-sopharma', element: <BeachSopharma/>},
+  {path: 'beach-pompata', element: <BeachPompata/>},
+  {path: 'beach-three', element: <BeachThree/>},
 ]);
 
 function App() {
