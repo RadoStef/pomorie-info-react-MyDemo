@@ -33,5 +33,4 @@ I hope there will be time for this and the project will be ready before the end 
 <hr><img src='https://www.sitefocus.eu/gitpics/demo13.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo14.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo15.png'>
-<hr><img src='https://www.sitefocus.eu/gitpics/demo16.png'>
 <hr>
