@@ -16,10 +16,12 @@ import { beaches } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
+import { NextObject } from "../../components/UI/NextObject";
+import { PreviousObject } from "../../components/UI/PreviousObject";
 import { Button } from "@mui/material";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 
-const beachName = `Плаж Софарма - Инжстрой`;
+const beachName = `Плажове Помпата 1 и 2`;
 const beachTwo = beaches.slice(5, 6);
 const images = [coverImage, image1, image2, image3, image4, image5, image6];
 const description = `Няма описание.`
@@ -28,7 +30,7 @@ const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 const mapContent = 
 <div className={classes.mapouter}>
     <div className={classes['gmap-canvas']}>
-        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5632253,27.6432353&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
+        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5632253,27.6432353&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
     </div>
 </div>
 
@@ -40,6 +42,8 @@ export const BeachPompata = () => {
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={description} beachName={beachName}/>
             <BeachesExtras beachExtras={beachTwo}/>
+            <Link to='/beach-atrium'><NextObject/></Link>
+            <Link to='/beach-sopharma'><PreviousObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>
         <Footer/>

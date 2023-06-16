@@ -29,7 +29,7 @@ const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 const mapContent = 
 <div className={classes.mapouter}>
     <div className={classes['gmap-canvas']}>
-        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5575356,27.6479714&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
+        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5575356,27.6479714&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
     </div>
 </div>
 
@@ -41,6 +41,7 @@ export const BeachTwo = () => {
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={description} beachName={beachName}/>
             <BeachesExtras beachExtras={beachTwo}/>
+            
             <Link to='/beach-three'><NextObject/></Link>
             <Link to='/beach-one'><PreviousObject/></Link>
             <MapSection map={mapContent}/>

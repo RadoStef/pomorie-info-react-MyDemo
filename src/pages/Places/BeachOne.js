@@ -30,7 +30,7 @@ const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 const mapContent = 
 <div className={classes.mapouter}>
     <div className={classes['gmap-canvas']}>
-        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5563763,27.6495449&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
+        <iframe className={classes['gmap-iframe']} width="100%" frameborder="0" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=42.5563763,27.6495449&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title='Object Map'></iframe>
     </div>
 </div>
 

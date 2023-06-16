@@ -20,7 +20,7 @@ export const ObjectDescription = ({images, text, beachName}) => {
         </div>
         <div className={classes['pictures-wrapper']}>
             <img className={classes['lightbox-img']} src={images[0]} alt='main' onClick={toggleHandler}/>
-            <button className={classes['gallery-btn']} onClick={toggleHandler}> Галерия </button>
+            <button className={classes['gallery-btn']} onClick={toggleHandler}> фото галерия </button>
         </div>
         <div className={classes['description-wrapper']}>
             <h3>{beachName}</h3>

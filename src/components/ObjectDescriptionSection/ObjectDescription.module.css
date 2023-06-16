@@ -5,7 +5,7 @@
 }
 
 .pictures-wrapper {
-    width: 40%;
+    width: 50%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -16,12 +16,12 @@
 }
 
 .description-wrapper {
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 50px;
-    background-color: #fbbc05;
+    background-color: #d1ccbc65;
     border: 3px dotted #fff;
     flex-direction: column;
 }
@@ -30,8 +30,8 @@
     margin-top: 10px;
     border: 2px solid #f1f1f1;
     border-radius: 5px;
-    width:300px;
-    height: 200px;
+    width:450px;
+    height: 300px;
 }
 
  .lightbox-img:hover {
@@ -44,10 +44,14 @@
     align-items: center;
     border: 1px solid #fbbc05;
     background-color: #f1f1f1;
-    border-radius: 4px;
     padding: 10px 20px;
     font-size: 18px;
+    margin-top: 10px;
 }
+
 .gallery-btn:hover {
     cursor: pointer;
+    color: white;
+    background-color: #fbbc05;
+    transition: all 0.7s;
 }
