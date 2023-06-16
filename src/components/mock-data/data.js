@@ -12,12 +12,12 @@ import WineBarIcon from '@mui/icons-material/WineBar';
 import EmojiTransportationIcon from '@mui/icons-material/EmojiTransportation';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
-import BackupIcon from '@mui/icons-material/Backup';
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
+// import BackupIcon from '@mui/icons-material/Backup';
+// import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+// import PivotTableChartIcon from '@mui/icons-material/PivotTableChart';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CastleIcon from '@mui/icons-material/Castle';
-import DryCleaningIcon from '@mui/icons-material/DryCleaning';
+// import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 
@@ -132,7 +132,7 @@ export const footerWebsites = [
 // beach payment regimes
 const mixedRegime = 'Безплатна и платена зона';
 const freeGuarded = 'Безплатен, охраняем плаж';
-const freeUnguarded = 'Безплатен, неoхраняем плаж';
+// const freeUnguarded = 'Безплатен, неoхраняем плаж';
 
 // beach prices
 const priceHight = '7 лева чадър, 7 лева шезлонг';
