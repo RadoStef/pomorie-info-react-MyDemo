@@ -18,11 +18,12 @@ import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
+import { BeachesRestaurantList } from "../../components/ObjectReastaurantsList/BeachesRestaurantList";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 import { NextObject } from "../../components/UI/NextObject";
 
-const beachName = `Първи плаж`;
-const description = `Няма описание.`
+const objectName = beaches.slice(0, 1).map(beachName => beachName.name);
+const objectDescription = beaches.slice(0, 1).map(beachDesc => beachDesc.description);
 const beachOne = beaches.slice(0, 1);
 const images = [coverImage, image1, image2, image3, image4, image5, image6, image7];
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
@@ -34,14 +35,17 @@ const mapContent =
     </div>
 </div>
 
+const beach = beaches[0]; // restaurants on beach 1
+
 export const BeachOne = () => {
     return (
         <>
         <ObjectDescriptionCard>
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
-            <ObjectDescription images={images} text={description} beachName={beachName}/>
+            <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <BeachesExtras beachExtras={beachOne}/>
+            <BeachesRestaurantList beachNum={beach}/>
             <Link to='/beach-two'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>

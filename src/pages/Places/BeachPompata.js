@@ -21,10 +21,10 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 import { Button } from "@mui/material";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 
-const beachName = `Плажове Помпата 1 и 2`;
-const beachTwo = beaches.slice(5, 6);
+const objectName = beaches.slice(4, 5).map(beachName => beachName.name);
+const objectDescription = beaches.slice(4, 5).map(beachDesc => beachDesc.description);
+const beachTwo = beaches.slice(4, 5);
 const images = [coverImage, image1, image2, image3, image4, image5, image6];
-const description = `Няма описание.`
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 
@@ -40,7 +40,7 @@ export const BeachPompata = () => {
         <ObjectDescriptionCard>
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
-            <ObjectDescription images={images} text={description} beachName={beachName}/>
+            <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <BeachesExtras beachExtras={beachTwo}/>
             <Link to='/beach-atrium'><NextObject/></Link>
             <Link to='/beach-sopharma'><PreviousObject/></Link>

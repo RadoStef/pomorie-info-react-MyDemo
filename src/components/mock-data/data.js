@@ -497,7 +497,7 @@ export const beaches = [
   {
     id: 1,
     name: 'Първи плаж, улица Крайбрежна',
-    description: 'Няма описание',
+    description: 'Описание за първи плаж',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -508,13 +508,27 @@ export const beaches = [
     showers: `(✔) Душове`,
     changingPlace: `(✔) Съблекални`,
     restaurant: `(✔) Ресторант/Място за хранене`,
+    openRestaurants: [
+      {
+        name: 'Омара,',
+        link: '/omara',
+      },
+      {
+        name: 'Кеми,',
+        link: '/kemi',
+      },
+      {
+        name: 'Бързо хранене и пица на парче',
+        link: '#',
+      }
+    ],
     nightLife: `(✔) Бийч Бар/Нощен бар`,
     linkTo: '/beach-one',
   },
   {
     id: 2,
     name: 'Втори плаж, улица Крайбрежна',
-    description: 'Няма описание',
+    description: 'Описание за втори плаж',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -531,7 +545,7 @@ export const beaches = [
   {
     id: 3,
     name: 'Трети плаж, пред Съни бей и Регата',
-    description: 'Няма описание',
+    description: 'Описание за трети плаж',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -548,7 +562,7 @@ export const beaches = [
   {
     id: 4,
     name: 'Плаж "Инжстрой" - пред станцията на "Софарма"',
-    description: 'Няма описание',
+    description: 'Описание за Инжстрой / Софарма',
     regime: mixedRegime,
     price: priceHight,
     address: address1,
@@ -565,7 +579,7 @@ export const beaches = [
   {
     id: 5,
     name: 'Плажове "Помпата" 1 и 2',
-    description: 'Няма описание',
+    description: 'Описание за Помпата',
     regime: freeGuarded,
     price: 'Безплатен',
     address: address1,
@@ -582,7 +596,7 @@ export const beaches = [
   {
     id: 6,
     name: 'Плаж "Атриум" - пред Гранд Хотел Поморие',
-    description: 'Няма описание',
+    description: 'Описание за Атриум',
     regime: mixedRegime,
     price: priceLow,
     address: address2,
@@ -599,7 +613,7 @@ export const beaches = [
   {
     id: 7,
     name: 'Плаж "централен" - пред Гранд Хотел Поморие',
-    description: 'Няма описание',
+    description: 'Описание за Централен плаж',
     regime: mixedRegime,
     price: priceLow,
     address: address2,

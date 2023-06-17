@@ -20,10 +20,10 @@ import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 import { NextObject } from "../../components/UI/NextObject";
 import { PreviousObject } from "../../components/UI/PreviousObject";
 
-const beachName = `Втори плаж`;
+const objectName = beaches.slice(1, 2).map(beachName => beachName.name);
+const objectDescription = beaches.slice(1, 2).map(beachDesc => beachDesc.description);
 const beachTwo = beaches.slice(1, 2);
 const images = [coverImage, image1, image2, image3, image4, image5];
-const description = `Lorem ipsum dolor sit amet,`
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 
@@ -39,9 +39,8 @@ export const BeachTwo = () => {
         <ObjectDescriptionCard>
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
-            <ObjectDescription images={images} text={description} beachName={beachName}/>
+            <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <BeachesExtras beachExtras={beachTwo}/>
-            
             <Link to='/beach-three'><NextObject/></Link>
             <Link to='/beach-one'><PreviousObject/></Link>
             <MapSection map={mapContent}/>

@@ -17,9 +17,9 @@ export const BeachesExtras = (props) => {
         <div className={classes['extras-wrapper']}>
             {props.beachExtras.map((extras) => {
                 return (
-                    <>
+                <>
                 <ul key={extras.id}>
-                    <li><BeachAccessIcon/> <span>{extras.regime}</span></li>
+                    <li ><BeachAccessIcon/> <span>{extras.regime}</span></li>
                     <li><LocalOfferIcon/> <span>{extras.price}</span></li>
                     <li><WcIcon/> <span>{extras.toilet}</span></li>
                     <li><PoolIcon/> <span>{extras.lifeguard}</span></li>

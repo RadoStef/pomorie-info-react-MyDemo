@@ -18,10 +18,11 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 import { NextObject } from "../../components/UI/NextObject";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 
-const beachName = `Трети плаж`;
-const beachTwo = beaches.slice(6, 7);
+
+const objectName = beaches.slice(2, 3).map(beachName => beachName.name);
+const objectDescription = beaches.slice(2, 3).map(beachDesc => beachDesc.description);
+const beachTwo = beaches.slice(2, 3);
 const images = [coverImage, image1, image2, image3];
-const description = `Няма описание.`
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 
@@ -37,7 +38,7 @@ export const BeachThree = () => {
         <ObjectDescriptionCard>
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
-            <ObjectDescription images={images} text={description} beachName={beachName}/>
+            <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <BeachesExtras beachExtras={beachTwo}/>
             <Link to='/beach-sopharma'><NextObject/></Link>
             <Link to='/beach-two'><PreviousObject/></Link>
