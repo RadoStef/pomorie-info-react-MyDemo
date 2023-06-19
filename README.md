@@ -78,7 +78,7 @@ Beach section:
    ❓ are there any showers
    ❓ are there any changing spots
    ❓ are there any restaurants or beach bars
-5. Below, If there are any restaurants on or near this beach, I want to see their names and a picture of each. If I click on some of them, I want to be redirected to the page of the restaurant/beach bar in order to see more information about working time, prices, menus, description, ratings, and so on.
+4. Below, If there are any restaurants on or near this beach, I want to see their names and a picture of each. If I click on some of them, I want to be redirected to the page of the restaurant/beach bar in order to see more information about working time, prices, menus, description, ratings, and so on.
 
 Footer section:
 
@@ -104,4 +104,6 @@ Footer section:
 <hr><img src='https://www.sitefocus.eu/gitpics/demo13.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo14.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo15.png'>
+<hr><img src='https://www.sitefocus.eu/gitpics/demo17.png'>
+<hr><img src='https://www.sitefocus.eu/gitpics/demo18.png'>
 <hr>
