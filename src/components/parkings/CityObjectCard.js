@@ -9,6 +9,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidIcon from '@mui/icons-material/Paid';
+import Chip from '@mui/material/Chip';
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { BootstrapTooltip } from "../UI/Themes";
 import { Link } from 'react-router-dom';
@@ -67,13 +68,15 @@ export const CityObjectCard = (props) => {
               </BottomNavigation>
             </Box>
 
-            <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
+            <CardActions sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px'}}>
+              <Chip label={parking.tag} color={parking.tag === 'Буферен / Безплатен' ? 'success' : 'info'} sx={{marginTop: '15px'}}/>
               <Link to=''>
                 <Button size="small" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   Разгледай
                 </Button>
               </Link>
             </CardActions>
+            
           </Card>
         );
       })}
