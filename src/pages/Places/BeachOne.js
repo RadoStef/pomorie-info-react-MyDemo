@@ -36,6 +36,7 @@ const mapContent =
 </div>
 
 const beach = beaches[0]; // restaurants on beach 1
+// TODO: Format the new beach restaurants section
 
 export const BeachOne = () => {
     return (

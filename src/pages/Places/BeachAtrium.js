@@ -20,7 +20,6 @@ import { NextObject } from "../../components/UI/NextObject";
 import { PreviousObject } from "../../components/UI/PreviousObject";
 import { Button } from "@mui/material";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
-import { BeachesRestaurantList } from "../../components/ObjectReastaurantsList/BeachesRestaurantList";
 
 const objectName = beaches.slice(5, 6).map(beachName => beachName.name);
 const objectDescription = beaches.slice(5, 6).map(beachDesc => beachDesc.description);

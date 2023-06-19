@@ -55,10 +55,11 @@ Museums section:
 8. When I`m on ‘Parking’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
 9. When I`m on the ‘Parking’ page I want to see some card elements with one picture of the parking, a short description, whether is it free or paid, prices for an hour or a day, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected parking to read more information.
 
-Attractions section: 
+Attractions section:
+
 1. Given there is an ‘Attractions’ section in the menu, and I click on It, I want to be redirected and see all the beaches available in Pomorie.
 2. When I`m on the ‘Attractions’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
-3.	When I`m on the ‘Attractions’ page I want to see some card elements with one picture of the attraction, a short description, phone number, prices, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected attraction to read more information.
+3. When I`m on the ‘Attractions’ page I want to see some card elements with one picture of the attraction, a short description, phone number, prices, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected attraction to read more information.
 
 Beach section:
 
