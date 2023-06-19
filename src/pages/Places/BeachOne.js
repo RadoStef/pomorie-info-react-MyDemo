@@ -35,8 +35,9 @@ const mapContent =
     </div>
 </div>
 
-const beach = beaches[0]; // restaurants on beach 1
-// TODO: Format the new beach restaurants section
+const restaurantsOnThisBeach = beaches[0]; // restaurants on beach 1
+
+// TODO: Add restaurant picture to mock-data
 
 export const BeachOne = () => {
     return (
@@ -46,7 +47,7 @@ export const BeachOne = () => {
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <BeachesExtras beachExtras={beachOne}/>
-            <BeachesRestaurantList beachNum={beach}/>
+            <BeachesRestaurantList beachNum={restaurantsOnThisBeach}/>
             <Link to='/beach-two'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>

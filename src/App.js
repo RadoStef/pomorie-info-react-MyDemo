@@ -28,8 +28,12 @@ import { BeachSopharma } from './pages/Places/BeachSopharma';
 import { BeachPompata } from './pages/Places/BeachPompata';
 import { BeachThree } from './pages/Places/BeachThree';
 import './App.css';
+import NotFound from './components/UI/NotFound';
 
 const router = createBrowserRouter([
+  // 404 page
+  {path: '/*', element: <NotFound/>},
+  // menu links
   {path: '/', element: <RootLayout/>},
   {path: 'post-data-page', element: <PostDataPage/>},
   {path: 'get-data-page', element: <GetDataPage/>},

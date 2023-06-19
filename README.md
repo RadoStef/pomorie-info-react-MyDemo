@@ -20,7 +20,7 @@ I hope there will be time for this and the project will be ready before the end 
 
 ---
 
-> Here are some user stories I wrote, about each of the page.
+> Here are some user stories I wrote, about each of the pages.
 
 > Pomorie-info index(main) page.
 
@@ -84,6 +84,10 @@ Footer section:
 
 1. As a visitor, on every section of the site I want to see a footer section, with important information, other interesting sites and resources, and also a possibility to subscribe to a mailing form because I want to receive latest news bulletin.
 
+💩 '404 not found' custom page:
+
+1. As a visitor, if there is no page found I want to see a custom page, that shows me a message and a 'back' button, to have an option to reach the homepage again.
+
 > And here are some demo pics, how what the project looks like :)
 
 ---
@@ -106,4 +110,5 @@ Footer section:
 <hr><img src='https://www.sitefocus.eu/gitpics/demo15.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo17.png'>
 <hr><img src='https://www.sitefocus.eu/gitpics/demo18.png'>
+<hr><img src='https://www.sitefocus.eu/gitpics/demo19.png'>
 <hr>

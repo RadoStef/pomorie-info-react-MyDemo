@@ -42,3 +42,9 @@
     cursor: pointer;
     z-index: 50;
 }
+
+.next-object-button:hover,
+.previous-object-button:hover {
+    background-color: coral;
+    transition: all 0.7s;
+}
