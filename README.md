@@ -43,11 +43,15 @@ I hope there will be time for this and the project will be ready before the end 
 
 Museums section:
 
+<hr>
+
 1. Given there is a ‘Museums’ section in the menu, and I click on It, I want to be redirected and see all the museums available in Pomorie.
 2. When I`m on ‘Museums’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
 3. When I`m on the ‘Museums’ page I want to see some card elements with one picture of the museum, a short description, phone number, working time, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected museum to read more information.
 
 Beaches section:
+
+<hr>
 
 1. Given there is a ‘Beaches’ section in the menu, and I click on It, I want to be redirected and see all the beaches available in Pomorie.
 2. When I`m on ‘Beaches’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
@@ -55,17 +59,23 @@ Beaches section:
 
 Parking section:
 
+<hr>
+
 1. Given there is a ‘Parking’ section in the menu, and I click on It, I want to be redirected and see all the beaches available in Pomorie.
 2. When I`m on ‘Parking’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
 3. When I`m on the ‘Parking’ page I want to see some card elements with one picture of the parking, a short description, whether is it free or paid, prices for an hour or a day, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected parking to read more information.
 
 Attractions section:
 
+<hr>
+
 1. Given there is an ‘Attractions’ section in the menu, and I click on It, I want to be redirected and see all the beaches available in Pomorie.
 2. When I`m on the ‘Attractions’ page, I want to have some breadcrumbs under the header, that inform me where on the site I am now, and an easy way to get back to the previous page if it is not the ‘homepage’ or button with link to the ‘homepage’.
 3. When I`m on the ‘Attractions’ page I want to see some card elements with one picture of the attraction, a short description, phone number, prices, and address. I also want to see a button, and when I click on it to be redirected to the exact page of the selected attraction to read more information.
 
 Beach section:
+
+<hr>
 
 1. Given I have selected some beach, from the ‘Beaches’ section. After redirection I want to see the header section, breadcrumb section with buttons, one leading to the homepage and one leading to Beaches section.
 2. Below I want to see a section with name of the beach and some description.
@@ -82,9 +92,13 @@ Beach section:
 
 Footer section:
 
+<hr>
+
 1. As a visitor, on every section of the site I want to see a footer section, with important information, other interesting sites and resources, and also a possibility to subscribe to a mailing form because I want to receive latest news bulletin.
 
 💩 '404 not found' custom page:
+
+<hr>
 
 1. As a visitor, if there is no page found I want to see a custom page, that shows me a message and a 'back' button, to have an option to reach the homepage again.
 
