@@ -14,6 +14,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import { BootstrapTooltip } from "../UI/Themes";
 import { Link } from 'react-router-dom';
 import '../UI/CityObject.css';
+import { iconStyle, cardStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 
 
@@ -26,7 +27,9 @@ export const CityObjectCard = (props) => {
             sx={styles.cityObjectCard}
             key={parking.id}
           >
-            <CardActionArea disableRipple>
+            <CardActionArea 
+              sx={cardStyle}
+              disableRipple>
               <CardMedia
                 component="img"
                 height="250"
@@ -50,19 +53,19 @@ export const CityObjectCard = (props) => {
               <BootstrapTooltip title='Режим на паркинга:'>
                 <BottomNavigationAction
                   label={parking.status}
-                  icon={<PaidIcon/>}
+                  icon={<PaidIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Цени за паркиране:'>
                 <BottomNavigationAction
                   label={parking.prices}
-                  icon={<HistoryToggleOffIcon />}
+                  icon={<HistoryToggleOffIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Адрес:'>
                 <BottomNavigationAction
                   label={parking.address}
-                  icon={<LocationOnIcon />}
+                  icon={<LocationOnIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               </BottomNavigation>
@@ -71,7 +74,7 @@ export const CityObjectCard = (props) => {
             <CardActions sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px'}}>
               <Chip label={parking.tag} color={parking.tag === 'Буферен / Безплатен' ? 'success' : 'info'} sx={{marginTop: '15px'}}/>
               <Link to=''>
-                <Button size="small" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
+                <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   Разгледай
                 </Button>
               </Link>

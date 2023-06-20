@@ -12,6 +12,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import { iconStyle, cardStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 import '../UI/CityObject.css';
 
@@ -26,7 +27,9 @@ export const CityObjectCard = (props) => {
             sx={styles.cityObjectCard}
             key={beaches.id}
           >
-            <CardActionArea disableRipple>
+            <CardActionArea 
+              sx={cardStyle}
+              disableRipple>
               <CardMedia
                 component="img"
                 height="250"
@@ -50,19 +53,19 @@ export const CityObjectCard = (props) => {
               <BootstrapTooltip title='Режим на зоната:'>
                 <BottomNavigationAction
                   label={beaches.regime}
-                  icon={<BeachAccessIcon/>}
+                  icon={<BeachAccessIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title={zonePrice}>
                 <BottomNavigationAction
                   label={beaches.price}
-                  icon={<LocalOfferIcon />}
+                  icon={<LocalOfferIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Местоположение:'>
                 <BottomNavigationAction
                   label={beaches.address}
-                  icon={<LocationOnIcon />}
+                  icon={<LocationOnIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               </BottomNavigation>

@@ -12,3 +12,5 @@ export const BootstrapTooltip = styled(({ className, ...props }) => (
     },
 }));
 
+export const iconStyle = {marginBottom: '10px'};
+export const cardStyle = {marginBottom: '15px', '&:hover': { cursor: 'default'}};

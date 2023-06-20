@@ -12,6 +12,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
+import { iconStyle, cardStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 import '../UI/CityObject.css';
 
@@ -24,7 +25,9 @@ export const CityObjectCard = (props) => {
             sx={styles.cityObjectCard}
             key={mudObjects.id}
           >
-            <CardActionArea disableRipple>
+            <CardActionArea 
+              sx={cardStyle}
+              disableRipple>
               <CardMedia
                 component="img"
                 height="250"
@@ -48,21 +51,21 @@ export const CityObjectCard = (props) => {
               <BootstrapTooltip title={mudObjects.phoneNumber}>
                 <BottomNavigationAction
                   label={mudObjects.phoneNumber}
-                  icon={<PhoneForwardedIcon/>}
+                  icon={<PhoneForwardedIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Официален уебсайт'>
                 <Link to={mudObjects.website} target="_blank">
                   <BottomNavigationAction
                     label={mudObjects.website}
-                    icon={<LanguageIcon/>}
+                    icon={<LanguageIcon sx={iconStyle}/>}
                   />
                 </Link>
               </BootstrapTooltip>
               <BootstrapTooltip title='Адрес:'>
                 <BottomNavigationAction
                   label={mudObjects.address}
-                  icon={<LocationOnIcon />}
+                  icon={<LocationOnIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               </BottomNavigation>
@@ -70,7 +73,7 @@ export const CityObjectCard = (props) => {
 
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
               <Link to=''>
-                <Button size="small" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
+                <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   Разгледай
                 </Button>
               </Link>
