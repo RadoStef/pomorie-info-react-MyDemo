@@ -28,7 +28,7 @@ export const GetData = () => {
 
     return (
     <CustomCard>
-        <h2>Getting data from firebase, PeEx</h2>
+        <h2>Getting data from firebase</h2>
         <div className='object-wrapper'>
             {cityObjects ? (
           Object.keys(cityObjects).map(key => (

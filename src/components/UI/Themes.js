@@ -13,4 +13,5 @@ export const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 
 export const iconStyle = {marginBottom: '10px'};
-export const cardStyle = {marginBottom: '15px', '&:hover': { cursor: 'default'}};
+export const cardStyle = {maxHeight: '600px', '&:hover': { cursor: 'default'}};
+export const cardImageStyle = {maxHeight: '250px', '&:hover': {scale: '1.1'}, transition: 'all 0.3s'}

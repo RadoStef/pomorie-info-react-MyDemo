@@ -2,7 +2,7 @@ import React, {useState, Fragment} from 'react';
 import { headerStyles } from './styles';
 import { menuItems } from '../mock-data/data';
 import { NavLink } from 'react-router-dom';
-import { RegisterForm } from '../RegisterForm/RegisterForm';
+// import { RegisterForm } from '../RegisterForm/RegisterForm';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -16,7 +16,7 @@ import logo from '../../assets/logo.png'
 import classes from './MenuStyles.module.css';
 
 
-const backToMainPage = 'https://www.eva-pomorie.eu';
+const backToMainPage = 'https://sitefocus.eu/pomorie-info/';
 
 export const AppHeaderBar = () => {
   const [state, setState] = useState({
@@ -24,7 +24,7 @@ export const AppHeaderBar = () => {
     left: false,
     bottom: false,
     right: false,
-  });
+  }); 
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -46,7 +46,7 @@ export const AppHeaderBar = () => {
     >
       <List sx={{ marginTop: 10 }}>
         {menuItems.map((text) => (
-          <ListItem key={text.id} disablePadding className={classes.list}>
+          <ListItem key={text.id} disablePadding className={classes.list} sx={{paddingBottom: 0}}>
             <NavLink to={text.link} className={({isActive}) => isActive ? classes.active : classes.list}>
               <ListItemButton>
                 <ListItemIcon>
@@ -72,7 +72,7 @@ export const AppHeaderBar = () => {
       <Box sx={{display: 'flex', flexDirection:'row', width: 300, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
         {[`меню`].map((anchor) => (
           <Fragment key={anchor}>
-            <RegisterForm/>
+            {/* <RegisterForm/> */}
             <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor} </Button>
             <SwipeableDrawer
               // anchor={anchor}

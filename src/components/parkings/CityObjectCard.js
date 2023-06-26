@@ -14,8 +14,9 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import { BootstrapTooltip } from "../UI/Themes";
 import { Link } from 'react-router-dom';
 import '../UI/CityObject.css';
-import { iconStyle, cardStyle } from "../UI/Themes";
+import { iconStyle, cardStyle, cardImageStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
+import { showMore } from "../mock-data/data";
 
 
 export const CityObjectCard = (props) => {
@@ -32,7 +33,7 @@ export const CityObjectCard = (props) => {
               disableRipple>
               <CardMedia
                 component="img"
-                height="250"
+                sx={cardImageStyle}
                 image={parking.img}
                 alt={parking.name}
               />
@@ -41,12 +42,13 @@ export const CityObjectCard = (props) => {
                   {parking.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {parking.description}
+                <b>Кратко описание:</b> {parking.description.slice(0, 300)}
+                <Link to={parking.linkTo}> ...Виж повече</Link>
                 </Typography>
               </CardContent>
             </CardActionArea>
             
-            <Box sx={{ maxWidth: 420 }}>
+            <Box sx={{ maxWidth: 420, marginTop: '30px' }}>
               <BottomNavigation
                 showLabels
               > 
@@ -75,7 +77,7 @@ export const CityObjectCard = (props) => {
               <Chip label={parking.tag} color={parking.tag === 'Буферен / Безплатен' ? 'success' : 'info'} sx={{marginTop: '15px'}}/>
               <Link to=''>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
-                  Разгледай
+                  {showMore}
                 </Button>
               </Link>
             </CardActions>

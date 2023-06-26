@@ -27,14 +27,13 @@ import { BeachCentral } from './pages/Places/BeachCentral';
 import { BeachSopharma } from './pages/Places/BeachSopharma';
 import { BeachPompata } from './pages/Places/BeachPompata';
 import { BeachThree } from './pages/Places/BeachThree';
+
 import './App.css';
 import NotFound from './components/UI/NotFound';
 
 const router = createBrowserRouter([
-  // 404 page
-  {path: '/*', element: <NotFound/>},
   // menu links
-  {path: '/', element: <RootLayout/>},
+  {path: '/pomorie-info/', element: <RootLayout/>, index: true}, // because deployed in subdirectory
   {path: 'post-data-page', element: <PostDataPage/>},
   {path: 'get-data-page', element: <GetDataPage/>},
   {path: 'table-page', element: <TablePage/>},
@@ -62,6 +61,8 @@ const router = createBrowserRouter([
   {path: 'beach-sopharma', element: <BeachSopharma/>},
   {path: 'beach-pompata', element: <BeachPompata/>},
   {path: 'beach-three', element: <BeachThree/>},
+  // 404 page
+  {path: '/*', element: <NotFound/>},
 ]);
 
 function App() {

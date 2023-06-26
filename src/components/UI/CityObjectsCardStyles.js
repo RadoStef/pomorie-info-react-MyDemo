@@ -1,6 +1,6 @@
 export const styles = {
     cityObjectCard: {
-        width: 400,
+        width: 350,
         margin: '20px',
         paddingBottom: '10px',
     },

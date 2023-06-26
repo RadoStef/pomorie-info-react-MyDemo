@@ -3,7 +3,6 @@ import { AppHeaderBar } from '../components/HeaderSection/AppHeaderBar';
 import { ScrollToTopButton } from '../components/UI/ScrollToTopButton';
 import { Breadcrumb } from '../components/BreadCrumbSection/Breadcrumb';
 import { ReadNews } from '../components/News/ReadNews';
-import { PostNewNews } from '../components/News/PostNewNews';
 import { Footer } from '../components/Footer/Footer';
 
 export const NewsPage = () => {
@@ -12,7 +11,6 @@ export const NewsPage = () => {
       <AppHeaderBar/>
       <Breadcrumb location='/ News'/>
       <ReadNews/>
-      <PostNewNews/>
       <Footer/>
       <ScrollToTopButton/>
     </div>

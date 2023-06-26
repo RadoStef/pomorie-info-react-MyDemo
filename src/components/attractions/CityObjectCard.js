@@ -12,9 +12,10 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
-import { iconStyle, cardStyle } from "../UI/Themes";
+import { iconStyle, cardStyle, cardImageStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 import '../UI/CityObject.css';
+import { showMore } from "../mock-data/data";
 
 
 
@@ -32,7 +33,7 @@ export const CityObjectCard = (props) => {
               disableRipple>
               <CardMedia
                 component="img"
-                height="250"
+                sx={cardImageStyle}
                 image={attraction.img}
                 alt={attraction.name}
               />
@@ -41,12 +42,13 @@ export const CityObjectCard = (props) => {
                   {attraction.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {attraction.description}
+                <b>Кратко описание:</b> {attraction.description.slice(0, 300)}
+                <Link to={attraction.linkTo}> ...Виж повече</Link>
                 </Typography>
               </CardContent>
             </CardActionArea>
             
-            <Box sx={{ maxWidth: 420 }}>
+            <Box sx={{ maxWidth: 420, marginTop: '30px' }}>
               <BottomNavigation
                 showLabels
               > 
@@ -74,7 +76,7 @@ export const CityObjectCard = (props) => {
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
               <Link to=''>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
-                  Разгледай
+                  {showMore}
                 </Button>
               </Link>
             </CardActions>

@@ -1,7 +1,6 @@
 // import { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import { headerStyles } from '../HeaderSection/styles';
 
 export const WeatherInfo = () => {
@@ -11,7 +10,7 @@ export const WeatherInfo = () => {
   // const [weatherDescription, setWeatherDescription] = useState(null);
 
   const today = new Date();
-  const summerStart = new Date(2023, 5, 21);
+  const summerEnd = new Date(2023, 8, 23);
   const daysLeftToSummerStart = (date1, date2) => Math.round((date2 - date1) / (1000 * 60 * 60 * 24));
 
   // const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
@@ -53,11 +52,8 @@ export const WeatherInfo = () => {
         </Box>
       )} */}
       {<Box>
-        Здравейте и добре дошли в Поморие! Астрономическото лято започва след <span style={{color: 'red'}}>{daysLeftToSummerStart(today, summerStart)}</span> дни, но ние вече сме готови! 💥😎🎉
+        Здравейте и добре дошли в Поморие! Астрономическото лято свършва след <span style={{color: 'red'}}>{daysLeftToSummerStart(today, summerEnd)}</span> дни, изживейте го максимално добре! 💥😎🎉
       </Box>}
-      <Box>
-        <WbSunnyIcon />
-      </Box>
     </Container>
   );
 };

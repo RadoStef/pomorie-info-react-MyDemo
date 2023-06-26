@@ -4,15 +4,13 @@ import { CustomCard } from '../UI/CustomCard';
 import moment from 'moment';
 import './News.css';
 
-
-
 export const ReadNews = () => {
     let nextNews = moment().add(1, 'days').calendar();
 
   return (
     <CustomCard>
-        <h2> Breaking NEWS, working with date and time </h2>
-        <p>There are {news.length} NEWS to read here. Next NEWS expexted {nextNews}</p>
+        <h2> Актуални новини от Поморие </h2>
+        <p>Към момента има {news.length} новини в този раздел. {nextNews}</p>
         <div className='news-container'>
             {news.map((news) => {
                 return (
@@ -21,7 +19,7 @@ export const ReadNews = () => {
                 <div className='gradient-wrapper'>
                   <img src={news.image} alt={news.title}/>  
                 </div>
-                <p>Published: {news.date}</p>
+                <p>Публикувана: {news.date.toLocaleString('bg-BG')}</p>
                 <article>
                     {news.summary}
                 </article>

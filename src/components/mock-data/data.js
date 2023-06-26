@@ -12,10 +12,12 @@ import WineBarIcon from '@mui/icons-material/WineBar';
 import EmojiTransportationIcon from '@mui/icons-material/EmojiTransportation';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
-import NewspaperIcon from '@mui/icons-material/Newspaper';
-import CastleIcon from '@mui/icons-material/Castle';
+// import NewspaperIcon from '@mui/icons-material/Newspaper';
+// import CastleIcon from '@mui/icons-material/Castle';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
+// import BackupIcon from '@mui/icons-material/Backup';
+// import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 // museums cover pictures
 import museumCoverPic from '../../assets/museums/museum/museum.jpg';
@@ -38,7 +40,7 @@ import bufferChurch from '../../assets/parkings/bufferChurch/bufferChurchEntry.j
 import bufferKapka from '../../assets/parkings/bufferKapka/bufferKapkaIntro.jpg';
 import bufferRose from '../../assets/parkings/bufferRoseGardens/bufferRoseIntro.jpg';
 import shortTermParkingZone from '../../assets/parkings/shortTermZone/shortTermZone2.jpg';
-import atriumLargeCoverPic from '../../assets/parkings/atriumLarge/parking-atrium-large3.jpg';
+import atriumLargeCoverPic from '../../assets/parkings/atriumLarge/atriumLargeNew3.jpg';
 import atriumSmallCoverPic from '../../assets/parkings/atriumSmall/parking-atrium1.jpg';
 import mbalPomorieCoverPic from '../../assets/parkings/mbal/mbal.jpg';
 import municipalityCoverPic from '../../assets/parkings/municipality/parking-obshtina6.jpg';
@@ -47,6 +49,7 @@ import sanatoriumCoverPic from '../../assets/parkings/sanatorium/sanatorium.jpg'
 import tokalievCoverPic from '../../assets/parkings/tokaliev/tokaliev.jpg';
 import trafficLightsCoverPic from '../../assets/parkings/traffic/parking-svetofar1.jpg';
 import tuthonCoverPic from '../../assets/parkings/tuthon/parking-tuthon1.jpg';
+import perlaCoverPic from '../../assets/parkings/perla/perlaCover.jpg';
 
 //attractions cover pictures
 import aquaparkCoverPic from '../../assets/attractions/aquapark/sunset.jpg';
@@ -92,9 +95,6 @@ import church5 from '../../assets/landmarks/church/church3.jpg';
 import church6 from '../../assets/landmarks/church/church4.jpg';
 import church7 from '../../assets/landmarks/church/church5.jpg';
 
-// other important imports
-import { Link } from 'react-router-dom';
-
 export const footerContacts = [
   {
     icon: <LocationCityIcon />,
@@ -129,14 +129,17 @@ export const footerWebsites = [
   },
 ];
 
+// showMore button in every section card
+export const showMore = 'Разгледай';
+
 // beach payment regimes
 const mixedRegime = 'Безплатна и платена зона';
 const freeGuarded = 'Безплатен, охраняем плаж';
 // const freeUnguarded = 'Безплатен, неoхраняем плаж';
 
 // beach prices
-const priceHight = '7 лева чадър, 7 лева шезлонг';
-const priceLow = '3.60 лв чадър, 3.60 лв шезлонг, 2 лв шалте, 2 лв масичка';
+const priceHight = '7.50 лева чадър, 7.50 лева шезлонг';
+const priceLow = '3.60 лв чадър, 3.60 лв шезлонг, 3.10 лв шалте, 3 лв масичка';
 
 // beach addresses
 const address1 = 'Ул. Крайбрежна';
@@ -144,6 +147,9 @@ const address2 = 'Ул. Професор Стоянов - срещу Гранд 
 
 // parking prices
 const municipalityPrice = '2 лева за час - 12 лева за денонощие';
+
+// blue zone prices
+// const blueZone = '1.20 лв с ДДС.'
 
 // content for FAQ section
 export const frequentlyAskedQuestions = [
@@ -372,33 +378,6 @@ export const longDescriptions = [
     осветителни съоръжения. Фарът представлява бяла каменна кула, издигаща се върху изкуствена платформа от каменни блокове на надморска височина от 8 метра, югоизточно от нос Поморие.`,
   },
 
-  // descriptions of parkings
-  {
-    largeMunicipalityParking: `Този паркинг е най-големия общински паркинг на територията на града. Той се намира точно пред сградата на Община Поморие. Капацитетът му е голям, но в разгара на сезона,
-    паркингът е пълен и често е трудно да се намерят свободни места. Това е и единственият паркинз за Автобуси. Част от територията на този паркинг се използва и за наказателен паркинг, 
-    където можете да откриете колата си ако е била вдигната от 'паяк'`,
-
-    petkoKaravelovParking: `Вторият по големина общински паркинг се намира точно до светофарите в центъра на града. Паркингът е общиснки и също е с голям капацитет.`,
-    tokalievParking: `Малък общински паркинг пред хотел Токалиев. Намира се на метри от Община Поморие, на ул. Нео Анхиало.`,
-    sanatoriumParking: `Паркингът се намира на Ул. Професор Стоянов, точно до санаториум кални бани. Изключително удобен, ако гостувате в района на квартал 'Малко солено езеро' или около Гранд Хотел Поморие.`,
-    hospitalParking: `Паркингът на МБАЛ Поморие е с безплатен режим за първите два часа, след което ще бъдете таксувани по редовната такса, 2 лв на час или 12 на денонощие. Ако пресрочите първите 2 часа и останете например 2 часа и 10 минути, ще пзаплатите за 3 часа.`,
-    casinoParking: `На най-централното място в Поморие, до старото казино, стария кей, хотел St. George. Този общински паркинг също работи за Вас. Изключително удобен, ако идвате на дневна или вечерна разходка.`,
-    tuthonParking: `Това е голям, частен паркинг в района на Айвазовски парк на улица Тутхон. Близко до ${<Link to='/beach-pompata'>плаж помпата.</Link> }`,
-    atriumLargeParking: ``,
-    atriumSmallParking: ``,
-  },
-
-  // descriptions of beaches
-  {
-    firstBeach: ``,
-    secondBeach: ``,
-    thirdBeachSunnyBay: ``,
-    sopharmaBeach: ``,
-    thePumpBeach: ``,
-    atriumBeach: ``,
-    centralBeach: ``,
-  },
-
   // descriptons of attractions
   {
     kukBoat: `Кораб „КУК” е най-големият атракционен туристически кораб на нашето Черноморие, построен изцяло в България.
@@ -516,13 +495,15 @@ export const beaches = [
   {
     id: 1,
     name: 'Първи плаж, улица Крайбрежна',
-    description: 'Описание за първи плаж',
+    description: `Първи плаж се намира е началото на плажната ивица, в североизточната аст на града, на улица 'Крайбрежна' точно пор старата църква и архитектурен ресерват 'Стари поморийски къщи'.
+    Това е едно от най-предпоитаните места за плажуване за почиващите в град Поморие. На улица 'Крайбрежна' над и на плажа има хубави ресторанти и много къщи за гости, където туристите могат да отсядат.
+    Цената за 1 бр шезлонг и 1 бр чадър е 7.50 лв. Има и свободна зона.`,
     regime: mixedRegime,
     price: priceHight,
     address: address1,
     img: `${firstBeachCoverPic}`,
     toilet: `(✔) Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `(✔) Спасител от 08:00 до 18:00`,
     lifeguard: `(✔) Спасител`,
     showers: `(✔) Душове`,
     changingPlace: `(✔) Съблекални`,
@@ -541,19 +522,20 @@ export const beaches = [
         link: '#',
       }
     ],
-    nightLife: `(✔) Бийч Бар/Нощен бар`,
+    nightLife: `(X) Бийч Бар/Нощен бар`,
     linkTo: '/beach-one',
   },
   {
     id: 2,
     name: 'Втори плаж, улица Крайбрежна',
-    description: 'Описание за втори плаж',
+    description: `Следващ по ред е втори плаж. Всичко, което се отнася за първи плаж важи и за този. Тук е разположен и един от най-атрактивните денонощни барове 'Scandalo', както и няколко 
+    ресторанта и заведения за бързо хранене, дюнери, палачинки, закуски и т.н. Цената за 1 бр шезлонг и 1 бр чадър е 7.50 лв. Има и свободна зона.`,
     regime: mixedRegime,
     price: priceHight,
     address: address1,
     img: `${secondBeachCoverPic}`,
     toilet: `(✔) Тоалетна`,
-    lifeguardWorkingTime: `(✔) Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `(✔) Спасител от 08:00 до 18:00`,
     lifeguard: `(✔) Спасител`,
     showers: `(✔) Душове`,
     changingPlace: `(✔) Съблекални`,
@@ -564,13 +546,14 @@ export const beaches = [
   {
     id: 3,
     name: 'Трети плаж, пред Съни бей и Регата',
-    description: 'Описание за трети плаж',
+    description: `Плаж трети е малко по-къс и по-тесен от предните два. Край този плаж са разположени Бирария 'Нептун', хотелите Съни бей и Регата. Пред този плаж от тази година започва да функционира 
+    и платен общински паркинг. Цената за 1 бр шезлонг и 1 бр чадър е 7.50 лв. Има и свободна зона.`,
     regime: mixedRegime,
     price: priceHight,
     address: address1,
     img: `${sunnyBayBeachCoverPic}`,
     toilet: `Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `Спасител от 08:00 до 18:00`,
     lifeguard: `Спасител`,
     showers: `Душове`,
     changingPlace: `Съблекални`,
@@ -581,13 +564,14 @@ export const beaches = [
   {
     id: 4,
     name: 'Плаж "Инжстрой" - пред станцията на "Софарма"',
-    description: 'Описание за Инжстрой / Софарма',
+    description: `Тази част на плажната ивица на Поморие е позната, като плажа пред 'Софарма' или, както поморийци още го нариат: 'Инжстроя'. Тук е разположено още едно от нощните заведения на
+    град поморие, бар 'La Habana Beach'. Той работи денонощно. Разбира се, около станцията на 'Софарма' има и много други заведения за хранене.  Цената за 1 бр шезлонг и 1 бр чадър е 7.50 лв. Има и свободна зона.`,
     regime: mixedRegime,
     price: priceHight,
     address: address1,
     img: `${inzhStroyBeachCoverPic}`,
     toilet: `Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `Спасител от 08:00 до 18:00`,
     lifeguard: `Спасител`,
     showers: `Душове`,
     changingPlace: `Съблекални`,
@@ -598,13 +582,13 @@ export const beaches = [
   {
     id: 5,
     name: 'Плажове "Помпата" 1 и 2',
-    description: 'Описание за Помпата',
+    description: 'Помпата обхваща два по-малки плажа, те са напълно безплатни. И тук ще намерите хубави заведения от които да си закупите храна, студени напитки или сладолед.',
     regime: freeGuarded,
     price: 'Безплатен',
     address: address1,
     img: `${pompataBeachCoverPic}`,
     toilet: `Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `Спасител от 08:00 до 18:00`,
     lifeguard: `Спасител`,
     showers: `Душове`,
     changingPlace: `Съблекални`,
@@ -615,13 +599,14 @@ export const beaches = [
   {
     id: 6,
     name: 'Плаж "Атриум" - пред Гранд Хотел Поморие',
-    description: 'Описание за Атриум',
+    description: `Широка и дълга ивица с платена и безплатна зона. На този плаж се намира бийч бар 'Рая Бийч. В близост е и един от безплатните буферни паркинги. За съжаление той не е много голям и шансът,
+    да си намерите свободно място не е голям, но не пречи да опитате. На този плаж можете да се възползвате от различчни плажни атракциони. МОЛЯ обърнете внимание на цените малко по-долу.` ,
     regime: mixedRegime,
     price: priceLow,
     address: address2,
     img: `${atriumBeachCoverPic}`,
     toilet: `Тоалетна`,
-    lifeguardWorkingTime: `Спасител от 07:00 до 18:00`,
+    lifeguardWorkingTime: `Спасител от 08:00 до 18:00`,
     lifeguard: `Спасител`,
     showers: `Душове`,
     changingPlace: `Съблекални`,
@@ -632,7 +617,8 @@ export const beaches = [
   {
     id: 7,
     name: 'Плаж "централен" - пред Гранд Хотел Поморие',
-    description: 'Описание за Централен плаж',
+    description: `Централен плаж, или плаж Чайка, е последния плаж с широка и дълга ивица преди неохраняемата зона от плажове в местност косата. Той се намира пред Гранд хотел Поморие. Може да се каже,
+    че е един от най-предпоитаните от местните хора. На плажа има заведение за хранене, както и бийч бар. МОЛЯ обърнете внимание на цените малко по-долу.`,
     regime: mixedRegime,
     price: priceLow,
     address: address2,
@@ -882,6 +868,19 @@ export const parkings = [
   },
   {
     id: 3,
+    name: 'Паркинг Перла, на пасажерско пристанище',
+    description: `Това е нов общински паркинг отворен тази година. Намира се в сърцето на град Поморие. Старото пристанище, пред някогашното заведение Перла. Паркинга е изключително подходящ за всички гости,
+     които са решили да посетят града за няколко часа и да се разходят по централната улица или покрай морето.`,
+    status: `Платен / Паркомат`,
+    prices: municipalityPrice,
+    address: `ул. Петко Каравелов 1`,
+    img: `${perlaCoverPic}`,
+    tag: `Общински / Платен`,
+    gps: `https://www.google.com/maps/place/42%C2%B033'11.6%22N+27%C2%B038'32.9%22E/@42.553217,27.6418173,213m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d42.553216!4d27.642461?entry=ttu`,
+    linkTo: '',
+  },
+  {
+    id: 4,
     name: 'Паркинг пред хотел Токалиев',
     description: `Непосредствено до Община Поморие, по улица "Нео Анхиало" в посока "Софарма" се намира този малък паркинг. Той също е общинси и функционира денонощно. `,
     status: `Платен / Паркомат`,
@@ -893,7 +892,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Паркинг пред СБР / Кални Бани',
     description: `Този паркинг се намира непосредствено пред известния санаториум на град Поморие, на улица "Професор Стоянов", точно преди Гранд Хотел Поморие и стадиона на града.
     Паркингът е денонощен, с режим на паркиране идентичен на другите общински паркинги.`,
@@ -906,7 +905,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Паркинг пред МБАЛ Поморие',
     description: `Паркингът пред МБАЛ Поморие функционира, като платен паркинг и за гостите на града. ТЪй, като местните жители го 
     използват, когато посещават болничното заведение, първите 2 часа от престоя са безплатни.`,
@@ -919,7 +918,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Паркинг пред хотел "Saint George" и старо казино',
     description: `На най-централното място в Поморие, до старото казино, стария кей, хотел St. George. Този общински паркинг също работи за Вас. Изключително удобен, ако идвате на дневна или вечерна разходка.`,
     status: `Платен / Паркомат`,
@@ -931,7 +930,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Паркинг на ул. Тутхон',
     description: `Това е голям, частен паркинг в района на Айвазовски парк на улица Тутхон. Близко до плаж Помпата.`,
     status: `Платен / Служител`,
@@ -943,7 +942,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Паркинг пред Гранд Хотел Поморие',
     description: `Това е единият от двата паркинга разположени непосредствено до комплекс "Атриум", срещу Гранд Хотел Поморие. Паркингът се намира до централен плаж.`,
     status: `Платен / Служител`,
@@ -955,7 +954,7 @@ export const parkings = [
     linkTo: '',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Паркинг пред Гранд Хотел Поморие 2',
     description: `Другият голям паркинг пред Гранд Хотел Поморие е този. Той се намира от другата страна на комплекс "Атриум."`,
     status: `Платен / Служител`,
@@ -1251,20 +1250,20 @@ export const menuItems = [
   //   length: '',
   //   link: '/table-page',
   // },
-  {
-    id: 17,
-    text: 'Новини',
-    icon: <NewspaperIcon />,
-    length: '',
-    link: '/news-page',
-  },
-  {
-    id: 18,
-    text: 'History of Pomorie',
-    icon: <CastleIcon />,
-    length: '',
-    link: '/history-page',
-  },
+  // {
+  //   id: 17,
+  //   text: 'Новини',
+  //   icon: <NewspaperIcon />,
+  //   length: '',
+  //   link: '/news-page',
+  // },
+  // {
+  //   id: 18,
+  //   text: 'History of Pomorie',
+  //   icon: <CastleIcon />,
+  //   length: '',
+  //   link: '/history-page',
+  // },
   // {
   //   id: 19,
   //   text: 'Popular Hotels',

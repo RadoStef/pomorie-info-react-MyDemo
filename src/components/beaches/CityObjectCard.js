@@ -12,9 +12,10 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import { iconStyle, cardStyle } from "../UI/Themes";
+import { iconStyle, cardStyle, cardImageStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 import '../UI/CityObject.css';
+import { showMore } from "../mock-data/data";
 
 export const CityObjectCard = (props) => {
   
@@ -32,7 +33,7 @@ export const CityObjectCard = (props) => {
               disableRipple>
               <CardMedia
                 component="img"
-                height="250"
+                sx={cardImageStyle}
                 image={beaches.img}
                 alt={beaches.name}
               />
@@ -41,12 +42,13 @@ export const CityObjectCard = (props) => {
                   {beaches.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {beaches.description}
+                  <b>Кратко описание:</b> {beaches.description.slice(0, 300)}
+                  <Link to={beaches.linkTo}> ...Виж повече</Link>
                 </Typography>
               </CardContent>
             </CardActionArea>
             
-            <Box sx={{ maxWidth: 420 }}>
+            <Box sx={{ maxWidth: 420, marginTop: '30px' }}>
               <BottomNavigation
                 showLabels
               > 
@@ -74,7 +76,7 @@ export const CityObjectCard = (props) => {
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
               <Link to={beaches.linkTo}>
                 <Button size="small" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
-                  Разгледай
+                  {showMore}
                 </Button>
               </Link>
             </CardActions>

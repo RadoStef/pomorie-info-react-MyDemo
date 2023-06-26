@@ -12,7 +12,7 @@ const NotFound = () => {
       <AnnouncementIcon sx={{ fontSize: "55px", color: '#4bbdff'}}/>
       <h3>СТРАНИЦАТА НЕ БЕШЕ НАМЕРЕНА</h3>
       <img src={pic404} alt='страницата не беше намерена'/>
-      <Link to='..'> <Button> <BackspaceIcon sx={{ paddingRight: '10px'}}/> Обратно </Button></Link>
+      <Link to='/pomorie-info/'> <Button> <BackspaceIcon sx={{ paddingRight: '10px'}}/> Обратно </Button></Link>
     </div>
   )
 }
