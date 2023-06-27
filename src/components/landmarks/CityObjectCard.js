@@ -73,7 +73,7 @@ export const CityObjectCard = (props) => {
             </Box>
 
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
-              <Link to=''>
+              <Link to={landmark.linkTo} target='_blank'>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   {showMore}
                 </Button>

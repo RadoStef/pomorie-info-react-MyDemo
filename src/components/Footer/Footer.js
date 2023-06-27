@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
-import { footerContacts, footerWebsites } from "../mock-data/data";
+import React from "react";
+import { footerContacts, footerWebsites, footerFacebookGrous } from "../mock-data/data";
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
 
 export const Footer = () => {
-  const [error, setError] = useState('Абонирай се');
-  const emailRef = useRef('');
+  // const [error, setError] = useState('Абонирай се');
+  // const emailRef = useRef('');
 
     const renderContacts = footerContacts.map((contact) => {
       return (
@@ -23,30 +23,37 @@ export const Footer = () => {
       );
     });
 
-    const validateData = () => {
-        const email = emailRef.current.value;
+    const renderGroups = footerFacebookGrous.map((site) => {
+      return (
+        <li key={site.text}>
+        <Link to={site.link}>{site.text} </Link>
+      </li>
+      )
+    })
 
-        if( !email.includes('@') || email.length <= 6) {
-            return setError(`Моля, въведете валиден e-mail`);
-        } else {
-            emailRef.current.value = '';
-            setError(`Благодаря`);
-        };
-    };
+    // const validateData = () => {
+    //     const email = emailRef.current.value;
 
-    const formChangeHandler = (event) => {
-        event.preventDefault();
-        if(!validateData()) {
-            return;
-        };
-    };
+    //     if( !email.includes('@') || email.length <= 6) {
+    //         return setError(`Моля, въведете валиден e-mail`);
+    //     } else {
+    //         emailRef.current.value = '';
+    //         setError(`Благодаря`);
+    //     };
+    // };
+
+    // const formChangeHandler = (event) => {
+    //     event.preventDefault();
+    //     if(!validateData()) {
+    //         return;
+    //     };
+    // };
 
   return (
     <footer>
       <div className={classes["footer-wrapper"]}>
-
         <div className={classes["footer-column"]}>
-          <p>Контакти</p>
+          <p>Контакти с община Поморие</p>
           <ul>{renderContacts}</ul>
         </div>
 
@@ -55,14 +62,15 @@ export const Footer = () => {
           <ul>{renderSites}</ul>
         </div>
 
-        <div className={classes["footer-column"]}>
-          <p>{error}</p>
+          {/* <p>{error}</p>
           <form onSubmit={formChangeHandler}>
             <input type='text' name='subscribe' placeholder='username@myemail.com' ref={emailRef}></input>
             <button className={classes.subscribe}>subscribe</button>
-          </form>
+          </form> */}
+        <div className={classes["footer-column"]}>
+          <p>Фейсбук страници</p>
+          <ul>{renderGroups}</ul>
         </div>
-
       </div>
       <div>
         <p>Code and design by Radoslav Stefanov 2023.</p>

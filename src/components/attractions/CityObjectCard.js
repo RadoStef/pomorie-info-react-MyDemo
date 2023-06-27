@@ -17,8 +17,6 @@ import { styles } from '../UI/CityObjectsCardStyles';
 import '../UI/CityObject.css';
 import { showMore } from "../mock-data/data";
 
-
-
 export const CityObjectCard = (props) => {
   return (
     <div className="cards-wrapper">
@@ -74,7 +72,7 @@ export const CityObjectCard = (props) => {
             </Box>
 
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
-              <Link to=''>
+              <Link to={attraction.linkTo}>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   {showMore}
                 </Button>
