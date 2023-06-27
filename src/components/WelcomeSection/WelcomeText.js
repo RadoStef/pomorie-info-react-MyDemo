@@ -1,5 +1,4 @@
 import React from "react";
-import { TypewriterText } from "./TypewriterText";
 import Container from "@mui/material/Container";
 import { Typography, Divider } from "@mui/material";
 
