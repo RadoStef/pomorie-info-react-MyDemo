@@ -14,6 +14,9 @@ export const styles = {
         background: 'white',
     },
     boxStyle: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundImage: `url(${selectedImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',

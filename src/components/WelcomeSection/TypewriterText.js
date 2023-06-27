@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { styles } from './styles';
 
-export const TypewriterText = ({ text, delay = 50, repeat = true, repeatDelay = 5000 }) => {
+export const TypewriterText = ({ text, delay = 50, repeat = true, repeatDelay = 15000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
 
@@ -31,5 +30,5 @@ export const TypewriterText = ({ text, delay = 50, repeat = true, repeatDelay = 
     setDisplayText(text.substring(0, currentIndex));
   }, [currentIndex, text]);
 
-  return <div style={styles.typewriterSpan}><span >{displayText}</span></div>;
+  return <div><span>{displayText}</span></div>;
 };

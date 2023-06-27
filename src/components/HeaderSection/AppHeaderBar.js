@@ -69,11 +69,11 @@ export const AppHeaderBar = () => {
         </a>
       </Box>
       
-      <Box sx={{display: 'flex', flexDirection:'row', width: 300, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
+      <Box sx={{display: 'flex', flexDirection:'row', width: 180, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
         {[`меню`].map((anchor) => (
           <Fragment key={anchor}>
             {/* <RegisterForm/> */}
-            <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor} </Button>
+            <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
             <SwipeableDrawer
               // anchor={anchor}
               open={state[anchor]}

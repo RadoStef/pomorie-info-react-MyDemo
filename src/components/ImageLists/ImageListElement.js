@@ -13,7 +13,7 @@ import { HomepageSectionsCard } from '../UI/HomepageSectionsCard';
 export const ImageListElement = () => {
   return (
     <HomepageSectionsCard>
-    <ImageList sx={{ width: '65%', height: 700, margin: '30px 0 30px 0', borderRadius: '8px' }}>
+    <ImageList sx={{ width: '95%', margin: '20px 0 30px 0', borderRadius: '4px' }}>
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div" sx={{ backgroundColor: '#83aed3', color: 'white'}}><h2 style={{margin: 0}}>Новини</h2></ListSubheader>
       </ImageListItem>
@@ -24,9 +24,10 @@ export const ImageListElement = () => {
             srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
             loading="lazy"
+            style={{height: '350px'}}
           />
           <ImageListItemBar
-          sx={{ height: '100px', fontSize: '22px'}}
+          sx={{ height: '80px', fontSize: '22px'}}
             title={item.title}
             subtitle={`Източник: ${item.author}`}
             actionIcon={

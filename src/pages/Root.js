@@ -9,6 +9,7 @@ import { FAQ } from '../components/QuestionSection/FAQ';
 import { ImageListElement } from '../components/ImageLists/ImageListElement';
 import { LightboxElement } from '../components/LightBoxSection/LightboxElement';
 import { Footer } from '../components/Footer/Footer';
+import { WelcomeText } from '../components/WelcomeSection/WelcomeText';
 
 export const RootLayout = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ export const RootLayout = () => {
             <AppHeaderBar />
             <WeatherInfo/>
             <WelcomeSection/>
+            <WelcomeText/>
             <Categories/>
             <ImageListElement/>
             <FAQ/>
