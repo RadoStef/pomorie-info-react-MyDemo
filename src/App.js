@@ -27,7 +27,7 @@ import { BeachCentral } from './pages/Places/BeachCentral';
 import { BeachSopharma } from './pages/Places/BeachSopharma';
 import { BeachPompata } from './pages/Places/BeachPompata';
 import { BeachThree } from './pages/Places/BeachThree';
-
+import { BeautifulPomorie } from './pages/BeautifulPomorie';
 import './App.css';
 import NotFound from './components/UI/NotFound';
 
@@ -53,6 +53,7 @@ const router = createBrowserRouter([
   {path: 'transport', element: <Transport/>},
   {path: 'hotels', element: <Hotels/>},
   {path: 'restaurants', element: <Restaurants/>},
+  {path: 'beauty-of-pomorie', element: <BeautifulPomorie/>},
   // beaches
   {path: 'beach-one', element: <BeachOne/>},
   {path: 'beach-two', element: <BeachTwo/>},

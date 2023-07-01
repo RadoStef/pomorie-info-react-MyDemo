@@ -70,7 +70,7 @@ export const AppHeaderBar = () => {
       </Box>
       
       <Box sx={{display: 'flex', flexDirection:'row', width: 180, height: 50, justifyContent: 'space-between', alignItems: 'center'}}>
-        {[`меню`].map((anchor) => (
+        {[`категории`].map((anchor) => (
           <Fragment key={anchor}>
             {/* <RegisterForm/> */}
             <Button sx={{background: '#fbbc05', color: 'black', width: '200px' }} onClick={toggleDrawer(anchor, true)}>{anchor}</Button>

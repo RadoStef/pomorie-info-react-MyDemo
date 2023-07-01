@@ -17,7 +17,7 @@ export const Categories = () => {
             <Button
               variant="outlined"
               size="medium"
-              sx={{ color: "black", width: "250px", margin: "15px" }}
+              sx={{ color: "black", width: "270px", margin: "15px" }}
             >
               {item.text}{" "}
               <Chip 

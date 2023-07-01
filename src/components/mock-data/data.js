@@ -19,6 +19,7 @@ import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 // import BackupIcon from '@mui/icons-material/Backup';
 // import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import HealingIcon from '@mui/icons-material/Healing';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 // museums cover pictures
 import museumCoverPic from '../../assets/museums/museum/museum.jpg';
@@ -87,14 +88,163 @@ import petarAndPavel from '../../assets/hotels/petar-and-pavel.jpg';
 import kalniBani from '../../assets/mud/kalni-bani-pomorie.jpg';
 import vitaPomorie from '../../assets/mud/vita-pomorie.jpg';
 
+// photographers avatar pictures
+import chavdarChernev from '../../assets/photographers/ChavdarChernev/chavdarChernevLogo.jpg';
+
+// photographers images
+// Chavdar Chernev
+import chavdar0 from '../../assets/photographers/ChavdarChernev/chavdarChernev0.jpg';
+import chavdar1 from '../../assets/photographers/ChavdarChernev/chavdarChernev1.jpg';
+import chavdar2 from '../../assets/photographers/ChavdarChernev/chavdarChernev2.jpg';
+import chavdar3 from '../../assets/photographers/ChavdarChernev/chavdarChernev3.jpg';
+import chavdar5 from '../../assets/photographers/ChavdarChernev/chavdarChernev5.jpg';
+import chavdar6 from '../../assets/photographers/ChavdarChernev/chavdarChernev6.jpg';
+import chavdar7 from '../../assets/photographers/ChavdarChernev/chavdarChernev7.jpg';
+import chavdar8 from '../../assets/photographers/ChavdarChernev/chavdarChernev8.jpg';
+import chavdar9 from '../../assets/photographers/ChavdarChernev/chavdarChernev9.jpg';
+import chavdar10 from '../../assets/photographers/ChavdarChernev/chavdarChernev10.jpg';
+import chavdar11 from '../../assets/photographers/ChavdarChernev/chavdarChernev11.jpg';
+import chavdar12 from '../../assets/photographers/ChavdarChernev/chavdarChernev12.jpg';
+import chavdar13 from '../../assets/photographers/ChavdarChernev/chavdarChernev13.jpg';
+import chavdar14 from '../../assets/photographers/ChavdarChernev/chavdarChernev14.jpg';
+import chavdar15 from '../../assets/photographers/ChavdarChernev/chavdarChernev15.jpg';
+import chavdar16 from '../../assets/photographers/ChavdarChernev/chavdarChernev16.jpg';
+import chavdar17 from '../../assets/photographers/ChavdarChernev/chavdarChernev17.jpg';
+import chavdar18 from '../../assets/photographers/ChavdarChernev/chavdarChernev18.jpg';
+import chavdar19 from '../../assets/photographers/ChavdarChernev/chavdarChernev19.jpg';
+import chavdar20 from '../../assets/photographers/ChavdarChernev/chavdarChernev20.jpg';
+import chavdar21 from '../../assets/photographers/ChavdarChernev/chavdarChernev21.jpg';
+import chavdar22 from '../../assets/photographers/ChavdarChernev/chavdarChernev22.jpg';
+import chavdar23 from '../../assets/photographers/ChavdarChernev/chavdarChernev23.jpg';
+import chavdar24 from '../../assets/photographers/ChavdarChernev/chavdarChernev24.jpg';
+// Pavlin Kulov
+import pavlin1 from '../../assets/photographers/PavlinKulov/pavlin1.jpg';
+import pavlin2 from '../../assets/photographers/PavlinKulov/pavlin2.jpg';
+import pavlin3 from '../../assets/photographers/PavlinKulov/pavlin3.jpg';
+import pavlin3_1 from '../../assets/photographers/PavlinKulov/pavlin3-1.jpg';
+import pavlin4 from '../../assets/photographers/PavlinKulov/pavlin4.jpg';
+import pavlin4_1 from '../../assets/photographers/PavlinKulov/pavlin4-1.jpg';
+import pavlin5 from '../../assets/photographers/PavlinKulov/pavlin5.jpg';
+import pavlin6 from '../../assets/photographers/PavlinKulov/pavlin6.jpg';
+import pavlin7 from '../../assets/photographers/PavlinKulov/pavlin7.jpg';
+import pavlin7_1 from '../../assets/photographers/PavlinKulov/pavlin7-1.jpg';
+import pavlin7_2 from '../../assets/photographers/PavlinKulov/pavlin7-2.jpg';
+import pavlin7_3 from '../../assets/photographers/PavlinKulov/pavlin7-3.jpg';
+import pavlin7_4 from '../../assets/photographers/PavlinKulov/pavlin7-4.jpg';
+import pavlin8 from '../../assets/photographers/PavlinKulov/pavlin8.jpg';
+import pavlin9 from '../../assets/photographers/PavlinKulov/pavlin9.jpg';
+import pavlin10 from '../../assets/photographers/PavlinKulov/pavlin10.jpg';
+import pavlin11 from '../../assets/photographers/PavlinKulov/pavlin11.jpg';
+import pavlin12 from '../../assets/photographers/PavlinKulov/pavlin12.jpg';
+import pavlin13 from '../../assets/photographers/PavlinKulov/pavlin13.jpg';
+import pavlin14 from '../../assets/photographers/PavlinKulov/pavlin14.jpg';
+import pavlin15 from '../../assets/photographers/PavlinKulov/pavlin15.jpg';
+import pavlin16 from '../../assets/photographers/PavlinKulov/pavlin16.jpg';
+import pavlin17 from '../../assets/photographers/PavlinKulov/pavlin17.jpg';
+import pavlin18 from '../../assets/photographers/PavlinKulov/pavlin18.jpg';
+import pavlin19 from '../../assets/photographers/PavlinKulov/pavlin19.jpg';
+import pavlin19_1 from '../../assets/photographers/PavlinKulov/pavlin19-1.jpg';
+import pavlin20 from '../../assets/photographers/PavlinKulov/pavlin20.jpg';
+import pavlin21 from '../../assets/photographers/PavlinKulov/pavlin21.jpg';
+import pavlin22 from '../../assets/photographers/PavlinKulov/pavlin22.jpg';
+import pavlin23 from '../../assets/photographers/PavlinKulov/pavlin23.jpg';
+import pavlin24 from '../../assets/photographers/PavlinKulov/pavlin24.jpg';
+import pavlin25 from '../../assets/photographers/PavlinKulov/pavlin25.jpg';
+import pavlin25_1 from '../../assets/photographers/PavlinKulov/pavlin25-1.jpg';
+import pavlin25_2 from '../../assets/photographers/PavlinKulov/pavlin25-2.jpg';
+import pavlin26 from '../../assets/photographers/PavlinKulov/pavlin26.jpg';
+import pavlin27 from '../../assets/photographers/PavlinKulov/pavlin27.jpg';
+import pavlin28 from '../../assets/photographers/PavlinKulov/pavlin28.jpg';
+import pavlin29 from '../../assets/photographers/PavlinKulov/pavlin29.jpg';
+import pavlin30 from '../../assets/photographers/PavlinKulov/pavlin30.jpg';
+import pavlin31 from '../../assets/photographers/PavlinKulov/pavlin31.jpg';
+import pavlin32 from '../../assets/photographers/PavlinKulov/pavlin32.jpg';
+import pavlin33 from '../../assets/photographers/PavlinKulov/pavlin33.jpg';
+import pavlin34 from '../../assets/photographers/PavlinKulov/pavlin34.jpg';
+import pavlin35 from '../../assets/photographers/PavlinKulov/pavlin35.jpg';
+import pavlin36 from '../../assets/photographers/PavlinKulov/pavlin36.jpg';
+import pavlin37 from '../../assets/photographers/PavlinKulov/pavlin37.jpg';
+import pavlin38 from '../../assets/photographers/PavlinKulov/pavlin38.jpg';
+import pavlin39 from '../../assets/photographers/PavlinKulov/pavlin39.jpg';
+import pavlin40 from '../../assets/photographers/PavlinKulov/pavlin40.jpg';
+import pavlin41 from '../../assets/photographers/PavlinKulov/pavlin41.jpg';
+import pavlin42 from '../../assets/photographers/PavlinKulov/pavlin42.jpg';
+
+// Atanas Naseka
+import naseka1 from '../../assets/photographers/AtanasNaseka/naseka1.jpg';
+import naseka2 from '../../assets/photographers/AtanasNaseka/naseka2.jpg';
+import naseka3 from '../../assets/photographers/AtanasNaseka/naseka3.jpg';
+import naseka4 from '../../assets/photographers/AtanasNaseka/naseka4.jpg';
+import naseka5 from '../../assets/photographers/AtanasNaseka/naseka5.jpg';
+import naseka6 from '../../assets/photographers/AtanasNaseka/naseka6.jpg';
+import naseka7 from '../../assets/photographers/AtanasNaseka/naseka7.jpg';
+import naseka8 from '../../assets/photographers/AtanasNaseka/naseka8.jpg';
+import naseka9 from '../../assets/photographers/AtanasNaseka/naseka9.jpg';
+
+// Boris Kratman
+import kratman1 from '../../assets/photographers/BorisKratman/kratman1.jpg';
+import kratman2 from '../../assets/photographers/BorisKratman/kratman2.jpg';
+import kratman3 from '../../assets/photographers/BorisKratman/kratman3.jpg';
+import kratman4 from '../../assets/photographers/BorisKratman/kratman4.jpg';
+import kratman5 from '../../assets/photographers/BorisKratman/kratman5.jpg';
+import kratman6 from '../../assets/photographers/BorisKratman/kratman6.jpg';
+import kratman7 from '../../assets/photographers/BorisKratman/kratman7.jpg';
+import kratman8 from '../../assets/photographers/BorisKratman/kratman8.jpg';
+import kratman9 from '../../assets/photographers/BorisKratman/kratman9.jpg';
+import kratman10 from '../../assets/photographers/BorisKratman/kratman10.jpg';
+import kratman11 from '../../assets/photographers/BorisKratman/kratman11.jpg';
+import kratman12 from '../../assets/photographers/BorisKratman/kratman12.jpg';
+import kratman13 from '../../assets/photographers/BorisKratman/kratman13.jpg';
+import kratman14 from '../../assets/photographers/BorisKratman/kratman14.jpg';
+import kratman15 from '../../assets/photographers/BorisKratman/kratman15.jpg';
+import kratman16 from '../../assets/photographers/BorisKratman/kratman16.jpg';
+import kratman17 from '../../assets/photographers/BorisKratman/kratman17.jpg';
+import kratman18 from '../../assets/photographers/BorisKratman/kratman18.jpg';
+import kratman19 from '../../assets/photographers/BorisKratman/kratman19.jpg';
+import kratman20 from '../../assets/photographers/BorisKratman/kratman20.jpg';
+import kratman21 from '../../assets/photographers/BorisKratman/kratman21.jpg';
+import kratman22 from '../../assets/photographers/BorisKratman/kratman22.jpg';
+import kratman23 from '../../assets/photographers/BorisKratman/kratman23.jpg';
+import kratman24 from '../../assets/photographers/BorisKratman/kratman24.jpg';
+import kratman25 from '../../assets/photographers/BorisKratman/kratman25.jpg';
+import kratman26 from '../../assets/photographers/BorisKratman/kratman26.jpg';
+import kratman27 from '../../assets/photographers/BorisKratman/kratman27.jpg';
+import kratman28 from '../../assets/photographers/BorisKratman/kratman28.jpg';
+import kratman29 from '../../assets/photographers/BorisKratman/kratman29.jpg';
+import kratman30 from '../../assets/photographers/BorisKratman/kratman30.jpg';
+import kratman31 from '../../assets/photographers/BorisKratman/kratman31.jpg';
+import kratman32 from '../../assets/photographers/BorisKratman/kratman32.jpg';
+import kratman33 from '../../assets/photographers/BorisKratman/kratman33.jpg';
+import kratman34 from '../../assets/photographers/BorisKratman/kratman34.jpg';
+import kratman35 from '../../assets/photographers/BorisKratman/kratman35.jpg';
+import kratman36 from '../../assets/photographers/BorisKratman/kratman36.jpg';
+import kratman37 from '../../assets/photographers/BorisKratman/kratman37.jpg';
+import kratman38 from '../../assets/photographers/BorisKratman/kratman38.jpg';
+import kratman39 from '../../assets/photographers/BorisKratman/kratman39.jpg';
+import kratman40 from '../../assets/photographers/BorisKratman/kratman40.jpg';
+import kratman41 from '../../assets/photographers/BorisKratman/kratman41.jpg';
+import kratman42 from '../../assets/photographers/BorisKratman/kratman42.jpg';
+import kratman43 from '../../assets/photographers/BorisKratman/kratman43.jpg';
+import kratman44 from '../../assets/photographers/BorisKratman/kratman44.jpg';
+import kratman45 from '../../assets/photographers/BorisKratman/kratman45.jpg';
+import kratman46 from '../../assets/photographers/BorisKratman/kratman46.jpg';
+import kratman47 from '../../assets/photographers/BorisKratman/kratman47.jpg';
+import kratman48 from '../../assets/photographers/BorisKratman/kratman48.jpg';
+import kratman49 from '../../assets/photographers/BorisKratman/kratman49.jpg';
+import kratman50 from '../../assets/photographers/BorisKratman/kratman50.jpg';
+import kratman51 from '../../assets/photographers/BorisKratman/kratman51.jpg';
+import kratman52 from '../../assets/photographers/BorisKratman/kratman52.jpg';
+import kratman53 from '../../assets/photographers/BorisKratman/kratman53.jpg';
+import kratman54 from '../../assets/photographers/BorisKratman/kratman54.jpg';
+import kratman55 from '../../assets/photographers/BorisKratman/kratman55.jpg';
+import kratman56 from '../../assets/photographers/BorisKratman/kratman56.jpg';
+import kratman57 from '../../assets/photographers/BorisKratman/kratman57.jpg';
+import kratman58 from '../../assets/photographers/BorisKratman/kratman58.jpg';
+import kratman59 from '../../assets/photographers/BorisKratman/kratman59.jpg';
+import kratman60 from '../../assets/photographers/BorisKratman/kratman60.jpg';
+
 // main page lightbox pictures
-import church1 from '../../assets/landmarks/church/church.jpg';
-import church2 from '../../assets/landmarks/church/church0.jpg';
-import church3 from '../../assets/landmarks/church/church1.jpg';
-import church4 from '../../assets/landmarks/church/church2.jpg';
-import church5 from '../../assets/landmarks/church/church3.jpg';
-import church6 from '../../assets/landmarks/church/church4.jpg';
-import church7 from '../../assets/landmarks/church/church5.jpg';
+
 
 export const footerContacts = [
   {
@@ -162,7 +312,7 @@ const freeGuarded = 'Безплатен, охраняем плаж';
 // const freeUnguarded = 'Безплатен, неoхраняем плаж';
 
 // beach prices
-const priceHight = '7.50 лева чадър, 7.50 лева шезлонг';
+const priceHight = '7 лв чадър, 7 лв шезлонг, 3 лв шалте, 3 лв масичка';
 const priceLow = '3.60 лв чадър, 3.60 лв шезлонг, 3.10 лв шалте, 3 лв масичка';
 
 // beach addresses
@@ -765,7 +915,7 @@ export const museums = [
     description: `Исторически музей – Поморие съхранява и експонира културно-историческото наследство на града и общината.
     Сградата на музея е построена в края на XIX в. като гръцко девическо училище. Тя е паметник на културата с местно значение.`,
     phoneNumber: `+359 (0)596 2 20 08`,
-    workTime: `Понеделник - Петък 8:00 - 18:00, Събота и Неделя 10:00 - 18:00`,
+    workTime: `Понеделник - Петък 9:00 - 19:00 (без сряда), Сряда 9:00 - 18:00, Събота и Неделя 10:00 - 19:00`,
     address: `ул. "Княз Борис I" №33`,
     img: `${museumCoverPic}`,
     linkTo: '',
@@ -835,7 +985,7 @@ export const parkings = [
     description: `От 15.06.2023 г. в квартал Солено Езеро функционира 'Зона за краткотрайно паркиране', която обхваща всички улици на квартала и е с реижим на паркиране ДО 2 ЧАСА. Натиснете 'Разгледай' за да се запознаете с обхвата на зоната.`,
     status: `Безплатен`,
     prices: `Безплатно паркиране`,
-    address: `ул. България`,
+    address: `ул. България 30`,
     img: `${bufferKapka}`,
     tag: `Буферен / Безплатен`,
     gps: `https://www.google.com/maps/place/42%C2%B033'41.7%22N+27%C2%B038'27.1%22E/@42.561595,27.6402203,210m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d42.561594!4d27.640864?entry=ttu`,
@@ -847,7 +997,7 @@ export const parkings = [
     description: `От 15.06.2023 г. в квартал Солено Езеро функционира 'Зона за краткотрайно паркиране', която обхваща всички улици на квартала и е с реижим на паркиране ДО 2 ЧАСА.`,
     status: `Безплатен`,
     prices: `Безплатно паркиране`,
-    address: `ул. България`,
+    address: `ул. Европа 60`,
     img: `${bufferRose}`,
     tag: `Буферен / Безплатен`,
     gps: `https://www.google.com/maps/place/Free+parking/@42.5646399,27.6403811,174m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd31fe5b33ab:0x3882068a114b4201!8m2!3d42.5647906!4d27.6408603!16s%2Fg%2F11t94d2_0z?entry=ttu`,
@@ -856,12 +1006,13 @@ export const parkings = [
   {
     id: '3z',
     name: `Зона за кратковременно паркиране в квартал 'Малко солено езеро'`,
-    description: `От 15.06.2023 г. в квартал Солено Езеро функционира 'Зона за краткотрайно паркиране', която обхваща всички улици на квартала и е с реижим на паркиране ДО 2 ЧАСА. Паркирането в тази буферна зона е неограничено и БЕЗПЛАТНО.`,
+    description: `От 15.06.2023 г. в квартал Солено Езеро функционира 'Зона за краткотрайно паркиране', която обхваща всички улици на квартала. Зоната е активна от 08:00 до 20:00, всеки ден. За да заплатите паркиране е нужно да 
+    изпратите SMS на номер 13596, а текста да е регистрационния номер на вашето МПС.`,
     status: `Плащане с SMS на номер: 13596`,
     prices: `1.20 лв с ДДС / Час`,
-    address: `ул. България`,
+    address: `кв. Малко солено езеро`,
     img: `${shortTermParkingZone}`,
-    tag: `платено паркиране до 2 часа`,
+    tag: `платено паркиране`,
     gps: `https://www.google.com/maps/place/Free+parking/@42.5646399,27.6403811,174m/data=!3m1!1e3!4m6!3m5!1s0x40a6bd31fe5b33ab:0x3882068a114b4201!8m2!3d42.5647906!4d27.6408603!16s%2Fg%2F11t94d2_0z?entry=ttu`,
     linkTo: '',
   },
@@ -898,7 +1049,7 @@ export const parkings = [
      които са решили да посетят града за няколко часа и да се разходят по централната улица или покрай морето.`,
     status: `Платен / Паркомат`,
     prices: municipalityPrice,
-    address: `ул. Петко Каравелов 1`,
+    address: `ул. П. К. Яворов 30`,
     img: `${perlaCoverPic}`,
     tag: `Общински / Платен`,
     gps: `https://www.google.com/maps/place/42%C2%B033'11.6%22N+27%C2%B038'32.9%22E/@42.553217,27.6418173,213m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d42.553216!4d27.642461?entry=ttu`,
@@ -910,7 +1061,7 @@ export const parkings = [
     description: `Непосредствено до Община Поморие, по улица "Нео Анхиало" в посока "Софарма" се намира този малък паркинг. Той също е общинси и функционира денонощно. `,
     status: `Платен / Паркомат`,
     prices: municipalityPrice,
-    address: `До община Поморие`,
+    address: `ул. Петко Каравелов 2`,
     img: `${tokalievCoverPic}`,
     tag: `Общински / Платен`,
     gps: 'https://www.google.com/maps/place/%D0%9E%D0%B1%D1%89%D0%B8%D0%BD%D1%81%D0%BA%D0%B8+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3+%22%D0%A2%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%22/@42.5593781,27.6426438,57m/data=!3m1!1e3!4m6!3m5!1s0x40a6bdb351ffa08f:0x450f61eccd5f42db!8m2!3d42.5594175!4d27.6426481!16s%2Fg%2F11t9kj8rbp',
@@ -948,7 +1099,7 @@ export const parkings = [
     description: `На най-централното място в Поморие, до старото казино, стария кей, хотел St. George. Този общински паркинг също работи за Вас. Изключително удобен, ако идвате на дневна или вечерна разходка.`,
     status: `Платен / Паркомат`,
     prices: municipalityPrice,
-    address: `ул. „П. К. Яворов“ 3`,
+    address: `ул. П. К. Яворов 3`,
     img: `${stGeorgeCoverPic}`,
     tag: `Общински / Платен`,
     gps: 'https://www.google.com/maps/place/%D0%9F%D0%BB%D0%B0%D1%82%D0%B5%D0%BD+%D0%BF%D0%B0%D1%80%D0%BA%D0%B8%D0%BD%D0%B3/@42.5564667,27.6397384,75m/data=!3m1!1e3!4m12!1m5!3m4!2zNDLCsDMzJzQzLjMiTiAyN8KwMzgnMTguMCJF!8m2!3d42.5620278!4d27.6383333!3m5!1s0x40a6bda96df482f9:0xc79e0dd2483b014f!8m2!3d42.5564974!4d27.6396301!16s%2Fg%2F11t4dzy65k',
@@ -972,7 +1123,7 @@ export const parkings = [
     description: `Това е единият от двата паркинга разположени непосредствено до комплекс "Атриум", срещу Гранд Хотел Поморие. Паркингът се намира до централен плаж.`,
     status: `Платен / Служител`,
     prices: `2 лева за час, 6 часа 10 лева/12 часа, 15 лв - 24 часа, 20лева`,
-    address: `ул. Професор Стоянов`,
+    address: `ул. Професор Стоянов 74`,
     img: `${atriumLargeCoverPic}`,
     tag: `Частен / Платен`,
     gps: 'https://www.google.com/maps/dir/42.5658725,27.6386398/%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+8200/@42.5659134,27.6385368,66m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x40a6bd61c6bead57:0x56c54b1c6c2f7ab1!2m2!1d27.6383442!2d42.5611404!3e0',
@@ -984,7 +1135,7 @@ export const parkings = [
     description: `Другият голям паркинг пред Гранд Хотел Поморие е този. Той се намира от другата страна на комплекс "Атриум."`,
     status: `Платен / Служител`,
     prices: `2 лева за час / 20 лева за 24 часа.`,
-    address: `ул. Професор Стоянов`,
+    address: `ул. Професор Стоянов 5`,
     img: `${atriumSmallCoverPic}`,
     tag: `Частен / Платен`,
     gps: `https://www.google.com/maps/place/42%C2%B034'00.2%22N+27%C2%B038'18.3%22E/@42.566715,27.6378648,229m/data=!3m2!1e3!4b1!4m18!1m13!4m12!1m3!2m2!1d27.6386398!2d42.5658725!1m6!1m2!1s0x40a6bd61c6bead57:0x56c54b1c6c2f7ab1!2z0KbQtdC90YLRitGALCA4MjAw!2m2!1d27.6383442!2d42.5611404!3e0!3m3!8m2!3d42.566715!4d27.638412`,
@@ -1114,6 +1265,7 @@ export const mud = [
     phoneNumber: '0596 2 41 50, 0596 2 61 03',
     website: 'http://nkrehabilitation.bg/',
     img: kalniBani,
+    
   },
   {
     id: 8444524,
@@ -1161,8 +1313,78 @@ export const mud = [
   },
 ];
 
+export const photographersDescription = `Поморие е красив и чаровен град! Няколко различни фейсбук
+групи ме вдъхновиха да създам този раздел на сайта. Целта ми е да обединя някой от прекрасните фотографии на талантливите майстори на обектива, запечатали красотата на нашия град. Снимките тук 
+са наслада за очите, искрено се надявам, че и вие ще ги харесате. Искрено благодаря на всички фотографи, че се съгласиха да споделя 
+техните кадри тук. Вярвм, че този раздел ще направи сайта различен, ще Ви позволи да се убедите в красотата на града ни, тук, където изгревите
+и залезите са неповторимо изживяване.`
+
+export const photographersAndGalleries = [
+  {
+    id: 'p1',
+    name: 'Чавдар Чернев',
+    image: `${chavdarChernev}`,
+    location: 'София',
+    website: 'https://www.chavdarchernevphotography.com',
+    gallery: [
+      chavdar7, chavdar0, chavdar1, chavdar2, chavdar3, chavdar5, chavdar6, chavdar8, chavdar9,
+      chavdar10, chavdar11, chavdar12, chavdar13, chavdar14, chavdar15, chavdar16,
+      chavdar17, chavdar18, chavdar19, chavdar20, chavdar21, chavdar22, chavdar23, chavdar24
+    ],
+  },
+  {
+    id: 'p2',
+    name: 'Павлин Кулов',
+    image: `https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/49658233_2047078898745642_5389585478557106176_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=fjbEucc0cMwAX80qunU&_nc_ht=scontent-sof1-2.xx&oh=00_AfCZ42W_bdC3nEwWvzw950HdlfyBV_UMnlOwnBhTNyg3Bg&oe=64C517C6`,
+    location: 'Поморие',
+    website: '',
+    gallery: [
+      pavlin1, pavlin2, pavlin3, pavlin3_1, pavlin4, pavlin4_1, pavlin5, pavlin6, 
+      pavlin7, pavlin7_1, pavlin7_2, pavlin7_3, pavlin7_4, pavlin8, pavlin9,
+      pavlin10, pavlin11, pavlin12, pavlin13, pavlin14, pavlin15, pavlin16, pavlin17,
+      pavlin18, pavlin19, pavlin19_1, pavlin20, pavlin21, pavlin22, pavlin23, pavlin24, 
+      pavlin25, pavlin25_1, pavlin25_2, pavlin26, pavlin27, pavlin28, pavlin29, pavlin30,
+      pavlin31, pavlin32, pavlin33, pavlin34, pavlin35, pavlin36, pavlin37, pavlin38,
+      pavlin39, pavlin40, pavlin41, pavlin42
+    ]
+  },
+  {
+    id: 'p3',
+    name: 'Атанас Железчев - Насека',
+    image: 'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/336489166_1027491491544736_2717650357627063788_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_dSt8dsETfsAX9cGV6Z&_nc_ht=scontent-sof1-2.xx&oh=00_AfA7FfjavzUi7UXkuJ7_pDD7Gk4_HiweE3V3z6M4x7xwFQ&oe=64A4B8FF',
+    location: 'Поморие',
+    website: '',
+    gallery: [
+      naseka1, naseka2, naseka3, naseka4, naseka5, naseka6, naseka7, naseka8, naseka9
+    ]
+  },
+  {
+    id: 'p4',
+    name: 'Борис Кратман - Лвовски',
+    image: 'https://scontent-sof1-2.xx.fbcdn.net/v/t1.18169-1/1526418_448692921941040_2471014160035776186_n.jpg?stp=dst-jpg_p200x200&_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=7206a8&_nc_ohc=Ydx_YGgk99AAX_TzsJT&_nc_ht=scontent-sof1-2.xx&oh=00_AfCyEcncOmSqkdp51To0otRyYKFGb5mgx8-LFQx7KGd8KQ&oe=64C792EC',
+    location: 'Поморие',
+    website: '',
+    gallery: [
+      kratman1, kratman2, kratman3, kratman4, kratman5, kratman6, kratman7, kratman8, kratman9, kratman10,
+      kratman11, kratman12, kratman13, kratman14, kratman15, kratman16, kratman17, kratman18, kratman19, kratman20,
+      kratman21, kratman22, kratman23, kratman24, kratman25, kratman26, kratman27, kratman28, kratman29, kratman30,
+      kratman31, kratman32, kratman33, kratman34, kratman35, kratman36, kratman37, kratman38, kratman39, kratman40,
+      kratman41, kratman42, kratman43, kratman44, kratman45, kratman46, kratman47, kratman48, kratman49, kratman50,
+      kratman51, kratman52, kratman53, kratman54, kratman55, kratman56, kratman57, kratman58, kratman59, kratman60
+    ]
+  }
+
+];
+
 // items in the menu element
 export const menuItems = [
+  {
+    id: 0,
+    text: 'Красотата на Поморие',
+    icon: <CameraAltIcon/>,
+    length: photographersAndGalleries.length,
+    link: '/beauty-of-pomorie',
+  },
   {
     id: 1,
     text: 'Музеи',
@@ -1300,36 +1522,55 @@ export const menuItems = [
 
 export const mainPageLightboxData = [
   {
-    img: church1,
-    title: 'Seagull',
+    img: chavdar0,
+    title: 'Птичи поглед',
     cols: 2,
   },
   {
-    img: church2,
-    title: 'Gull',
+    img: chavdar11,
+    title: 'Манастир Свети Георги победоносец',
   },
   {
-    img: church3,
-    title: 'MoreGulls',
+    img: chavdar17,
+    title: 'дълбок залез',
   },
   {
-    img: church4,
-    title: 'Coffee',
+    img: pavlin19,
+    title: 'Хоро край поморийския бряг',
     cols: 2,
   },
   {
-    img: church5,
-    title: 'Coffee',
+    img: pavlin4_1,
+    title: 'Плаж',
     cols: 2,
   },
   {
-    img: church6,
-    title: 'Coffee',
+    img: naseka1,
+    title: 'Беседката по залез',
     cols: 1,
   },
   {
-    img: church7,
-    title: 'Coffee',
+    img: naseka8,
+    title: 'Още плаж',
     cols: 3,
   },
+  {
+    img: kratman3,
+    title: 'Старата църква',
+    cols: 3,
+  },
+  {
+    img: kratman16,
+    title: 'Coffee',
+  },
+  {
+    img: kratman29,
+    title: 'Прозорец',
+    cols: 2,
+  },
+  {
+    img: pavlin7_4,
+    title: 'да се обадим?',
+    cols: 2,
+  }
 ];
