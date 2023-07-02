@@ -20,11 +20,11 @@ import { showMore } from "../mock-data/data";
 export const CityObjectCard = (props) => {
   return (
     <div className="cards-wrapper">
-      {props.attractionsData.map((attraction) => {
+      {props.cultureData.map((culture) => {
         return (
           <Card
             sx={styles.cityObjectCard}
-            key={attraction.id}
+            key={culture.id}
           >
             <CardActionArea 
               sx={cardStyle}
@@ -32,16 +32,16 @@ export const CityObjectCard = (props) => {
               <CardMedia
                 component="img"
                 sx={cardImageStyle}
-                image={attraction.img}
-                alt={attraction.name}
+                image={culture.img}
+                alt={culture.name}
               />
               <CardContent sx={styles.cardContent}>
                 <Typography gutterBottom variant="h5" component="div">
-                  {attraction.name}
+                  {culture.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                <b>Кратко описание:</b> {attraction.description.slice(0, 300)}
-                <Link to={attraction.linkTo}> ...Виж повече</Link>
+                <b>Кратко описание:</b> {culture.description.slice(0, 300)}
+                <Link to={culture.linkTo}> ...Виж повече</Link>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -52,19 +52,19 @@ export const CityObjectCard = (props) => {
               > 
               <BootstrapTooltip title='Телефон за връзка:'>
                 <BottomNavigationAction
-                  label={attraction.phoneNumber}
+                  label={culture.phoneNumber}
                   icon={<PhoneForwardedIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Работно време:'>
                 <BottomNavigationAction
-                  label={attraction.workTime}
+                  label={culture.workTime}
                   icon={<HistoryToggleOffIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
               <BootstrapTooltip title='Адрес:'>
                 <BottomNavigationAction
-                  label={attraction.address}
+                  label={culture.address}
                   icon={<LocationOnIcon sx={iconStyle}/>}
                 />
               </BootstrapTooltip>
@@ -72,7 +72,7 @@ export const CityObjectCard = (props) => {
             </Box>
 
             <CardActions sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '15px'}}>
-              <Link to={attraction.linkTo}>
+              <Link to={culture.linkTo}>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   {showMore}
                 </Button>

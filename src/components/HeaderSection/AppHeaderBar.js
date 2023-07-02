@@ -15,7 +15,6 @@ import ListItemText from '@mui/material/ListItemText';
 import logo from '../../assets/logo.png'
 import classes from './MenuStyles.module.css';
 
-
 const backToMainPage = 'https://sitefocus.eu/pomorie-info/';
 
 export const AppHeaderBar = () => {

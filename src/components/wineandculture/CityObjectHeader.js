@@ -2,8 +2,8 @@ import React from 'react';
 import '../UI/CityObject.css';
 
 export const CityObjectHeader = props => {
-    const sectionInformation = props.attractionsDescriptions.map((desc) => desc.attractions.description);
-    const sectionHeader = props.attractionsDescriptions.map((desc) => desc.attractions.header);
+    const sectionInformation = props.cultureDescriptions.map((desc) => desc.culture.description);
+    const sectionHeader = props.cultureDescriptions.map((desc) => desc.culture.header);
 
   return (
     <div className='section-header-wrapper'>

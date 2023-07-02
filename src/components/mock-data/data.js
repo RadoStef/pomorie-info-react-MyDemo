@@ -8,7 +8,6 @@ import AttractionsIcon from '@mui/icons-material/Attractions';
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
-import WineBarIcon from '@mui/icons-material/WineBar';
 import EmojiTransportationIcon from '@mui/icons-material/EmojiTransportation';
 import LocalHotelIcon from '@mui/icons-material/LocalHotel';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
@@ -20,6 +19,13 @@ import PhoneForwardedIcon from '@mui/icons-material/PhoneForwarded';
 // import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import HealingIcon from '@mui/icons-material/Healing';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+
+// wineAndCulture cover pictures
+import prosveta1888 from '../../assets/wineandculture/prosveta/prosveta1.jpg';
+import bibliotekaProsveta from '../../assets/wineandculture/prosvetaLibrary/library1.jpg';
+import svetlina1939 from '../../assets/wineandculture/svetlina/svetlina1.jpg';
+import bibliotekaSvetlina from '../../assets/wineandculture/svetlinaLibrary/svetlinaLibrary1.jpg';
 
 // museums cover pictures
 import museumCoverPic from '../../assets/museums/museum/museum.jpg';
@@ -361,7 +367,7 @@ export const frequentlyAskedQuestions = [
   },
   {
     question: `Има ли публични места, където мога да използвам компютър и/или копирни услуги?`,
-    answer: `В Поморие има две читалища. И двете разполагат с компютърни клубове, където можете да използвате компютър с интернет, да използвате копирни услуги и т.н. За повече информация, моля посетете раздел 'Култура и вино' на този сайт.`,
+    answer: `В Поморие има две читалища. И двете разполагат с компютърни клубове, където можете да използвате компютър с интернет, да използвате копирни услуги и т.н. За повече информация, моля посетете раздел 'Култура' на този сайт.`,
   },
 ];
 
@@ -372,6 +378,12 @@ export const sectionDescriptions = [
       header: `МУЗЕИТЕ НА ГРАД ПОМОРИЕ`,
       description: `Поморие е град с богата култура и историческо наследство. Китния семеен курорт, предлага не само хубави плажове, красиви места за разходка и забавление, но и много история и традиции, за които си заслужава да научите.
       В града има няколко музея, един от които е без аналог на балканите: Музея на солта. Опознайте пленителната история на Поморие.`,
+    },
+
+    culture: {
+      header: 'ЧИТАЛИЩА, БИБЛИОТЕКИ И КУЛТУРА В ГРАД ПОМОРИЕ',
+      description: `В Поморие има две изключително дейни читалища, Читалище Светлина - 1939 и Читалище просвета - 1888. В двете ни читалища непрестанно кипи културна дейност свързана с обучителни курсове, библиотекарска дейност, интернет клубове, детска читателска секция, театър, музика и много други. Ако сте в града за по-дълго време 
+      и се интересувате от забавни детски занимания, имате нужда от интернет и компютър или от копирни услуги, можете да разчитате на нашите читалища. Повече информация можете да откриете в секцията 'Култура' на този сайт.`
     },
 
     landmarks: {
@@ -908,6 +920,53 @@ export const landmarks = [
   },
 ];
 
+export const wineAndCulture = [
+  {
+    id: 1,
+    name: `Читалище „Просвета – 1888 г.“`,
+    description: `Читалището е основен изпълнител и организатор на общинската културна програма. Разполага с библиотека с фонд от над 60 000 единици и над 1 000 читатели. Читалищния театър е с над вековна история и множество национални и международни награди.`,
+    phoneNumber: `+359 596 2 2316, 0877335749`,
+    website: `https://prosveta1888.com/`,
+    address: `ул. Княз Борис I № 51`,
+    workTime: `Пон - Пт: 09:00 - 17:00`,
+    img: `${prosveta1888}`,
+    linkTo: ``,
+  },
+  {
+    id: 2,
+    name: `Библиотека към читалище Просвета - 1888 г.`,
+    description: `Библиотеката при Народно Читалище "Просвета 1888" гр. Поморие съществува от самото основаване на Читалището през 1888 г. През годините библиотеката се превръща в желано и обичано място за жителите и гостите на града. Днеса тя разполага с 53 000 тома книжен фонд - художествена литература за деца и възрастни, справочна и научна литература на български, руски и английски език, периодични издания.`,
+    phoneNumber: `0596/22470`,
+    website: `https://prosveta1888.com/library/306#worktime`,
+    address: `ул. Княз Борис I № 51`,
+    workTime: `Пон - Пт: 09:00 - 17:00`,
+    img: `${bibliotekaProsveta}`,
+    linkTo: ``,
+  },
+  {
+    id: 3,
+    name: `Читалище „Светлина – 1939 г.“`,
+    description: `Разполага с библиотека с фонд от над 20 000 единици и с над 450 читатели. Към читалището има интернет център, детски куклен театър, скаутски клуб, музикална школа, школа „Изобразително изкуство“, група изворен фолклор, езикови курсове. Към читалището има сформиран и детски театрален състав „Светулка“.`,
+    phoneNumber: `+359 596 3 3593,  089 33 90 446`,
+    website: `https://svetlina-pm.com/`,
+    address: `ул. Княз Борис I 110`,
+    workTime: `Пон - Нед: 09:30 - 18:30`,
+    img: `${svetlina1939}`,
+    linkTo: ``,
+  },
+  {
+    id: 4,
+    name: `Библиотека към Читалище Светлина - 1939 г.`,
+    description: `Дейността на библиотеката е свързана с обработване  и организиране достъпа на информация,  опазване на литературното и културно наследство. Книжният  фонд наброява около 23 000 тома, като 100% от фонда е предоставен за свободно ползване. `,
+    phoneNumber: `+359 596 3 3593,  089 33 90 446`,
+    website: `https://svetlina-pm.com/%d0%b1%d0%b8%d0%b1%d0%bb%d0%b8%d0%be%d1%82%d0%b5%d0%ba%d0%b0/`,
+    address: `ул. Княз Борис I 110`,
+    workTime: `Пон - Нед: 09:30 - 18:30`,
+    img: `${bibliotekaSvetlina}`,
+    linkTo: ``,
+  }
+]
+
 export const museums = [
   {
     id: 1,
@@ -927,7 +986,7 @@ export const museums = [
     Музеят е единствения в България и на Балканския полуостров специализиран музей за производство на сол чрез слънчево изпарение на морска вода. Запазени са действащи солници по старинна анхиалска технология.`,
     phoneNumber: `+359 (0)596 2 2008`,
     workTime: `Понеделник - Петък 8:00 - 18:00, Събота и Неделя 10:00 - 18:00`,
-    address: `разгледай обекта`,
+    address: `GPS координати: 42.565323, 27.631407`,
     img: `${saltCoverPic}`,
     linkTo: '',
   },
@@ -938,7 +997,7 @@ export const museums = [
     Датирана е от ІІ – ІV в. сл. Хр. Смята се, че тя е служила за „Хероон” (Мавзолей) на богата анхиалска фамилия, в който са се извършвали нееднократно религиозни езически ритуали.`,
     phoneNumber: '+359 (0)596 2 2008',
     workTime: `Втк. - Нед. 10:00 - 17:00`,
-    address: `разгледай обекта`,
+    address: `Местност Кротирия, GPS координати: 42.5666646, 27.5960084`,
     img: `${thombCoverPic}`,
     linkTo: '',
   },
@@ -948,7 +1007,7 @@ export const museums = [
     description: `В него ще получите богата информация за биологичното разнообразие, природните ресурси и режимите на защита в комплекса от защитени природни територии на Поморийско езеро.`,
     phoneNumber: `няма`,
     workTime: `Вт. - Нд. 09:00 - 18:00, Обедна поччивка 13:00 - 14:00`,
-    address: `разгледай обекта`,
+    address: `GPS координати: 42.5656381, 27.6312729`,
     img: `${ornithologyCoverPic}`,
     linkTo: '',
   },
@@ -1450,9 +1509,9 @@ export const menuItems = [
   },
   {
     id: 10,
-    text: 'Култура и вино',
-    icon: <WineBarIcon />,
-    length: '',
+    text: 'Култура',
+    icon: <MenuBookIcon />,
+    length: wineAndCulture.length,
     link: '/wineandculture',
   },
   {
