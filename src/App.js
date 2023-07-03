@@ -30,6 +30,20 @@ import { BeachThree } from './pages/Places/BeachThree';
 import { BeautifulPomorie } from './pages/BeautifulPomorie';
 import './App.css';
 import NotFound from './components/UI/NotFound';
+import { ParkingBufferLarge } from './pages/Places/ParkingBufferLarge';
+import { ParkingBufferKapka } from './pages/Places/ParkingBufferKapka';
+import { ParkingBufferRose } from './pages/Places/ParkingBufferRose';
+import { ParkingBlueZone } from './pages/Places/ParkingBlueZone';
+import { ParkingMunicipality } from './pages/Places/ParkingMunicipality';
+import { ParkingTrafficLights } from './pages/Places/ParkingTrafficLights';
+import { ParkingPerla } from './pages/Places/ParkingPerla';
+import { ParkingTokaliev } from './pages/Places/ParkingTokaliev';
+import { ParkingSbr } from './pages/Places/ParkingSbr';
+import { ParkingMbal } from './pages/Places/ParkingMbal';
+import { ParkingCasino } from './pages/Places/ParkingCasino';
+import { ParkingTuthon } from './pages/Places/ParkingTuthon';
+import { ParkingGrandLarge } from './pages/Places/ParkingGrandLarge';
+import { ParkingGrandSmall } from './pages/Places/ParkingGrandSmall';
 
 const router = createBrowserRouter([
   // menu links
@@ -62,6 +76,22 @@ const router = createBrowserRouter([
   {path: 'beach-sopharma', element: <BeachSopharma/>},
   {path: 'beach-pompata', element: <BeachPompata/>},
   {path: 'beach-three', element: <BeachThree/>},
+  // parkings
+  {path: 'buffer-large', element: <ParkingBufferLarge/>},
+  {path: 'buffer-kapka', element: <ParkingBufferKapka/>},
+  {path: 'buffer-rose', element: <ParkingBufferRose/>},
+  {path: 'parking-zone', element: <ParkingBlueZone/>},
+  {path: 'parking-municipality', element: <ParkingMunicipality/>},
+  {path: 'parking-trafficlights', element: <ParkingTrafficLights/>},
+  {path: 'parking-perla', element: <ParkingPerla/>},
+  {path: 'parking-tokaliev', element: <ParkingTokaliev/>},
+  {path: 'parking-sbr', element: <ParkingSbr/>},
+  {path: 'parking-mbal', element: <ParkingMbal/>},
+  {path: 'parking-casino', element: <ParkingCasino/>},
+  {path: 'parking-tuthon', element: <ParkingTuthon/>},
+  {path: 'parking-grand-large', element: <ParkingGrandLarge/>},
+  {path: 'parking-grand-small', element: <ParkingGrandSmall/>},
+
   // 404 page
   {path: '/*', element: <NotFound/>},
 ]);

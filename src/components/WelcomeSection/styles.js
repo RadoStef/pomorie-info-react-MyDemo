@@ -1,10 +1,11 @@
-import cover from '../../assets/cover.jpg';
+import cover from '../../assets/cover5.jpg';
 import cover1 from '../../assets/cover.jpg';
 import cover2 from '../../assets/cover2.jpg';
 import cover3 from '../../assets/cover3.jpg';
 import cover4 from '../../assets/cover4.jpg';
+import cover5 from '../../assets/cover1.jpg';
 
-const backgroundImages = [cover, cover1, cover2, cover3, cover4];
+const backgroundImages = [cover, cover1, cover2, cover3, cover4, cover5];
 const randomIndex = Math.floor(Math.random() * backgroundImages.length);
 const selectedImage = backgroundImages[randomIndex];
 

@@ -75,7 +75,7 @@ export const CityObjectCard = (props) => {
 
             <CardActions sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px'}}>
               <Chip label={parking.tag} color={parking.tag === 'Буферен / Безплатен' ? 'success' : 'info'} sx={{marginTop: '15px'}}/>
-              <Link to=''>
+              <Link to={parking.linkTo}>
                 <Button size="medium" color="primary" variant="outlined" sx={{marginTop: '15px'}}>
                   {showMore}
                 </Button>
