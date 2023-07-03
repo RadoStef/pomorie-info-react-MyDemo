@@ -21,7 +21,7 @@ import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 
 const objectName = beaches.slice(2, 3).map(beachName => beachName.name);
 const objectDescription = beaches.slice(2, 3).map(beachDesc => beachDesc.description);
-const beachTwo = beaches.slice(2, 3);
+const beachXtras = beaches.slice(2, 3);
 const images = [coverImage, image1, image2, image3];
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -39,7 +39,7 @@ export const BeachThree = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <BeachesExtras beachExtras={beachTwo}/>
+            <BeachesExtras beachExtras={beachXtras}/>
             <Link to='/beach-sopharma'><NextObject/></Link>
             <Link to='/beach-two'><PreviousObject/></Link>
             <MapSection map={mapContent}/>

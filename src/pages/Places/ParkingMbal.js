@@ -19,7 +19,7 @@ import { PreviousObject } from '../../components/UI/PreviousObject';
 
 const objectName = parkings.slice(9, 10).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(9, 10).map(parkingDesc => parkingDesc.description);
-const bufferLarge = parkings.slice(9, 10);
+const parkingXtras = parkings.slice(9, 10);
 const images = [mbal1, mbal2];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -38,7 +38,7 @@ export const ParkingMbal = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <ParkingsXtras parkingExtras={bufferLarge}/>
+            <ParkingsXtras parkingExtras={parkingXtras}/>
             <Link to='/parking-sbr'><PreviousObject/></Link>
             <Link to='/parking-casino'><NextObject/></Link>
             <MapSection map={mapContent}/>

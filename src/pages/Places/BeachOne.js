@@ -24,7 +24,7 @@ import { NextObject } from "../../components/UI/NextObject";
 
 const objectName = beaches.slice(0, 1).map(beachName => beachName.name);
 const objectDescription = beaches.slice(0, 1).map(beachDesc => beachDesc.description);
-const beachOne = beaches.slice(0, 1);
+const beachXtras = beaches.slice(0, 1);
 const images = [coverImage, image1, image2, image3, image4, image5, image6, image7];
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -46,7 +46,7 @@ export const BeachOne = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <BeachesExtras beachExtras={beachOne}/>
+            <BeachesExtras beachExtras={beachXtras}/>
             <BeachesRestaurantList beachNum={restaurantsOnThisBeach}/>
             <Link to='/beach-two'><NextObject/></Link>
             <MapSection map={mapContent}/>

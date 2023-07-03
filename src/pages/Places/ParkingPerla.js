@@ -22,7 +22,7 @@ import { PreviousObject } from '../../components/UI/PreviousObject';
 
 const objectName = parkings.slice(6, 7).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(6, 7).map(parkingDesc => parkingDesc.description);
-const bufferLarge = parkings.slice(6, 7);
+const parkingXtras = parkings.slice(6, 7);
 const images = [perla1, perla2, perla3, perla4, perla5];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -41,7 +41,7 @@ export const ParkingPerla = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <ParkingsXtras parkingExtras={bufferLarge}/>
+            <ParkingsXtras parkingExtras={parkingXtras}/>
             <Link to='/parking-trafficlights'><PreviousObject/></Link>
             <Link to='/parking-tokaliev'><NextObject/></Link>
             <MapSection map={mapContent}/>

@@ -23,7 +23,7 @@ import { NextObject } from "../../components/UI/NextObject";
 
 const objectName = parkings.slice(0, 1).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(0, 1).map(parkingDesc => parkingDesc.description);
-const bufferLarge = parkings.slice(0, 1);
+const parkingXtras = parkings.slice(0, 1);
 const images = [bufferChurch1, bufferChurch2, bufferChurch3, bufferChurch4, bufferChurch5, bufferChurch6, bufferChurch7];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -41,7 +41,7 @@ export const ParkingBufferLarge = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <ParkingsXtras parkingExtras={bufferLarge}/>
+            <ParkingsXtras parkingExtras={parkingXtras}/>
             <Link to='/buffer-kapka'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>

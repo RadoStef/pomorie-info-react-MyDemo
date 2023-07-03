@@ -22,7 +22,7 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 
 const objectName = beaches.slice(1, 2).map(beachName => beachName.name);
 const objectDescription = beaches.slice(1, 2).map(beachDesc => beachDesc.description);
-const beachTwo = beaches.slice(1, 2);
+const beachXtras = beaches.slice(1, 2);
 const images = [coverImage, image1, image2, image3, image4, image5];
 const backLink = <Link to='/beaches'> <Button> <ArrowBackIcon/> </Button></Link>
 
@@ -40,7 +40,7 @@ export const BeachTwo = () => {
             <AppHeaderBar/>
             <Breadcrumb backLink={backLink}/>
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
-            <BeachesExtras beachExtras={beachTwo}/>
+            <BeachesExtras beachExtras={beachXtras}/>
             <Link to='/beach-three'><NextObject/></Link>
             <Link to='/beach-one'><PreviousObject/></Link>
             <MapSection map={mapContent}/>
