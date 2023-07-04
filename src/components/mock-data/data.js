@@ -186,6 +186,10 @@ import naseka6 from '../../assets/photographers/AtanasNaseka/naseka6.jpg';
 import naseka7 from '../../assets/photographers/AtanasNaseka/naseka7.jpg';
 import naseka8 from '../../assets/photographers/AtanasNaseka/naseka8.jpg';
 import naseka9 from '../../assets/photographers/AtanasNaseka/naseka9.jpg';
+import naseka10 from '../../assets/photographers/AtanasNaseka/naseka10.jpg';
+import naseka11 from '../../assets/photographers/AtanasNaseka/naseka11.jpg';
+import naseka12 from '../../assets/photographers/AtanasNaseka/naseka12.jpg';
+import naseka13 from '../../assets/photographers/AtanasNaseka/naseka13.jpg';
 
 // Boris Kratman
 import kratman1 from '../../assets/photographers/BorisKratman/kratman1.jpg';
@@ -328,8 +332,15 @@ const address2 = 'Ул. Професор Стоянов - срещу Гранд 
 // parking prices
 const municipalityPrice = '2 лева за час - 12 лева за денонощие';
 
-// blue zone prices
-// const blueZone = '1.20 лв с ДДС.'
+// page headers
+export const pageTitles = {
+  museums: `Разгледайте музеите на град Поморие. Музей на солта, Историески музей и др. Работно време, цени, локация.`,
+  parkings: `Паркингите в град Поморие. Безплани, платени, цени, работно време, локация.`,
+  beaches: `Плажовете на град Поморие. Цени на шезлонги, чадъри, свободни зони, екстри на плажа, заведения.`,
+  attractions: `Атракциони в Поморие. Корабчета за разходка, влакче, лунапарк, лятно кино, цени, работно време.`,
+  landmarks: `Забележителностите на град Поморие. Манастир Св. Георги, стари поморийски къщи, поморийско езеро.`,
+  culture: `Читалища и библиотеки в Поморие. Културни мероприятия, интернет клуб, театрални дейности.`,
+}
 
 // content for FAQ section
 export const frequentlyAskedQuestions = [
@@ -616,9 +627,9 @@ export const attractions = [
     description: `Подарете си незабравими морски емоции на борда на кораб Black Pearl! Корабчето предлага панорамни морски разходки в акваторията на гр. Поморие,
     пътувания с маршрут и дейности по избор, организиран риболов, морски пикник, морско парти. Цена за възрастни и за деца e 10 лева за една разходка.`,
     phoneNumber: `+359 898 63 06 87`,
-    workTime: `Позвънете на посочените телефони.`,
+    workTime: `Всеки ден от 10:00 до 23:00`,
     address: `ул. „П. К. Яворов“ №15`,
-    linkTo: '',
+    linkTo: 'https://www.facebook.com/people/%D0%9A%D0%BE%D1%80%D0%B0%D0%B1-%D0%B7%D0%B0-%D1%80%D0%B0%D0%B7%D1%85%D0%BE%D0%B4%D0%BA%D0%B8-Black-Pearl-%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5/100057545016055/?locale=bg_BG',
     img: `${blackPearlCoverPic}`,
   },
   {
@@ -1004,9 +1015,9 @@ export const museums = [
   {
     id: 4,
     name: 'Посетителски център „Поморийско езеро“',
-    description: `В него ще получите богата информация за биологичното разнообразие, природните ресурси и режимите на защита в комплекса от защитени природни територии на Поморийско езеро.`,
+    description: `Тук ще получите богата информация за биологичното разнообразие, природните ресурси и режимите на защита в комплекса от защитени природни територии на Поморийско езеро.`,
     phoneNumber: `няма`,
-    workTime: `Вт. - Нд. 09:00 - 18:00, Обедна поччивка 13:00 - 14:00`,
+    workTime: `Вт. - Нд. 09:00 - 18:00, Обедна почивка 13:00 - 14:00`,
     address: `GPS координати: 42.5656381, 27.6312729`,
     img: `${ornithologyCoverPic}`,
     linkTo: '',
@@ -1627,7 +1638,7 @@ export const photographersAndGalleries = [
     location: 'Поморие',
     website: '',
     gallery: [
-      naseka1, naseka2, naseka3, naseka4, naseka5, naseka6, naseka7, naseka8, naseka9
+      naseka10, naseka11, naseka1, naseka2, naseka3, naseka4, naseka5, naseka6, naseka7, naseka8, naseka9, naseka12, naseka13
     ]
   },
   {

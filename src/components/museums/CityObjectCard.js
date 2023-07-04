@@ -17,8 +17,6 @@ import { iconStyle, cardStyle, cardImageStyle } from "../UI/Themes";
 import { styles } from '../UI/CityObjectsCardStyles';
 import { showMore } from "../mock-data/data";
 
-
-
 export const CityObjectCard = (props) => {
   return (
     <div className="cards-wrapper">

@@ -6,6 +6,7 @@ import { TypewriterText } from './TypewriterText';
 
 export const WelcomeSection = ({ text }) => {
   return (
+    <main>
     <Container sx={styles.container} maxWidth='xl'>
       <Box sx={styles.boxStyle}>
         <h1
@@ -24,5 +25,6 @@ export const WelcomeSection = ({ text }) => {
         </h1>
       </Box>
     </Container>
+    </main>
   );
 };
