@@ -44,6 +44,11 @@ import { ParkingCasino } from './pages/Places/ParkingCasino';
 import { ParkingTuthon } from './pages/Places/ParkingTuthon';
 import { ParkingGrandLarge } from './pages/Places/ParkingGrandLarge';
 import { ParkingGrandSmall } from './pages/Places/ParkingGrandSmall';
+import { MuseumHistorical } from './pages/Places/MuseumHistorical';
+import { MuseumSalt } from './pages/Places/MuseumSalt';
+import { MuseumOrnithology } from './pages/Places/MuseumOrnithology';
+import { MuseumThomb } from './pages/Places/MuseumThomb';
+import { MuseumGallery } from './pages/Places/MuseumGallery';
 
 const router = createBrowserRouter([
   // menu links
@@ -91,6 +96,12 @@ const router = createBrowserRouter([
   {path: 'parking-tuthon', element: <ParkingTuthon/>},
   {path: 'parking-grand-large', element: <ParkingGrandLarge/>},
   {path: 'parking-grand-small', element: <ParkingGrandSmall/>},
+  // museums
+  {path: 'museum-historical', element: <MuseumHistorical/>},
+  {path: 'museum-salt', element: <MuseumSalt/>},
+  {path: 'museum-thomb', element: <MuseumThomb/>},
+  {path: 'museum-ornithology', element: <MuseumOrnithology/>},
+  {path: 'museum-gallery', element: <MuseumGallery/>},
 
   // 404 page
   {path: '/*', element: <NotFound/>},

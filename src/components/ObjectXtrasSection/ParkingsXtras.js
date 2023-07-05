@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
                     <li ><MonetizationOnIcon/> <span>{extras.tag}</span></li>
                     <li><LocalOfferIcon/> <span>{extras.prices}</span></li>
                     <li><BusinessIcon/> <span>{extras.address}</span></li>
-                    <li><AddLocationIcon/> <Link to={extras.gps}> Заведи ме там </Link></li>
+                    <li><AddLocationIcon/> <span><Link to={extras.gps}> Заведи ме там </Link></span></li>
                 </ul>
                 <ScrollToTopButton/>
                 </>

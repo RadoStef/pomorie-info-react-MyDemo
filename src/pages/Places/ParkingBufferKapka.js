@@ -1,5 +1,6 @@
 import React from 'react';
 import bufferKapka1 from '../../assets/parkings/bufferKapka/bufferKapkaIntro.jpg';
+import bufferKapka0 from '../../assets/parkings/bufferKapka/bufferkapkaIntro1.jpg';
 import bufferKapka2 from '../../assets/parkings/bufferKapka/bufferKapka1.jpg';
 import bufferKapka3 from '../../assets/parkings/bufferKapka/bufferKapka2.jpg';
 import bufferKapka4 from '../../assets/parkings/bufferKapka/bufferKapka3.jpg';
@@ -22,7 +23,7 @@ import { PreviousObject } from '../../components/UI/PreviousObject';
 const objectName = parkings.slice(1, 2).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(1, 2).map(parkingDesc => parkingDesc.description);
 const parkingXtras = parkings.slice(1, 2);
-const images = [bufferKapka1, bufferKapka2, bufferKapka3, bufferKapka4];
+const images = [bufferKapka0, bufferKapka1, bufferKapka2, bufferKapka3, bufferKapka4];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

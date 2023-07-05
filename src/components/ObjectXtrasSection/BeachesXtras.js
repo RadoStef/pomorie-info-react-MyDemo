@@ -12,7 +12,6 @@ import CheckroomIcon from '@mui/icons-material/Checkroom';
 import { ScrollToTopButton } from '../UI/ScrollToTopButton';
 
 export const BeachesExtras = (props) => {
-
     return(
         <div className={classes['extras-wrapper']}>
             {props.beachExtras.map((extras) => {
