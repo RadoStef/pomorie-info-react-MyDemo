@@ -49,6 +49,15 @@ import { MuseumSalt } from './pages/Places/MuseumSalt';
 import { MuseumOrnithology } from './pages/Places/MuseumOrnithology';
 import { MuseumThomb } from './pages/Places/MuseumThomb';
 import { MuseumGallery } from './pages/Places/MuseumGallery';
+import { LandmarkMonastery } from './pages/Places/LandmarkMonastery';
+import { LandmarkLake } from './pages/Places/LandmarkLake';
+import { LandmarkChurch } from './pages/Places/LandmarkChurch';
+import { LandmarkHouses } from './pages/Places/LandmarkHouses';
+import { LandmarkMonument } from './pages/Places/LandmarkMonument';
+import { LandmarkYavorov } from './pages/Places/LandmarkYavorov';
+import { LandmarkBoy } from './pages/Places/LandmarkBoy';
+import { LandmarkHarbor } from './pages/Places/LandmarkHarbor';
+import { LandmarkLighthouse } from './pages/Places/LandmarkLighthouse';
 
 const router = createBrowserRouter([
   // menu links
@@ -102,6 +111,16 @@ const router = createBrowserRouter([
   {path: 'museum-thomb', element: <MuseumThomb/>},
   {path: 'museum-ornithology', element: <MuseumOrnithology/>},
   {path: 'museum-gallery', element: <MuseumGallery/>},
+  //landmarks
+  {path: 'landmark-monastery', element: <LandmarkMonastery/>},
+  {path: 'landmark-lake', element: <LandmarkLake/>},
+  {path: 'landmark-church', element: <LandmarkChurch/>},
+  {path: 'landmark-houses', element: <LandmarkHouses/>},
+  {path: 'landmark-monument', element: <LandmarkMonument/>},
+  {path: 'landmark-yavorov', element: <LandmarkYavorov/>},
+  {path: 'landmark-boy', element: <LandmarkBoy/>},
+  {path: 'landmark-harbor', element: <LandmarkHarbor/>},
+  {path: 'landmark-lighthouse', element: <LandmarkLighthouse/>},
 
   // 404 page
   {path: '/*', element: <NotFound/>},

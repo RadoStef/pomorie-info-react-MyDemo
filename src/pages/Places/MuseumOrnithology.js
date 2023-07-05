@@ -20,8 +20,8 @@ import { NextObject } from "../../components/UI/NextObject";
 import { PreviousObject } from '../../components/UI/PreviousObject';
 import { MuseumsXtras } from '../../components/ObjectXtrasSection/MuseumsXtras';
 
-const objectName = museums.slice(3, 4).map(parkingName => parkingName.name);
-const objectDescription = museums.slice(3, 4).map(parkingDesc => parkingDesc.description);
+const objectName = museums.slice(3, 4).map(museumName => museumName.name);
+const objectDescription = museums.slice(3, 4).map(museumDesc => museumDesc.description);
 const museumsXtras = museums.slice(3, 4);
 const images = [ornithology1, ornithology2, ornithology3, ornithology4, ornithology5];
 const backLink = <Link to='/museums'> <Button> <ArrowBackIcon/> </Button></Link>

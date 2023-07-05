@@ -21,8 +21,8 @@ import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 import { PreviousObject } from '../../components/UI/PreviousObject';
 import { MuseumsXtras } from '../../components/ObjectXtrasSection/MuseumsXtras';
 
-const objectName = museums.slice(4, 5).map(parkingName => parkingName.name);
-const objectDescription = museums.slice(4, 5).map(parkingDesc => parkingDesc.description);
+const objectName = museums.slice(4, 5).map(museumName => museumName.name);
+const objectDescription = museums.slice(4, 5).map(museumDesc => museumDesc.description);
 const museumsXtras = museums.slice(4, 5);
 const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7];
 const backLink = <Link to='/museums'> <Button> <ArrowBackIcon/> </Button></Link>

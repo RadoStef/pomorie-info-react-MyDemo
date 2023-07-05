@@ -22,8 +22,8 @@ import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 import { NextObject } from "../../components/UI/NextObject";
 import { MuseumsXtras } from '../../components/ObjectXtrasSection/MuseumsXtras';
 
-const objectName = museums.slice(0, 1).map(parkingName => parkingName.name);
-const objectDescription = museums.slice(0, 1).map(parkingDesc => parkingDesc.description);
+const objectName = museums.slice(0, 1).map(museumName => museumName.name);
+const objectDescription = museums.slice(0, 1).map(museumDesc => museumDesc.description);
 const museumsXtras = museums.slice(0, 1);
 const images = [historical1, historical2, historical3, historical4, historical5, historical6, historical7, historical8];
 const backLink = <Link to='/museums'> <Button> <ArrowBackIcon/> </Button></Link>

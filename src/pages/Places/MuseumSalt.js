@@ -32,8 +32,8 @@ import { NextObject } from "../../components/UI/NextObject";
 import { PreviousObject } from '../../components/UI/PreviousObject';
 import { MuseumsXtras } from '../../components/ObjectXtrasSection/MuseumsXtras';
 
-const objectName = museums.slice(1, 2).map(parkingName => parkingName.name);
-const objectDescription = museums.slice(1, 2).map(parkingDesc => parkingDesc.description);
+const objectName = museums.slice(1, 2).map(museumName => museumName.name);
+const objectDescription = museums.slice(1, 2).map(museumDesc => museumDesc.description);
 const museumsXtras = museums.slice(1, 2);
 const images = [salt1, salt2, salt3, salt4, salt5, salt6, salt7, salt8, salt9, salt10, salt11, salt12, salt13, salt14, salt15, salt16];
 const backLink = <Link to='/museums'> <Button> <ArrowBackIcon/> </Button></Link>

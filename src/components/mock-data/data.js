@@ -847,12 +847,19 @@ export const landmarks = [
   {
     id: 1,
     name: 'Манастир "Свети Георги Победоносец"',
-    description: `Манастирът „Свети Георги Победоносец” е единственият действащ мъжки манастир в Югоизточна България и представлява забележителен паметник на архитектурата от Възраждането.`,
+    description: `Манастирът „Свети Георги Победоносец” е единственият действащ мъжки манастир в Югоизточна България и представлява забележителен паметник на архитектурата от Възраждането. 
+    В древния Анхиало /Поморие/ християнството прониква още в края на І век. Според Преданието св. апостол Андрей, на път за Киев, минава през черноморския град, тогава голям административен и 
+    пристанищен център в границите на Римската империя. По времето на император Диоклетиан /284 – 305/ от Фригия на Балканския полуостров идва света Севастиана, която проповядва в Анхиало и околните градове.
+    По това време Анхиало вече е църковен център. Въпреки гоненията, още от ІІІ – ІV век има сведения за епископи на града. През V – VІ век Анхиалската църква е провъзгласена за архиепископия. Християнството вече е
+    официална религия на Източната Римска империя – Византия. Преданието сочи, че през VІІ век на това място вече съществува храм или манастир, посветен на великомъченик Георги. 
+    При хан Крум в 812 г. Анхиало е превзет от българите, а по-късно, след Покръстването, към 894 г. е създадена българска църковна организация. От края на ХІІІ век Анхиалският епископ е почетен със сан митрополит.`,
     phoneNumber: `+359 596 3 2017`,
     workTime: `09:00 - 20:00`,
     address: `ул. Княз Борис I, гр.Поморие, България`,
+    website: `https://pomoriemonastery.com/`,
     img: `${monasteryCoverPic}`,
-    linkTo: 'https://pomoriemonastery.com/',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D1%83%D0%BB.+%E2%80%9E%D0%9A%D0%BD%D1%8F%D0%B7+%D0%91%D0%BE%D1%80%D0%B8%D1%81+l%E2%80%9C,+8201+%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5/@42.5652152,27.621237,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x40a697c5b7a99175:0x1c88f5202af3044d!2m2!1d27.6180972!2d42.567163!3e0?entry=ttu`,
+    linkTo: '/landmark-monastery',
   },
   {
     id: 2,
@@ -861,8 +868,10 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `няма`,
+    website: ``,
     img: `${lakeCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81,+8200/@42.5638229,27.6299825,18z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x40a697d9268f0341:0xd3b2a62f968b4e2e!2m2!1d27.6322691!2d42.5654674!3e0?entry=ttu`, 
+    linkTo: '/landmark-lake',
   },
   {
     id: 3,
@@ -872,8 +881,10 @@ export const landmarks = [
     phoneNumber: `Скоро`,
     workTime: `08:30 - 12:30 / 16:00 - 20:00`,
     address: `ул. "Хан Кубрат" 2`,
+    website: ``,
     img: `${oldChurchCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D1%83%D0%BB.+%E2%80%9E%D0%A5%D0%B0%D0%BD+%D0%9A%D1%83%D0%B1%D1%80%D0%B0%D1%82%22+2,+8200+%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D1%8F+%D0%93%D1%80%D0%B0%D0%B4,+%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5/@42.5586523,27.629359,3406m/data=!3m2!1e3!4b1!4m19!1m8!3m7!1s0x40a6bd7230443f3d:0x80eed6ff6cd7c3a1!2z0YPQuy4g4oCe0KXQsNC9INCa0YPQsdGA0LDRgiIgMiwgODIwMCDQodGC0LDRgNC40Y8g0JPRgNCw0LQsINCf0L7QvNC-0YDQuNC1!3b1!8m2!3d42.5549579!4d27.6502305!16s%2Fg%2F11k1kwd_2m!4m9!1m1!4e1!1m5!1m1!1s0x40a6bd7230443f3d:0x80eed6ff6cd7c3a1!2m2!1d27.6502305!2d42.5549579!3e0?entry=ttu`, 
+    linkTo: '/landmark-church',
   },
   {
     id: 4,
@@ -883,8 +894,10 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `ул. "Хан Кубрат" 1`,
+    website: ``,
     img: `${oldHousesCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D1%83%D0%BB.+%E2%80%9E%D0%A1%D1%82.+%D0%9A%D0%B0%D1%80%D0%B0%D0%B4%D0%B6%D0%B0%E2%80%9C,+8200+%D0%BA%D0%B2.+%D0%A1%D1%82%D0%B0%D1%80%D0%B8%D1%8F+%D0%B3%D1%80%D0%B0%D0%B4,+%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81/@42.5586447,27.6343125,1703m/data=!3m2!1e3!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x40a6bd722f3bd611:0xcd15087abfa25a2!2m2!1d27.6498379!2d42.5551171!3e0?entry=ttu`,
+    linkTo: '/landmark-houses',
   },
   {
     id: 5,
@@ -894,8 +907,10 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `няма`,
+    website: ``,
     img: `${monumentSaintGeorgeCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/place/%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%8F+%D0%BD%D0%B0+%D1%81%D0%B2.+%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8/@42.5672977,27.6190287,174m/data=!3m1!1e3!4m6!3m5!1s0x40a697c5ad79ff4d:0xce45987c3760c860!8m2!3d42.5672539!4d27.6189563!16s%2Fg%2F11crzrcx9x?entry=ttu`,
+    linkTo: '/landmark-monument',
   },
   {
     id: 6,
@@ -905,8 +920,10 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `ул. „П. К. Яворов“`,
+    website: ``,
     img: `${yavorovMonumentCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/place/%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%8F+%D0%BD%D0%B0+%D0%9F%D0%B5%D0%B9%D0%BE+%D0%AF%D0%B2%D0%BE%D1%80%D0%BE%D0%B2/@42.5534757,27.6438273,173m/data=!3m1!1e3!4m6!3m5!1s0x40a6bdea379e3b2f:0xebb64b144986eb01!8m2!3d42.5532878!4d27.6435284!16s%2Fg%2F11s_vkb_h8?entry=ttu`,
+    linkTo: '/landmark-yavorov',
   },
   {
     id: 7,
@@ -915,8 +932,10 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `ул. „П. К. Яворов“ №15`,
+    website: ``,
     img: `${momchetoCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D1%83%D0%BB.+%E2%80%9E%D0%9F.+%D0%9A.+%D0%AF%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%E2%80%9C+15,+8200+%D0%A6%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5/@42.5593043,27.629762,1703m/data=!3m2!1e3!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x40a6bd7a126e876b:0x6f1681b35c3acad8!2m2!1d27.6407369!2d42.5553237!3e0?entry=ttu`,
+    linkTo: '/landmark-boy',
   },
   {
     id: 8,
@@ -924,10 +943,12 @@ export const landmarks = [
     description: `Старият кей е една от емблемите на Поморие. Той е неразривно свързан с историята и поминъците на града.
     Пристанът е бил използван за износ на вино, сол, риба, жито, дървен материал и за внос на манифактурни и промишлени стоки.`,
     phoneNumber: `няма`,
-    workTime: `няма`,
+    workTime: `ВНИМАНИЕ!!! От 10.07 до 30.07 кеят ще бъде отворен след 14:00 ч.`,
     address: `ул. „П. К. Яворов“ №15`,
+    website: ``,
     img: `${oldHarborCoverPic}`,
-    linkTo: '',
+    gps: `https://www.google.com/maps/dir/42.5631954,27.6295267/%D0%9C%D0%BE%D1%81%D1%82%D0%B8%D0%BA+%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5,+ul.+%22Burgas,+8200+%D0%9F%D0%BE%D0%BC%D0%BE%D1%80%D0%B8%D0%B5/@42.5594194,27.6295126,1703m/data=!3m2!1e3!4b1!4m18!1m7!3m6!1s0x40a6bdd0e5231a97:0x8fab321f52a000e0!2z0JzQvtGB0YLQuNC6INCf0L7QvNC-0YDQuNC1!8m2!3d42.555554!4d27.6395663!16s%2Fg%2F11j1hpt1xf!4m9!1m1!4e1!1m5!1m1!1s0x40a6bdd0e5231a97:0x8fab321f52a000e0!2m2!1d27.6395663!2d42.555554!3e0?entry=ttu`,
+    linkTo: '/landmark-harbor',
   },
   {
     id: 9,
@@ -937,8 +958,9 @@ export const landmarks = [
     phoneNumber: `няма`,
     workTime: `няма`,
     address: `няма`,
+    website: ``,
     img: `${lightHouseCoverPic}`,
-    linkTo: '',
+    linkTo: '/landmark-lighthouse',
   },
 ];
 
