@@ -12,17 +12,17 @@ import { Link } from 'react-router-dom';
     <div className={classes['extras-wrapper']}>
             {props.parkingExtras.map((extras) => {
                 return (
-                <>
-                <ul key={extras.id}>
-                    <li ><MonetizationOnIcon/> <span>{extras.tag}</span></li>
+                <React.Fragment key={extras.id}>
+                <ul>
+                    <li key={extras.id}><MonetizationOnIcon/> <span>{extras.tag}</span></li>
                     <li><LocalOfferIcon/> <span>{extras.prices}</span></li>
                     <li><BusinessIcon/> <span>{extras.address}</span></li>
                     <li><AddLocationIcon/> <span><Link to={extras.gps}> Заведи ме там </Link></span></li>
                 </ul>
-                <ScrollToTopButton/>
-                </>
+                </React.Fragment>
                 )
             })}
+            <ScrollToTopButton/>
         </div>
   )
 }

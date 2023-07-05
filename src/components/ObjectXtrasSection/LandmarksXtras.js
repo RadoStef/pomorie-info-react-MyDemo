@@ -13,18 +13,18 @@ import { Link } from 'react-router-dom';
     <div className={classes['extras-wrapper']}>
             {props.landmarksExtras.map((extras) => {
                 return (
-                <>
-                <ul key={extras.id}>
-                    <li><HistoryToggleOffIcon/> <span>{extras.workTime}</span></li>
+                <React.Fragment key={extras.id}>
+                <ul>
+                    <li key={extras.id}><HistoryToggleOffIcon/> <span>{extras.workTime}</span></li>
                     <li><PhoneForwardedIcon/> <span>{extras.phoneNumber}</span></li>
                     <li><BusinessIcon/> <span>{extras.address}</span></li>
                     <li><LanguageIcon/> <span>{extras.website === `` ? <p>няма</p> : <Link to={extras.website} target='_blank'> Официален уебсайт </Link>}</span></li>
                     <li><AddLocationIcon/> <span><Link to={extras.gps} target='_blank'> Заведи ме там </Link></span></li>
                 </ul>
-                <ScrollToTopButton/>
-                </>
+                </React.Fragment>
                 )
             })}
+            <ScrollToTopButton/>
         </div>
   )
 }
