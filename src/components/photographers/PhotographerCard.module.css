@@ -43,3 +43,11 @@
     transition: all 0.7s;
     color: black;
 }
+
+.slide-wrapper {
+    width: 96%;
+    overflow-x: auto;
+    background-color: seagreen;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}

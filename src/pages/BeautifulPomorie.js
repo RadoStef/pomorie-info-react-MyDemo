@@ -4,6 +4,7 @@ import { Breadcrumb } from '../components/BreadCrumbSection/Breadcrumb';
 import { CityObject } from '../components/photographers/CityObject';
 import { PhotographerCard } from '../components/photographers/PhotographerCard';
 import { ScrollToTopButton } from '../components/UI/ScrollToTopButton';
+import { Footer } from '../components/Footer/Footer';
 
 export const BeautifulPomorie = () => {
   return (
@@ -13,6 +14,7 @@ export const BeautifulPomorie = () => {
       <CityObject/>
       <PhotographerCard/>
       <ScrollToTopButton/>
+      <Footer/>
     </div>
   )
 };

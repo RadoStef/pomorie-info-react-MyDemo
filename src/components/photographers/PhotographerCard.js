@@ -4,6 +4,7 @@ import FsLightbox from 'fslightbox-react';
 import { Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import LazyLoad from 'react-lazy-load';
 import classes from './PhotographerCard.module.css';
 
 export const PhotographerCard = () => {
@@ -37,18 +38,19 @@ export const PhotographerCard = () => {
               </p>
               <p><b>{photographer.gallery.length}</b> снимки в галерията</p>
             </div>
-
-            <Carousel dynamicHeight emulateTouch width='100%' showThumbs={false}>
+            <div className={classes['slide-wrapper']}>
+            <Carousel dynamicHeight emulateTouch width='100%' showIndicators={false}>
               {photographer.gallery.map((image, index) => {
                 return (
-                  <div key={index} >
-                    <img src={image} alt={`${index + 1}`}  />
-                    <p className="legend">Фотограф: {photographer.name}</p>
-                  </div>
+                  <LazyLoad key={index} placeholder={<img src={image} alt={`${index + 1}`} />}>
+                      <img src={image} alt={`${index + 1}`} />
+                    </LazyLoad>
                 )
               })}
             </Carousel>
-            <button onClick={() => toggleHandler(photographer.gallery)} className={classes['lightbox-button']}> Разгледай на голям екран </button>
+            </div>
+            
+            <button onClick={() => toggleHandler(photographer.gallery)} className={classes['lightbox-button']}> Разгледай на цял екран </button>
           </div>
         );
       })}

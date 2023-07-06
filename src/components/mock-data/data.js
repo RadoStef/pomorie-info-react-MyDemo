@@ -125,6 +125,7 @@ import chavdar22 from '../../assets/photographers/ChavdarChernev/chavdarChernev2
 import chavdar23 from '../../assets/photographers/ChavdarChernev/chavdarChernev23.jpg';
 import chavdar24 from '../../assets/photographers/ChavdarChernev/chavdarChernev24.jpg';
 // Pavlin Kulov
+import pavlinProfile from '../../assets/photographers/PavlinKulov/pavlinProfile.jpg';
 import pavlin1 from '../../assets/photographers/PavlinKulov/pavlin1.jpg';
 import pavlin2 from '../../assets/photographers/PavlinKulov/pavlin2.jpg';
 import pavlin3 from '../../assets/photographers/PavlinKulov/pavlin3.jpg';
@@ -178,6 +179,7 @@ import pavlin41 from '../../assets/photographers/PavlinKulov/pavlin41.jpg';
 import pavlin42 from '../../assets/photographers/PavlinKulov/pavlin42.jpg';
 
 // Atanas Naseka
+import nasekaProfile from '../../assets/photographers/AtanasNaseka/nasekaProfile.jpg';
 import naseka1 from '../../assets/photographers/AtanasNaseka/naseka1.jpg';
 import naseka2 from '../../assets/photographers/AtanasNaseka/naseka2.jpg';
 import naseka3 from '../../assets/photographers/AtanasNaseka/naseka3.jpg';
@@ -1710,7 +1712,7 @@ export const photographersAndGalleries = [
   {
     id: 'p2',
     name: 'Павлин Кулов',
-    image: `https://scontent-sof1-2.xx.fbcdn.net/v/t1.6435-9/49658233_2047078898745642_5389585478557106176_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=fjbEucc0cMwAX80qunU&_nc_ht=scontent-sof1-2.xx&oh=00_AfCZ42W_bdC3nEwWvzw950HdlfyBV_UMnlOwnBhTNyg3Bg&oe=64C517C6`,
+    image: `${pavlinProfile}`,
     location: 'Поморие',
     website: '',
     gallery: [
@@ -1726,7 +1728,7 @@ export const photographersAndGalleries = [
   {
     id: 'p3',
     name: 'Атанас Железчев - Насека',
-    image: 'https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/336489166_1027491491544736_2717650357627063788_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_dSt8dsETfsAX9cGV6Z&_nc_ht=scontent-sof1-2.xx&oh=00_AfA7FfjavzUi7UXkuJ7_pDD7Gk4_HiweE3V3z6M4x7xwFQ&oe=64A4B8FF',
+    image: `${nasekaProfile}`,
     location: 'Поморие',
     website: '',
     gallery: [
