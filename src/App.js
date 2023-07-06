@@ -58,6 +58,14 @@ import { LandmarkYavorov } from './pages/Places/LandmarkYavorov';
 import { LandmarkBoy } from './pages/Places/LandmarkBoy';
 import { LandmarkHarbor } from './pages/Places/LandmarkHarbor';
 import { LandmarkLighthouse } from './pages/Places/LandmarkLighthouse';
+import { AttractionKuk } from './pages/Places/AttractionKuk';
+import { AttractionBlackperl } from './pages/Places/AttractionBlackperl';
+import { AttractionNiya } from './pages/Places/AttractionNiya';
+import { AttractionOrkinos } from './pages/Places/AttractionOrkinos';
+import { AttractionAquapark } from './pages/Places/AttractionAquapark';
+import { AttractionTrain } from './pages/Places/AttractionTrain';
+import { AttractionLunapark } from './pages/Places/AtractionLunapark';
+import { AttractionCinema } from './pages/Places/AttractionCinema';
 
 const router = createBrowserRouter([
   // menu links
@@ -121,6 +129,15 @@ const router = createBrowserRouter([
   {path: 'landmark-boy', element: <LandmarkBoy/>},
   {path: 'landmark-harbor', element: <LandmarkHarbor/>},
   {path: 'landmark-lighthouse', element: <LandmarkLighthouse/>},
+  // attractions
+  {path: 'attraction-kuk', element: <AttractionKuk/>},
+  {path: 'attraction-blackperl', element: <AttractionBlackperl/>},
+  {path: 'attraction-niya', element: <AttractionNiya/>},
+  {path: 'attraction-orkinos', element: <AttractionOrkinos/>},
+  {path: 'attraction-aquapark', element: <AttractionAquapark/>},
+  {path: 'attraction-train', element: <AttractionTrain/>},
+  {path: 'attraction-lunapark', element: <AttractionLunapark/>},
+  {path: 'attraction-cinema', element: <AttractionCinema/>},
 
   // 404 page
   {path: '/*', element: <NotFound/>},
