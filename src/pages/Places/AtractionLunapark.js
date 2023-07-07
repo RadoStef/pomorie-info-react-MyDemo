@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import lunapark1 from '../../assets/attractions/lunapark/lunapark-pomorie1.jpg';
 import lunapark2 from '../../assets/attractions/lunapark/lunapark-pomorie2.jpg';
 import lunapark3 from '../../assets/attractions/lunapark/lunapark-pomorie3.jpg';
@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { attractions } from '../../components/mock-data/data';
+import { attractions, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -38,6 +38,9 @@ const mapContent =
 </div>
 
 export const AttractionLunapark = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
   return (
     <>
         <ObjectDescriptionCard>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ornithology1 from '../../assets/museums/ornithology/ornithology.jpg';
 import ornithology2 from '../../assets/museums/ornithology/ornithology1.jpg';
 import ornithology3 from '../../assets/museums/ornithology/ornithology2.jpg';
@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { museums } from '../../components/mock-data/data';
+import { museums, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -34,6 +34,9 @@ const mapContent =
 </div>
 
 export const MuseumOrnithology = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
   return (
     <>
         <ObjectDescriptionCard>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import coverImage from '../../assets/beaches/1/pyrvi-mark.jpg';
 import image1 from '../../assets/beaches/1/pyrvi.jpg';
 import image2 from '../../assets/beaches/1/pyrvi0.jpg';
@@ -13,7 +13,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { BeachesExtras } from "../../components/ObjectXtrasSection/BeachesXtras";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { beaches } from '../../components/mock-data/data';
+import { beaches, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -40,6 +40,10 @@ const restaurantsOnThisBeach = beaches[0]; // restaurants on beach 1
 // TODO: Add restaurant picture to mock-data
 
 export const BeachOne = () => {
+    useEffect(() => {
+        goToTop();
+    }, []);
+
     return (
         <>
         <ObjectDescriptionCard>

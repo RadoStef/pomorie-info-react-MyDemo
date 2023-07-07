@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import trafficLights1 from '../../assets/parkings/traffic/parking-svetofar1.jpg';
 import trafficLights2 from '../../assets/parkings/traffic/parking-svetofar2.jpg';
 import trafficLights3 from '../../assets/parkings/traffic/parking-svetofar3.jpg';
@@ -9,7 +9,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ParkingsXtras } from '../../components/ObjectXtrasSection/ParkingsXtras';
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { parkings } from '../../components/mock-data/data';
+import { parkings, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -33,6 +33,10 @@ const mapContent =
 
 
 export const ParkingTrafficLights = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

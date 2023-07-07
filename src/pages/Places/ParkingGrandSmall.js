@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import grandSmall1 from '../../assets/parkings/atriumSmall/parking-atrium1.jpg';
 import grandSmall2 from '../../assets/parkings/atriumSmall/parking-atrium2.jpg';
 import grandSmall3 from '../../assets/parkings/atriumSmall/parking-atrium3.jpg';
@@ -10,7 +10,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ParkingsXtras } from '../../components/ObjectXtrasSection/ParkingsXtras';
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { parkings } from '../../components/mock-data/data';
+import { parkings, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -33,6 +33,10 @@ const mapContent =
 
 
 export const ParkingGrandSmall = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

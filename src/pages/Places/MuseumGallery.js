@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import gallery1 from '../../assets/museums/gallery/gallery.jpg';
 import gallery2 from '../../assets/museums/gallery/gallery1.jpg';
 import gallery3 from '../../assets/museums/gallery/gallery2.jpg';
@@ -6,13 +6,12 @@ import gallery4 from '../../assets/museums/gallery/gallery3.jpg';
 import gallery5 from '../../assets/museums/gallery/gallery4.jpg';
 import gallery6 from '../../assets/museums/gallery/gallery5.jpg';
 import gallery7 from '../../assets/museums/gallery/gallery6.jpg';
-
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { museums } from '../../components/mock-data/data';
+import { museums, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -35,6 +34,10 @@ const mapContent =
 </div>
 
 export const MuseumGallery = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

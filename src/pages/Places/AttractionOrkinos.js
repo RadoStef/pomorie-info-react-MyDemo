@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import orkinos1 from '../../assets/attractions/orkinos-boat/orkinos1.jpg';
 import orkinos2 from '../../assets/attractions/orkinos-boat/orkinos2.jpg';
 import orkinos3 from '../../assets/attractions/orkinos-boat/orkinos3.jpg';
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { attractions } from '../../components/mock-data/data';
+import { attractions, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -31,6 +31,10 @@ const mapContent =
 </div>
 
 export const AttractionOrkinos = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

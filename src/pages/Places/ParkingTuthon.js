@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import tuthon1 from '../../assets/parkings/tuthon/parking-tuthon1.jpg';
 import tuthon2 from '../../assets/parkings/tuthon/parking-tuthon2.jpg';
 import tuthon3 from '../../assets/parkings/tuthon/parking-tuthon3.jpg';
@@ -10,7 +10,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ParkingsXtras } from '../../components/ObjectXtrasSection/ParkingsXtras';
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { parkings } from '../../components/mock-data/data';
+import { parkings, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -34,6 +34,10 @@ const mapContent =
 
 
 export const ParkingTuthon = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

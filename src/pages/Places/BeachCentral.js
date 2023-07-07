@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import coverImage from '../../assets/beaches/centralen/centralen-marked.jpg';
 import image1 from '../../assets/beaches/centralen/centralen.jpg';
 import image2 from '../../assets/beaches/centralen/centralen0.jpg';
@@ -12,7 +12,7 @@ import { AppHeaderBar } from '../../components/HeaderSection/AppHeaderBar';
 import { BeachesExtras } from '../../components/ObjectXtrasSection/BeachesXtras';
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from '../../components/ObjectDescriptionSection/ObjectDescription';
-import { beaches } from '../../components/mock-data/data';
+import { beaches, goToTop } from '../../components/mock-data/data';
 import { Footer } from '../../components/Footer/Footer';
 import { MapSection } from '../../components/ObjectMapSection/ObjectMap';
 import { Breadcrumb } from '../../components/BreadCrumbSection/Breadcrumb';
@@ -47,6 +47,10 @@ const mapContent = (
 );
 
 export const BeachCentral = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
       <ObjectDescriptionCard>

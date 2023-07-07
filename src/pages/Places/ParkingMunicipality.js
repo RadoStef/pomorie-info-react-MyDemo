@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import municipality1 from '../../assets/parkings/municipality/parking-obshtina1.jpg';
 import municipality2 from '../../assets/parkings/municipality/parking-obshtina2.jpg';
 import municipality3 from '../../assets/parkings/municipality/parking-obshtina3.jpg';
@@ -15,7 +15,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ParkingsXtras } from '../../components/ObjectXtrasSection/ParkingsXtras';
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { parkings } from '../../components/mock-data/data';
+import { parkings, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -39,6 +39,10 @@ const mapContent =
 
 
 export const ParkingMunicipality = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import monastery1 from '../../assets/landmarks/monastery/monastery.jpg';
 import monastery2 from '../../assets/landmarks/monastery/monastery1.jpg';
 import monastery3 from '../../assets/landmarks/monastery/monastery2.jpg';
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { landmarks } from '../../components/mock-data/data';
+import { landmarks, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -34,6 +34,10 @@ const mapContent =
 </div>
 
 export const LandmarkMonastery = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cinema1 from '../../assets/attractions/summer-cinema/kino-pomorie.jpg';
 import cinema2 from '../../assets/attractions/summer-cinema/kino-pomorie2.jpg';
 import cinema3 from '../../assets/attractions/summer-cinema/kino-pomorie3.jpg';
@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { attractions } from '../../components/mock-data/data';
+import { attractions, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -43,6 +43,10 @@ const mapContent =
 </div>
 
 export const AttractionCinema = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+  
   return (
     <>
         <ObjectDescriptionCard>

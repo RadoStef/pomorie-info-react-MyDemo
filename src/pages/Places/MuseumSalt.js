@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import salt1 from '../../assets/museums/salt/salt.jpg';
 import salt2 from '../../assets/museums/salt/salt1.jpg';
 import salt3 from '../../assets/museums/salt/salt2.jpg';
@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { museums } from '../../components/mock-data/data';
+import { museums, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -46,6 +46,10 @@ const mapContent =
 </div>
 
 export const MuseumSalt = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+  
   return (
     <>
         <ObjectDescriptionCard>
@@ -54,7 +58,7 @@ export const MuseumSalt = () => {
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <MuseumsXtras museumsExtras={museumsXtras}/>
             <Link to='/museum-historical'><PreviousObject/></Link>
-            <Link to='/museum-ornithology'><NextObject/></Link>
+            <Link to='/museum-thomb'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>
         <Footer/>

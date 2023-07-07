@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import coverImage from '../../assets/beaches/sunnybay/sunny-bay-marked.jpg';
 import image1 from '../../assets/beaches/sunnybay/sunnybay0.jpg';
 import image2 from '../../assets/beaches/sunnybay/sunnybay1.jpg';
@@ -9,7 +9,7 @@ import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { BeachesExtras } from "../../components/ObjectXtrasSection/BeachesXtras";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { beaches } from '../../components/mock-data/data';
+import { beaches, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
@@ -33,6 +33,10 @@ const mapContent =
 </div>
 
 export const BeachThree = () => {
+    useEffect(() => {
+        goToTop();
+    }, []);
+
     return (
         <>
         <ObjectDescriptionCard>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import kuk1 from '../../assets/attractions/kuk-boat/kuk1.jpg';
 import kuk2 from '../../assets/attractions/kuk-boat/kuk2.jpg';
 import kuk3 from '../../assets/attractions/kuk-boat/kuk3.jpg';
@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { attractions } from '../../components/mock-data/data';
+import { attractions, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -35,6 +35,10 @@ const mapContent =
 </div>
 
 export const AttractionKuk = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+  
   return (
     <>
         <ObjectDescriptionCard>

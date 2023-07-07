@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import train1 from '../../assets/attractions/attraction-train/train-pomorie1.jpg';
 import train2 from '../../assets/attractions/attraction-train/train-pomorie2.jpg';
 import train3 from '../../assets/attractions/attraction-train/train-pomorie3.jpg';
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
 import { ObjectDescriptionCard } from '../../components/UI/ObjectDescriptionCard';
 import { ObjectDescription } from "../../components/ObjectDescriptionSection/ObjectDescription";
-import { attractions } from '../../components/mock-data/data';
+import { attractions, goToTop } from '../../components/mock-data/data';
 import { Footer } from "../../components/Footer/Footer";
 import { MapSection } from "../../components/ObjectMapSection/ObjectMap";
 import { Button } from "@mui/material";
@@ -33,6 +33,10 @@ const mapContent =
 </div>
 
 export const AttractionTrain = () => {
+  useEffect(() => {
+    goToTop();
+  }, []);
+
   return (
     <>
         <ObjectDescriptionCard>
