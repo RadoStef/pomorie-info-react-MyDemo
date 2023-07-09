@@ -7,6 +7,7 @@ import blackPerl5 from '../../assets/attractions/black-pearl/black-pearl4.jpg';
 import blackPerl6 from '../../assets/attractions/black-pearl/black-pearl5.jpg';
 import blackPerl7 from '../../assets/attractions/black-pearl/black-pearl6.jpg';
 import blackPerl8 from '../../assets/attractions/black-pearl/black-pearl7.jpg';
+import blackPerlSign from '../../assets/attractions/black-pearl/blackPearlSign.jpg';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
@@ -25,7 +26,7 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 const objectName = attractions.slice(1, 2).map(attractionName => attractionName.name);
 const objectDescription = attractions.slice(1, 2).map(attractionDesc => attractionDesc.description);
 const attractionsXtras = attractions.slice(1, 2);
-const images = [blackPerl1, blackPerl2, blackPerl3, blackPerl4, blackPerl5, blackPerl6, blackPerl7, blackPerl8];
+const images = [blackPerl1, blackPerlSign, blackPerl2, blackPerl3, blackPerl4, blackPerl5, blackPerl6, blackPerl7, blackPerl8];
 const backLink = <Link to='/attractions'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import orkinos1 from '../../assets/attractions/orkinos-boat/orkinos1.jpg';
 import orkinos2 from '../../assets/attractions/orkinos-boat/orkinos2.jpg';
 import orkinos3 from '../../assets/attractions/orkinos-boat/orkinos3.jpg';
+import orkinos4 from '../../assets/attractions/orkinos-boat/orkinos4.jpg';
+import orkinos5 from '../../assets/attractions/orkinos-boat/orkinos5.jpg';
+import orkinos6 from '../../assets/attractions/orkinos-boat/orkinos6.jpg';
+import orkinos7 from '../../assets/attractions/orkinos-boat/orkinos7.jpg';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
@@ -20,7 +24,7 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 const objectName = attractions.slice(3, 4).map(attractionName => attractionName.name);
 const objectDescription = attractions.slice(3, 4).map(attractionDesc => attractionDesc.description);
 const attractionsXtras = attractions.slice(3, 4);
-const images = [orkinos1, orkinos2, orkinos3];
+const images = [orkinos1, orkinos2, orkinos3, orkinos4, orkinos5, orkinos6, orkinos7];
 const backLink = <Link to='/attractions'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

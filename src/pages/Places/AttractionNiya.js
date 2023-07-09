@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import niya1 from '../../assets/attractions/niya-boat/niya1.jpg';
 import niya2 from '../../assets/attractions/niya-boat/niya2.jpg';
 import niya3 from '../../assets/attractions/niya-boat/niya3.jpg';
+import niya4 from '../../assets/attractions/niya-boat/niyaProgram1.jpg';
+import niya5 from '../../assets/attractions/niya-boat/niyaProgram2.jpg';
+
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
@@ -20,7 +23,7 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 const objectName = attractions.slice(2, 3).map(attractionName => attractionName.name);
 const objectDescription = attractions.slice(2, 3).map(attractionDesc => attractionDesc.description);
 const attractionsXtras = attractions.slice(2, 3);
-const images = [niya1, niya2, niya3];
+const images = [niya1, niya2, niya3, niya4, niya5];
 const backLink = <Link to='/attractions'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

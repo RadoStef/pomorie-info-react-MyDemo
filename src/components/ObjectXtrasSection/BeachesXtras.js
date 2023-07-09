@@ -9,6 +9,9 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 import ShowerIcon from '@mui/icons-material/Shower';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
+import DirectionsIcon from '@mui/icons-material/Directions';
 import { ScrollToTopButton } from '../UI/ScrollToTopButton';
 
 export const BeachesExtras = (props) => {
@@ -45,6 +48,7 @@ export const BeachesExtras = (props) => {
               <li>
                 <NightlifeIcon /> <span>{extras.nightLife}</span>
               </li>
+              <li><Link to={extras.gps} target='_blank'> <Button variant='outlined'> Заведи ме там <DirectionsIcon sx={{marginLeft: '10px'}}/> </Button> </Link></li>
             </ul>
           </React.Fragment>
         );
