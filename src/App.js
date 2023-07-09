@@ -66,6 +66,7 @@ import { AttractionAquapark } from './pages/Places/AttractionAquapark';
 import { AttractionTrain } from './pages/Places/AttractionTrain';
 import { AttractionLunapark } from './pages/Places/AtractionLunapark';
 import { AttractionCinema } from './pages/Places/AttractionCinema';
+import { ParkingSopharma } from './pages/Places/ParkingSopharma';
 
 const router = createBrowserRouter([
   // menu links
@@ -113,6 +114,7 @@ const router = createBrowserRouter([
   {path: 'parking-tuthon', element: <ParkingTuthon/>},
   {path: 'parking-grand-large', element: <ParkingGrandLarge/>},
   {path: 'parking-grand-small', element: <ParkingGrandSmall/>},
+  {path: 'parking-sopharma', element: <ParkingSopharma/>},
   // museums
   {path: 'museum-historical', element: <MuseumHistorical/>},
   {path: 'museum-salt', element: <MuseumSalt/>},

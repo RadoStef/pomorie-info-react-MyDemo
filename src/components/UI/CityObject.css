@@ -1,6 +1,30 @@
+@media only screen and (min-width: 330px) {
+    .section-header-wrapper {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 140px auto 650px auto;
+        justify-content: center;
+    }
+}
+
 @media only screen and (min-width: 450px) {
     .section-header-wrapper {
-        width: 100%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 140px auto 350px auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-header-wrapper {
+        width: 85%;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -10,9 +34,9 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .section-header-wrapper {
-        width: 100%;
+        width: 95%;
         display: flex;
         align-items: center;
         flex-wrap: wrap;

@@ -58,6 +58,7 @@ import tokalievCoverPic from '../../assets/parkings/tokaliev/tokaliev.jpg';
 import trafficLightsCoverPic from '../../assets/parkings/traffic/parking-svetofar1.jpg';
 import tuthonCoverPic from '../../assets/parkings/tuthon/parking-tuthon1.jpg';
 import perlaCoverPic from '../../assets/parkings/perla/perlaCover.jpg';
+import sopharmaCoverPic from '../../assets/parkings/parkingSopharma/sopharmaEntrance.jpg';
 
 //attractions cover pictures
 import aquaparkCoverPic from '../../assets/attractions/aquapark/sunset.jpg';
@@ -1134,9 +1135,9 @@ export const parkings = [
   {
     id: 9,
     name: 'Паркинг пред Гранд Хотел Поморие',
-    description: `Това е единият от двата паркинга разположени непосредствено до комплекс "Атриум", срещу Гранд Хотел Поморие. Паркингът се намира до централен плаж.`,
+    description: `Това е единият от двата паркинга разположени непосредствено до комплекс "Атриум", срещу Гранд Хотел Поморие. Паркингът се намира до централен плаж. При влизане в паркинга заплащате първия час (2 лева). Издава Ви се касов бон и при излизане се отччита остатъчния престой след, този един ас който вече сте платили.`,
     status: `Платен / Служител`,
-    prices: `2 лева за час, 6 часа 10 лева/12 часа, 15 лв - 24 часа, 20лева`,
+    prices: `2 лв за час, 10 лв за 6 часа, 15лв за 12 часа, 20 лв за 24 часа.`,
     address: `ул. Професор Стоянов 74`,
     img: `${atriumLargeCoverPic}`,
     tag: `Частен / Платен`,
@@ -1146,14 +1147,27 @@ export const parkings = [
   {
     id: 10,
     name: 'Паркинг пред Гранд Хотел Поморие 2',
-    description: `Другият голям паркинг пред Гранд Хотел Поморие е този. Той се намира от другата страна на комплекс "Атриум."`,
+    description: `Другият голям паркинг пред Гранд Хотел Поморие е този. Той се намира от другата страна на комплекс Атриум. При влизане в паркинга заплащате първия час (2 лева). Издава Ви се касов бон и при излизане се отччита остатъчния престой след, този един ас който вече сте платили.`,
     status: `Платен / Служител`,
-    prices: `2 лева за час / 20 лева за 24 часа.`,
+    prices: `2 лв за час, 10 лв за 6 часа, 15лв за 12 часа, 20 лв за 24 часа.`,
     address: `ул. Професор Стоянов 5`,
     img: `${atriumSmallCoverPic}`,
     tag: `Частен / Платен`,
     gps: `https://www.google.com/maps/place/42%C2%B034'00.2%22N+27%C2%B038'18.3%22E/@42.566715,27.6378648,229m/data=!3m2!1e3!4b1!4m18!1m13!4m12!1m3!2m2!1d27.6386398!2d42.5658725!1m6!1m2!1s0x40a6bd61c6bead57:0x56c54b1c6c2f7ab1!2z0KbQtdC90YLRitGALCA4MjAw!2m2!1d27.6383442!2d42.5611404!3e0!3m3!8m2!3d42.566715!4d27.638412`,
     linkTo: '/parking-grand-small',
+  },
+  {
+    id: 11,
+    name: 'Общински паркинг пред "Софарма" и "Ла Хабана" (открит юли 2023 г)',
+    description: `Този паркинг е открит на 10.07.2023 г. след, като Община Поморие реши да реконструира парцела, който и преди се използваше за неплатено паркиране.
+    Паркингът е общински и работи с помощта на паркомати. Заплащането става на паркоматна машина, която се намира на входа на паркинга от страната на плажа.`,
+    status: `Платен / Паркомат`,
+    prices: municipalityPrice,
+    address: `ул. Нео Анхиало 10`,
+    img: `${sopharmaCoverPic}`,
+    tag: `Общински / Платен`,
+    gps: `https://www.google.com/maps/place/42%C2%B033'36.8%22N+27%C2%B038'39.6%22E/@42.560217,27.644336,17z/data=!3m1!4b1!4m4!3m3!8m2!3d42.560217!4d27.644336?entry=ttu`,
+    linkTo: '/parking-sopharma',
   },
 ];
 

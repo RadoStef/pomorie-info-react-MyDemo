@@ -3,6 +3,8 @@ import tuthon1 from '../../assets/parkings/tuthon/parking-tuthon1.jpg';
 import tuthon2 from '../../assets/parkings/tuthon/parking-tuthon2.jpg';
 import tuthon3 from '../../assets/parkings/tuthon/parking-tuthon3.jpg';
 import tuthon4 from '../../assets/parkings/tuthon/parking-tuthon4.jpg';
+import tuthon5 from '../../assets/parkings/tuthon/parking-tuthon5.jpg';
+import tuthon6 from '../../assets/parkings/tuthon/parking-tuthon6.jpg';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
@@ -22,7 +24,7 @@ import { PreviousObject } from '../../components/UI/PreviousObject';
 const objectName = parkings.slice(11, 12).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(11, 12).map(parkingDesc => parkingDesc.description);
 const parkingXtras = parkings.slice(11, 12);
-const images = [tuthon1, tuthon2, tuthon3, tuthon4];
+const images = [tuthon1, tuthon2, tuthon3, tuthon4, tuthon5, tuthon6];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

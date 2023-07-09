@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom';
                     <li><PhoneForwardedIcon/> <span>{extras.phoneNumber}</span></li>
                     <li><BusinessIcon/> <span>{extras.address}</span></li>
                     <li><LanguageIcon/> <span>{extras.website === `` ? <p>няма</p> : <Link to={extras.website} target='_blank'> Официален уебсайт </Link>}</span></li>
-                    <Link to={extras.gps} target='_blank'> <Button variant='outlined'> Заведи ме там <DirectionsIcon sx={{marginLeft: '10px'}}/> </Button> </Link>
+                    <li><Link to={extras.gps} target='_blank'> <Button variant='outlined'> Заведи ме там <DirectionsIcon sx={{marginLeft: '10px'}}/> </Button> </Link></li>
                 </ul>
                 </React.Fragment>
                 )

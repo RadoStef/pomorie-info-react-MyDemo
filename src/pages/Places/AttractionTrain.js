@@ -4,6 +4,7 @@ import train2 from '../../assets/attractions/attraction-train/train-pomorie2.jpg
 import train3 from '../../assets/attractions/attraction-train/train-pomorie3.jpg';
 import train4 from '../../assets/attractions/attraction-train/train-pomorie4.jpg';
 import train5 from '../../assets/attractions/attraction-train/train-pomorie5.jpg';
+import trainSign from '../../assets/attractions/attraction-train/trainSign.jpg';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
 import { AppHeaderBar } from "../../components/HeaderSection/AppHeaderBar";
@@ -22,7 +23,7 @@ import { PreviousObject } from "../../components/UI/PreviousObject";
 const objectName = attractions.slice(5, 6).map(attractionName => attractionName.name);
 const objectDescription = attractions.slice(5, 6).map(attractionDesc => attractionDesc.description);
 const attractionsXtras = attractions.slice(5, 6);
-const images = [train1, train2, train3, train4, train5];
+const images = [train1, trainSign, train2, train3, train4, train5];
 const backLink = <Link to='/attractions'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

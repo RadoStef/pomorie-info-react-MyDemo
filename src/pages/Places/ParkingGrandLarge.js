@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import grandLarge1 from '../../assets/parkings/atriumLarge/atriumLargeNew1.jpg';
 import grandLarge2 from '../../assets/parkings/atriumLarge/atriumLargeNew2.jpg';
 import grandLarge3 from '../../assets/parkings/atriumLarge/atriumLargeNew3.jpg';
+import grandLarge4 from '../../assets/parkings/atriumLarge/atriumLargeEntrance.jpg';
+import grandLarge5 from '../../assets/parkings/atriumLarge/atriumLargeEntrance1.jpg';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from "react-router-dom";
@@ -21,7 +23,7 @@ import { PreviousObject } from '../../components/UI/PreviousObject';
 const objectName = parkings.slice(12, 13).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(12, 13).map(parkingDesc => parkingDesc.description);
 const parkingXtras = parkings.slice(12, 13);
-const images = [grandLarge1, grandLarge2, grandLarge3];
+const images = [grandLarge4, grandLarge5, grandLarge1, grandLarge2, grandLarge3];
 const backLink = <Link to='/parkings'> <Button> <ArrowBackIcon/> </Button></Link>
 
 const mapContent = 

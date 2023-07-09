@@ -17,6 +17,7 @@ import { Button } from "@mui/material";
 import { Breadcrumb } from "../../components/BreadCrumbSection/Breadcrumb";
 import classes from '../../components/ObjectMapSection/ObjectMap.module.css';
 import { PreviousObject } from '../../components/UI/PreviousObject';
+import { NextObject } from '../../components/UI/NextObject';
 
 const objectName = parkings.slice(13, 14).map(parkingName => parkingName.name);
 const objectDescription = parkings.slice(13, 14).map(parkingDesc => parkingDesc.description);
@@ -45,6 +46,7 @@ export const ParkingGrandSmall = () => {
             <ObjectDescription images={images} text={objectDescription} objectName={objectName}/>
             <ParkingsXtras parkingExtras={parkingXtras}/>
             <Link to='/parking-grand-large'><PreviousObject/></Link>
+            <Link to='/parking-sopharma'><NextObject/></Link>
             <MapSection map={mapContent}/>
         </ObjectDescriptionCard>
         <Footer/>
