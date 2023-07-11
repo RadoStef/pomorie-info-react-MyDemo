@@ -1,10 +1,14 @@
 import React from "react";
 import { footerContacts, footerWebsites, footerFacebookGrous } from "../mock-data/data";
 import { Link } from "react-router-dom";
+import LanguageIcon from '@mui/icons-material/Language';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import classes from "./Footer.module.css";
+import { Divider } from "@mui/material";
 
 export const Footer = () => {
-  // const [error, setError] = useState('Абонирай се');
+  // const [submitList, setSubmitList] = useState('Абонирай се');
   // const emailRef = useRef('');
 
     const renderContacts = footerContacts.map((contact) => {
@@ -35,10 +39,10 @@ export const Footer = () => {
     //     const email = emailRef.current.value;
 
     //     if( !email.includes('@') || email.length <= 6) {
-    //         return setError(`Моля, въведете валиден e-mail`);
+    //         return setSubmitList(`Моля, въведете валиден e-mail`);
     //     } else {
     //         emailRef.current.value = '';
-    //         setError(`Благодаря`);
+    //         setSubmitList(`Благодаря`);
     //     };
     // };
 
@@ -53,12 +57,14 @@ export const Footer = () => {
     <footer>
       <div className={classes["footer-wrapper"]}>
         <div className={classes["footer-column"]}>
-          <p>Контакти с община Поморие</p>
+          <p> <ContactSupportIcon fontSize="medium"/></p>
+          <Divider/>
           <ul>{renderContacts}</ul>
         </div>
 
         <div className={classes["footer-column"]}>
-          <p>Сайтове</p>
+          <p> <LanguageIcon fontSize="medium"/></p>
+          <Divider/>
           <ul>{renderSites}</ul>
         </div>
 
@@ -68,12 +74,13 @@ export const Footer = () => {
             <button className={classes.subscribe}>subscribe</button>
           </form> */}
         <div className={classes["footer-column"]}>
-          <p>Фейсбук страници</p>
+          <p><FacebookIcon fontSize="medium"/></p>
+          <Divider/>
           <ul>{renderGroups}</ul>
         </div>
       </div>
       <div>
-        <p>Code and design by Radoslav Stefanov 2023.</p>
+        <p>Код, дизайн и цялостна изработка: Радослав Стефанов - 2023. <Link to='https://github.com/RadoStef' target="_blank"> GitHub </Link></p>
       </div>
     </footer>
   );

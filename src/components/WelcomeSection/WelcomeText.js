@@ -1,11 +1,12 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import { Link } from "react-router-dom";
 import { Typography, Divider } from "@mui/material";
 
 export const WelcomeText = () => {
   return (
     <Container sx={{
-      maxWidth: { xs: '90%', sm: '80%', md: '70%', lg: '60%' },
+      maxWidth: { xs: '90%', sm: '80%', md: '70%', lg: '65%' },
       border: '1px solid #fbbc05',
       boxShadow: '0px 6px 13px -6px rgba(0,0,0,0.55)',
       background: 'white',
@@ -17,7 +18,9 @@ export const WelcomeText = () => {
         сайт, който да служи, като пътеводител за гостите на град Поморие и да отговаря с актуална информация
         на най-важните за туристите въпроси.
         Този сайт е направен с <b>нестопанска цел</b> от гражданин на Поморие и е абсолютно
-        потребителски ориентиран. 
+        <b>потребителски ориентиран.</b> Много от снимките в сайта са мое дело. Благодаря на Павлин Кулов, Борис Кратман, Атанас Железчев - Насека и 
+        Чавдар Чернев, че се съгласиха да публикувам техни фотографии от Поморие в раздел <Link to='/beauty-of-pomorie'>'Красотата на Поморие'</Link>. Използвани са и снимки от 
+        <Link to='https://www.pomorietourism.bg/' target='_blank'> Туристическия портал на Поморие </Link>
         <Divider sx={{margin: '30px 0'}}/>
         <b>Тук ще намерите отговори на въпроси, като:</b>
         <ul>

@@ -194,6 +194,7 @@ import naseka10 from '../../assets/photographers/AtanasNaseka/naseka10.jpg';
 import naseka11 from '../../assets/photographers/AtanasNaseka/naseka11.jpg';
 import naseka12 from '../../assets/photographers/AtanasNaseka/naseka12.jpg';
 import naseka13 from '../../assets/photographers/AtanasNaseka/naseka13.jpg';
+import naseka14 from '../../assets/photographers/AtanasNaseka/naseka14.jpg';
 
 // Boris Kratman
 import kratman1 from '../../assets/photographers/BorisKratman/kratman1.jpg';
@@ -1595,7 +1596,7 @@ export const photographersAndGalleries = [
     location: 'Поморие',
     website: '',
     gallery: [
-      naseka10, naseka11, naseka1, naseka2, naseka3, naseka4, naseka5, naseka6, naseka7, naseka8, naseka9, naseka12, naseka13
+      naseka10, naseka11, naseka1, naseka2, naseka3, naseka14, naseka4, naseka5, naseka6, naseka7, naseka8, naseka9, naseka12, naseka13
     ]
   },
   {

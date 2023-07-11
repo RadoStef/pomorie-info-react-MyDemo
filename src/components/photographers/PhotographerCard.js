@@ -21,6 +21,7 @@ export const PhotographerCard = () => {
       {photographersAndGalleries.map((photographer) => {
         return (
           <div className={classes['photographer-wrapper']} key={photographer.name}>
+            
             <div className={classes['photographer-logo-wrapper']}>
               <img src={photographer.image} alt={photographer.name} />
             </div>
@@ -38,18 +39,17 @@ export const PhotographerCard = () => {
               </p>
               <p><b>{photographer.gallery.length}</b> снимки в галерията</p>
             </div>
-            <div className={classes['slide-wrapper']}>
-            <Carousel dynamicHeight emulateTouch width='100%' showIndicators={false}>
-              {photographer.gallery.map((image, index) => {
-                return (
-                  <LazyLoad key={index} placeholder={<img src={image} alt={`${index + 1}`} />}>
-                      <img src={image} alt={`${index + 1}`} />
-                    </LazyLoad>
-                )
-              })}
-            </Carousel>
-            </div>
-            
+              <div className={classes['slide-wrapper']}>
+                <Carousel dynamicHeight emulateTouch width='100%' showIndicators={false}>
+                  {photographer.gallery.map((image, index) => {
+                    return (
+                      <LazyLoad key={index} placeholder={<img src={image} alt={`${index + 1}`} />}>
+                          <img src={image} alt={`${index + 1}`} />
+                      </LazyLoad>
+                    )
+                  })}
+                </Carousel>
+              </div>
             <button onClick={() => toggleHandler(photographer.gallery)} className={classes['lightbox-button']}> Разгледай на цял екран </button>
           </div>
         );
